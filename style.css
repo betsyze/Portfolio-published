@@ -1,0 +1,391 @@
+  /* Importing Fonts */
+  
+  @font-face {
+    font-family: "Roobert-Medium";
+    font-style: normal;
+    font-weight: 500;
+    src: url('https://anima-uploads.s3.amazonaws.com/5963acbdff6ca0000c98ef8d/Roobert-Medium.otf') format("opentype");
+  }
+  
+  @font-face {
+    font-family: "Roobert-Regular";
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://anima-uploads.s3.amazonaws.com/5963acbdff6ca0000c98ef8d/Roobert-Regular.otf') format("opentype");
+  }
+  
+  @font-face {
+    font-family: "SF Pro Text-Bold";
+    font-style: normal;
+    font-weight: 700;
+    src: url('https://anima-uploads.s3.amazonaws.com/projects/62e5bd2f729e81c0f2cb0ddb/fonts/sf-pro-text-bold.ttf') format("truetype");
+  }
+  
+  @font-face {
+    font-family: "Apfel Grotezk-Regular";
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://anima-uploads.s3.amazonaws.com/projects/61428154992a408f45ab95b1/fonts/apfelgrotezk-regular.otf') format("opentype");
+  }
+
+    /* Page Architecture */
+
+    /* Page bg  */
+    .homepage-new {
+        align-items: flex-start;
+        background-color: #f6f4ec;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        height: 748px;
+        left: 0px;
+        overflow: hidden;
+        padding: 20px 40px 20px;
+        position: relative;
+        top: 0px;
+        width: 100%;
+      }
+
+      /* White outer box */
+      .homepage-new .frame-72-7alUKT {
+        background-color: #ffffff;
+        height: 600px;
+        padding: 10px;
+        width: 100%;
+        min-width: 1100px;
+      }
+
+      /* first card */
+      .homepage-new .frame-69-BsBNEN {
+        align-items: flex-start;
+        align-self: stretch;
+        background-color: var(--desert-storm);
+        border: 1px dashed;
+        border-color: var(--black);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        overflow: hidden;
+        padding: 28px 32px 28px 32px;
+        position: relative;
+        width: 100%;
+        min-width: 430px;
+      }
+
+      /* second card */
+      .homepage-new .frame-68-C7iolO {
+        align-items: flex-start;
+        align-self: stretch;
+        background-color: transparent;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 12px;
+        position: relative;
+        width: 100%;
+      }
+
+       /* bio img */
+  .homepage-new .bio-img-ZlUoao {
+    background-color: transparent;
+    height: 100%;
+    position: relative;
+    width: 84px;
+  }
+
+  /* bio text fit */
+  .homepage-new .frame-47-ZlUoao {
+    align-items: flex-start;
+    align-self: stretch;
+    background-color: transparent;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+    max-width: 300px;
+  }
+
+/* ??? */
+  .homepage-new .frame-60-7VwDpr {
+    align-items: flex-start;
+    align-self: stretch;
+    background-color: transparent;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+  }
+
+/* name text styling */
+  .homepage-new .title-mygWwm {
+    background-color: transparent;
+    color: var(--black);
+    font-family: var(--font-family-roobert-medium);
+    font-size: var(--font-size-xl);
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+  }
+/* bio text styling */
+  .homepage-new .im-a-designer-and-il-7VwDpr {
+    align-self: stretch;
+    background-color: transparent;
+    letter-spacing: -0.60px;
+    line-height: normal;
+    position: relative;
+    text-align: justify;
+  }
+
+  /* divider styling */
+  .homepage-new .divider-7VwDpr {
+    align-self: stretch;
+    background-color: transparent;
+    flex: 0 0 auto;
+    margin-bottom: -0.50px;
+    object-fit: cover;
+    position: relative;
+    width: 100%;
+  }
+
+  /* colophon fit  */
+  .homepage-new .colo-ZlUoao {
+    align-items: flex-start;
+    align-self: stretch;
+    background-color: transparent;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+    width: 100%;
+  }
+
+  /* colophon header fit */
+  .homepage-new .colophon-header-TxuAYa {
+    align-items: center;
+    align-self: stretch;
+    background-color: transparent;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 10px;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+
+/* colophon header text styling */
+  .homepage-new .colophon-JgoTnY {
+    background-color: transparent;
+    color: var(--black);
+    flex: 1;
+    font-family: var(--font-family-sf_pro_text-bold);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -0.60px;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+  }
+
+/* colophon text fit  */
+  .homepage-new .colo-text-TxuAYa {
+    align-items: center;
+    align-self: stretch;
+    background-color: transparent;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 10px;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    max-width: 350px;
+  }
+
+/* colophon text styling */
+  .homepage-new .i-registered-this-do-YBAkqo {
+    background-color: transparent;
+    flex: 1;
+    letter-spacing: -0.48px;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: justify;
+  }
+  .homepage-new .span1-RxFDl0 {
+    color: var(--black);
+    font-family: var(--font-family-roobert-medium);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: -0.06px;
+    text-decoration: underline;
+  }
+  .homepage-new .span2-RxFDl0 {
+    letter-spacing: -0.06px;
+  }
+
+  /* /// */
+
+/* second card div fit */
+  .homepage-new .frame-72-BsBNEN {
+    background-color: var(--desert-storm);
+    flex-direction: column;
+    overflow: hidden;
+    padding: 40px;
+    width: 100%;
+    min-width: 305px;
+  }
+
+  /* UX Img sizing */
+  .homepage-new .anim6-UZvTVx {
+    height: 72px;
+    position: relative;
+    width: 72px;
+  }
+
+  .UX-gif {
+    display: none;
+  }
+
+  .UX-static {
+    position:absolute;
+    background: white;
+  }
+
+  .homepage-new .frame-72-BsBNEN:hover .UX-static {
+    opacity: 0;
+  }
+
+/* UX Card Header Text */
+  .homepage-new .experience-design-8AEMPk {
+    background-color: transparent;
+    color: var(--black);
+    font-family: var(--font-family-roobert-medium);
+    font-size: var(--font-size-l);
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    width: fit-content;
+  }
+
+  .homepage-new .frame-72-BsBNEN:hover {
+    background-color:rgb(255, 255, 255);
+  }
+
+/* Art Card div */
+  .homepage-new .frame-75-BsBNEN {
+    align-items: flex-start;
+    align-self: stretch;
+    background-color: var(--desert-storm);
+    border: 1px solid;
+    border-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: hidden;
+    padding: 40px;
+    position: relative;
+    width: 100%;
+    min-width: 305px;
+  }
+/* Art Illo */
+  .homepage-new .frame-74-pvt6x4 {
+    background-color: transparent;
+    height: 72px;
+    position: relative;
+    width: 72px;
+  }
+/* Art header text styling */
+  .homepage-new .visual-art-1p5TjO {
+    background-color: transparent;
+    color: var(--black);
+    font-family: var(--font-family-roobert-medium);
+    font-size: var(--font-size-l);
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    width: fit-content;
+  }
+
+  .homepage-new .frame-75-BsBNEN:hover {
+    background-color:rgb(255, 255, 255);
+  }
+
+
+  /* //// */
+
+/* footer */
+  .homepage-new .footer-7alUKT {
+    background-color: #f6f4ec;
+    gap: 10px;
+    height: 43px;
+    left: 40px;
+    padding: 12px 0px 12px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+  }
+
+  .homepage-new .you-can-also-find-me-YdUwlW {
+    background-color: transparent;
+    height: 28px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    width: 636px;
+  }
+
+  .homepage-new .span1-uOQtAz {
+    text-decoration: underline;
+    color: black;
+  }
+  
+  
+  .homepage-new .span3-uOQtAz {
+    text-decoration: underline;
+    color: black;
+  }
+  
+  .homepage-new .span5-uOQtAz {
+    text-decoration: underline;
+    color: black;
+  }
+
+/* over complicated? can maybe remove */
+  .homepage-new .frame-56 {
+    align-items: flex-start;
+    align-self: stretch;
+    background-color: transparent;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    overflow: hidden;
+    padding: 8px 0px;
+    position: relative;
+    width: 100%;
+  }

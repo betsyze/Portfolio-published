@@ -1,0 +1,21 @@
+body {
+    margin: 0%;
+  }
+
+  :root {
+    --desert-wind: #faf9f5;
+    --sandstone: #999999;
+    --sapphire: #0051E6;
+    --twilight: #00318A;
+  }
+
+.homepage-va {
+    align-items: flex-start; 
+    background-color: var(--desert-wind);
+    display: flex;
+    /* width: 100%; */
+    height: 100%;
+    padding: 40px 40px 20px 40px;
+    flex-direction: column;
+    
+  }

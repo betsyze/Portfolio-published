@@ -1,0 +1,160 @@
+
+body {
+    margin: 0%;
+  }
+
+  :root {
+    --desert-wind: #faf9f5;
+    --sandstone: #999999;
+    --sapphire: #0051E6;
+    --twilight: #00318A;
+  }
+
+.homepage-ux {
+    align-items: flex-start; 
+    background-color: var(--desert-wind);
+    display: flex;
+    /* width: 100%; */
+    height: 100%;
+    padding: 40px 40px 20px 40px;
+    flex-direction: column;
+    
+  }
+
+  .content-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+  }
+
+
+  .header-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    align-self: stretch;
+  }
+
+  .header-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+  }
+
+  .bw-icons-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+.header-face {
+    width: 64px;
+    height: 64.985px;
+}
+
+.header-grid {
+    width: 64px;
+    height: 64.985px;
+}
+
+.header-blob {
+    width: 64px;
+    height: 64.985px;
+}
+
+.divider-fit {
+    display: flex;
+    align-items: flex-start;
+    gap: 1px;
+    align-self: stretch;
+    border: black;
+}
+
+.divider-style {
+    height: 0px;
+    align-self: stretch;
+
+}
+
+
+.project-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.table-row {
+    display: flex;
+    align-items: center;
+    gap: 53px;
+    align-self: stretch;
+    min-width: 720px;
+    
+}
+
+.icon-fit {
+    width: 18px;
+    height: 18px;
+    /* border:#0051E6 solid; */
+}
+
+a.header {
+    color: black;
+font-family: "Apfel Grotezk";
+font-size: 16px;
+font-style: normal;
+/* font-weight: 500; */
+line-height: normal;
+}
+
+a.line-title {
+color: black;
+font-family: "Roobert";
+font-size: 16px;
+font-style: normal;
+/* font-weight: 500; */
+line-height: normal;
+min-width: 240px;
+}
+
+a.line-keywords {
+    align-content: bottom;
+    color: var(--sandstone);
+    font-family: "apfel grotezk";
+    font-size: 16px;
+    font-style: italic;
+    min-width: 330px;
+    
+}
+
+a.disabled {
+    color: dimgrey;
+    font-family: "apfel grotezk";
+    min-width: 120px;
+}
+
+a.cs-link {
+    color: var(--sapphire);
+    font-family: "apfel grotezk";
+    width: 220px;
+    text-decoration: none;
+    min-width: 120px;
+}
+
+a:visited {
+    color: var(--twilight);
+    text-decoration: none;
+}
+
+
+
+
+
+

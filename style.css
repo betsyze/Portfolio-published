@@ -1,26 +1,26 @@
   /* Importing Fonts */
-  
+
   @font-face {
     font-family: "Roobert-Medium";
     font-style: normal;
     font-weight: 500;
     src: url('https://anima-uploads.s3.amazonaws.com/5963acbdff6ca0000c98ef8d/Roobert-Medium.otf') format("opentype");
   }
-  
+
   @font-face {
     font-family: "Roobert-Regular";
     font-style: normal;
     font-weight: 400;
     src: url('https://anima-uploads.s3.amazonaws.com/5963acbdff6ca0000c98ef8d/Roobert-Regular.otf') format("opentype");
   }
-  
+
   @font-face {
     font-family: "SF Pro Text-Bold";
     font-style: normal;
     font-weight: 700;
     src: url('https://anima-uploads.s3.amazonaws.com/projects/62e5bd2f729e81c0f2cb0ddb/fonts/sf-pro-text-bold.ttf') format("truetype");
   }
-  
+
   @font-face {
     font-family: "Apfel Grotezk-Regular";
     font-style: normal;
@@ -28,64 +28,75 @@
     src: url('https://anima-uploads.s3.amazonaws.com/projects/61428154992a408f45ab95b1/fonts/apfelgrotezk-regular.otf') format("opentype");
   }
 
-    /* Page Architecture */
+  /* Page Architecture */
 
-    /* Page bg  */
-    .homepage-new {
-        align-items: flex-start;
-        background-color: #f6f4ec;
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-        height: 748px;
-        left: 0px;
-        overflow: hidden;
-        padding: 20px 40px 20px;
-        position: relative;
-        top: 0px;
-        width: 100%;
-      }
+  /* Page bg  */
+  .homepage-new {
+    align-items: flex-start;
+    background-color: #f6f4ec;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    /* height: 748px; */
+    left: 0px;
+    overflow: hidden;
+    padding: 20px 40px 20px;
+    position: relative;
+    top: 0px;
+    width: 100%;
+  }
 
-      /* White outer box */
-      .homepage-new .frame-72-7alUKT {
-        background-color: #ffffff;
-        height: 600px;
-        padding: 10px;
-        width: 100%;
-        min-width: 1100px;
-      }
+  /* White outer box */
+  .homepage-new .hero-box {
+    background-color: #ffffff;
+    /* height: 600px; */
+    padding: 10px;
+    width: 100%;
+    /* min-width: 1100px; */
 
-      /* first card */
-      .homepage-new .frame-69-BsBNEN {
-        align-items: flex-start;
-        align-self: stretch;
-        background-color: var(--desert-storm);
-        border: 1px dashed;
-        border-color: var(--black);
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        overflow: hidden;
-        padding: 28px 32px 28px 32px;
-        position: relative;
-        width: 100%;
-        min-width: 430px;
-      }
 
-      /* second card */
-      .homepage-new .frame-68-C7iolO {
-        align-items: flex-start;
-        align-self: stretch;
-        background-color: transparent;
-        display: flex;
-        flex: 0 0 auto;
-        flex-direction: column;
-        gap: 12px;
-        position: relative;
-        width: 100%;
-      }
+    align-items: flex-start;
+    align-self: stretch;
+    border: 1px solid;
+    border-color: var(--black);
+    display: flex;
+    gap: 10px;
+    position: relative;
+  }
 
-       /* bio img */
+  /* first card */
+  .homepage-new .biocard {
+    align-items: flex-start;
+    align-self: stretch;
+    background-color: var(--desert-storm);
+    border: 1px dashed;
+    border-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* overflow: hidden; */
+    padding: 28px 32px 28px 32px;
+    position: relative;
+    width: 100%;
+    min-width: 430px;
+    height: auto;
+  }
+
+  /* inner bio card stack */
+  .homepage-new .innerbiostack {
+    align-items: flex-start;
+    align-self: stretch;
+    background-color: transparent;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+    width: 100%;
+
+  }
+
+  /* bio img */
   .homepage-new .bio-img-ZlUoao {
     background-color: transparent;
     height: 100%;
@@ -106,7 +117,7 @@
     max-width: 300px;
   }
 
-/* ??? */
+  /* ??? */
   .homepage-new .frame-60-7VwDpr {
     align-items: flex-start;
     align-self: stretch;
@@ -120,7 +131,7 @@
     width: 100%;
   }
 
-/* name text styling */
+  /* name text styling */
   .homepage-new .title-mygWwm {
     background-color: transparent;
     color: var(--black);
@@ -136,7 +147,8 @@
     white-space: nowrap;
     width: fit-content;
   }
-/* bio text styling */
+
+  /* bio text styling */
   .homepage-new .im-a-designer-and-il-7VwDpr {
     align-self: stretch;
     background-color: transparent;
@@ -148,6 +160,7 @@
 
   /* divider styling */
   .homepage-new .divider-7VwDpr {
+    display: block;
     align-self: stretch;
     background-color: transparent;
     flex: 0 0 auto;
@@ -168,6 +181,7 @@
     gap: 12px;
     position: relative;
     width: 100%;
+    height: 100%;
   }
 
   /* colophon header fit */
@@ -184,7 +198,7 @@
     width: 100%;
   }
 
-/* colophon header text styling */
+  /* colophon header text styling */
   .homepage-new .colophon-JgoTnY {
     background-color: transparent;
     color: var(--black);
@@ -200,8 +214,9 @@
     text-align: left;
   }
 
-/* colophon text fit  */
+  /* colophon text fit  */
   .homepage-new .colo-text-TxuAYa {
+    display: block;
     align-items: center;
     align-self: stretch;
     background-color: transparent;
@@ -214,7 +229,7 @@
     max-width: 350px;
   }
 
-/* colophon text styling */
+  /* colophon text styling */
   .homepage-new .i-registered-this-do-YBAkqo {
     background-color: transparent;
     flex: 1;
@@ -224,6 +239,7 @@
     position: relative;
     text-align: justify;
   }
+
   .homepage-new .span1-RxFDl0 {
     color: var(--black);
     font-family: var(--font-family-roobert-medium);
@@ -233,20 +249,43 @@
     letter-spacing: -0.06px;
     text-decoration: underline;
   }
+
   .homepage-new .span2-RxFDl0 {
     letter-spacing: -0.06px;
   }
 
   /* /// */
 
-/* second card div fit */
-  .homepage-new .frame-72-BsBNEN {
-    background-color: var(--desert-storm);
-    flex-direction: column;
-    overflow: hidden;
+  /* UX card */
+
+  .homepage-new .ux-card {
+
+    /* flex-direction: column;
+      overflow: hidden;
+      padding: 40px;
+      width: 100%;
+      min-width: 305px; */
+    display: flex;
     padding: 40px;
+    flex-direction: column;
+    position: relative;
+
+    overflow: hidden;
+
     width: 100%;
     min-width: 305px;
+    overflow: hidden;
+
+    align-items: flex-start;
+    align-self: stretch;
+    gap: 10px;
+
+    /* flex: 1 0 0 1; */
+
+    background-color: var(--desert-storm);
+    border: 1px solid;
+    border-color: var(--black);
+
   }
 
   /* UX Img sizing */
@@ -261,15 +300,15 @@
   }
 
   .UX-static {
-    position:absolute;
+    position: absolute;
     background: white;
   }
 
-  .homepage-new .frame-72-BsBNEN:hover .UX-static {
+  .homepage-new .ux-card:hover .UX-static {
     opacity: 0;
   }
 
-/* UX Card Header Text */
+  /* UX Card Header Text */
   .homepage-new .experience-design-8AEMPk {
     background-color: transparent;
     color: var(--black);
@@ -285,19 +324,23 @@
     width: fit-content;
   }
 
-  .homepage-new .frame-72-BsBNEN:hover {
-    background-color:rgb(255, 255, 255);
+  .homepage-new .ux-card:hover {
+    background-color: rgb(255, 255, 255);
   }
 
-/* Art Card div */
-  .homepage-new .frame-75-BsBNEN {
+  /* Art Card div */
+  .homepage-new .art-card {
+    display: flex;
+    flex-direction: column;
     align-items: flex-start;
     align-self: stretch;
+
     background-color: var(--desert-storm);
     border: 1px solid;
     border-color: var(--black);
-    display: flex;
-    flex-direction: column;
+
+    /* flex: 1 0 0 1; */
+
     gap: 10px;
     overflow: hidden;
     padding: 40px;
@@ -305,14 +348,20 @@
     width: 100%;
     min-width: 305px;
   }
-/* Art Illo */
+
+  .homepage-new .art-card:hover {
+    background-color: rgb(255, 255, 255);
+  }
+
+  /* Art Illo */
   .homepage-new .frame-74-pvt6x4 {
     background-color: transparent;
     height: 72px;
     position: relative;
     width: 72px;
   }
-/* Art header text styling */
+
+  /* Art header text styling */
   .homepage-new .visual-art-1p5TjO {
     background-color: transparent;
     color: var(--black);
@@ -328,14 +377,12 @@
     width: fit-content;
   }
 
-  .homepage-new .frame-75-BsBNEN:hover {
-    background-color:rgb(255, 255, 255);
-  }
+
 
 
   /* //// */
 
-/* footer */
+  /* footer */
   .homepage-new .footer-7alUKT {
     background-color: #f6f4ec;
     gap: 10px;
@@ -362,19 +409,19 @@
     text-decoration: underline;
     color: black;
   }
-  
-  
+
+
   .homepage-new .span3-uOQtAz {
     text-decoration: underline;
     color: black;
   }
-  
+
   .homepage-new .span5-uOQtAz {
     text-decoration: underline;
     color: black;
   }
 
-/* over complicated? can maybe remove */
+  /* over complicated? can maybe remove */
   .homepage-new .frame-56 {
     align-items: flex-start;
     align-self: stretch;
@@ -388,4 +435,119 @@
     padding: 8px 0px;
     position: relative;
     width: 100%;
+  }
+
+  .smlColo {
+    display: none;
+  }
+
+
+  /* media queries! */
+
+  @media (min-width: 768px) {
+    .hero-box {
+      height: 600px;
+      min-width: 1100px;
+
+    }
+  }
+
+  @media (max-width:768px) {
+    .homepage-new {
+      padding: 10px;
+    }
+
+    .hero-box {
+      flex-direction: column;
+      align-items: flex-start;
+      align-self: stretch;
+      /* height: fit-content; */
+      max-width: 100%;
+
+
+    }
+
+    .biocard {
+      height: 100%;
+      align-items: stretch;
+      height: fit-content;
+      min-width: auto;
+
+    }
+
+    .ux-card {
+      /* height: 100%; */
+      /* align-items: stretch; */
+      height: fit-content;
+
+    }
+
+    .art-card {
+      /* height: 100%; */
+      align-items: stretch;
+      height: fit-content;
+
+    }
+
+    .homepage-new .footer-7alUKT{
+      left: 0px;
+      padding: 12px 0px 12px 24px;
+    }
+
+
+  }
+
+  @media (max-width:488px) {
+
+    .homepage-new {
+      gap: 12px;
+      padding: 12px 12px 48px 12px;
+    }
+
+    .homepage-new .divider-7VwDpr {
+      display: none;
+    }
+
+    .homepage-new .colophon-JgoTnY {
+      display: none;
+    }
+
+    .hero-box {
+      flex-direction: column;
+    }
+
+    .homepage-new .biocard {
+      min-width: auto;
+    }
+
+    .homepage-new .colo-text-TxuAYa {
+      display: none;
+
+    }
+
+    .homepage-new .im-a-designer-and-il-7VwDpr {
+      min-width: 200px;
+    }
+
+    .homepage-new .ux-card {
+      min-width: auto;
+    }
+
+    .homepage-new .art-card {
+      min-width: auto;
+    }
+
+        .smlColo {
+          display: block;
+          color: #000;
+          padding: 12px;
+          /* Case Study/Body/Bold */
+         
+        }
+
+    .homepage-new .footer-7alUKT{
+      left: 0px;
+      padding: 12px 0px 12px 24px;
+    }
+
   }

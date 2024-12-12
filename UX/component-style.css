@@ -4,7 +4,7 @@
   @font-face {
     font-family: "Roobert-Medium";
     font-style: normal;
-    font-weight: 500;
+    font-weight: 200, 480, 600;
     src: url('https://anima-uploads.s3.amazonaws.com/5963acbdff6ca0000c98ef8d/Roobert-Medium.otf') format("opentype");
   }
   
@@ -53,7 +53,7 @@ min-width: 320px;
 padding: 25px 12px 25px 32px;
 flex-direction: column;
 align-items: flex-start;
-gap: 6px;
+gap: 12px;
 flex: 1 0 0;
 align-self: stretch;
 }
@@ -64,7 +64,7 @@ align-self: stretch;
     padding: 25px 17px 25px 32px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 2px;
+    /* gap: 2px; */
 }
 
 h2.project-item-title {
@@ -79,6 +79,8 @@ h2.project-item-title {
 }
 
 p.project-description {
+    margin: 0;
+    padding: 0;
     align-self: stretch;
     color: #000;
     font-family: Roobert;
@@ -89,11 +91,13 @@ p.project-description {
 }
 
 p.keywords {
-    color: #000;
-font-family: Helvetica, sans-serif;
+margin: 0;
+padding: 0;
+color: #000;
+font-family: Roobert;
 font-size: 12px;
-font-style: italic;
-font-weight: 400;
+/* font-style: italic; */
+font-weight: 200;
 line-height: normal;
 }
 
@@ -109,12 +113,15 @@ letter-spacing: -0.6px;
 }
 
 p.pub-date {
+    margin: 0;
+    padding: 0;
     color: #374151;
-text-align: left;
-font-family: "SF Pro Text";
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: 15px; /* 125% */
-letter-spacing: -0.6px;
+    text-align: left;
+    font-family: "SF Pro Text";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+    /* 125% */
+    letter-spacing: -0.6px;
 }

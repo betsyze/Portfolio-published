@@ -90,7 +90,7 @@
     /* screen - homepage-new */
 
 
-    .homepage-new .frame-72 {
+    /* .homepage-new .frame-72 {
       align-items: flex-start;
       align-self: stretch;
       border: 1px solid;
@@ -98,23 +98,7 @@
       display: flex;
       gap: 10px;
       position: relative;
-    }
-
-
-
-
-    .popover {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 1060;
-      display: none;
-      font-family: "sans-serif";
-      font-size: 14px;
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
-    }
+    } */
 
 
 
@@ -134,9 +118,9 @@
 <body style="margin: 0px; background: rgb(246, 244, 236); overflow-x: hidden;">
   <input type="hidden" id="anPageName" name="page" value="homepage-new">
   <div class="homepage-new screen " data-id="168:136">
-    <div class="frame-72-7alUKT frame-72" data-id="168:139">
-      <div class="frame-69-BsBNEN" data-id="168:140">
-        <div class="frame-68-C7iolO" data-id="168:141"><img class="bio-img-ZlUoao" data-id="173:984"
+    <div class="hero-box" data-id="168:139">
+      <div class="biocard" data-id="168:140">
+        <div class="innerbiostack" data-id="168:141"><img class="bio-img-ZlUoao" data-id="173:984"
             src="https://cdn.animaapp.com/projects/63a130846d099077909945b8/releases/6758b178ad9974c27f569c6b/img/bio-img@2x.png"
             alt="Bio Img">
           <div class="frame-47-ZlUoao" data-id="168:143">
@@ -158,7 +142,8 @@
             <div class="colo-text-TxuAYa" data-id="168:152">
               <p class="i-registered-this-do-YBAkqo valign-text-middle roobert-regular-normal-black-12px"
                 data-id="168:153"><span><span class="span0-RxFDl0 roobert-regular-normal-black-12px">I registered this
-                    domain as a teenager and have been using it to host my portfolio since 2019. This website was laid out in
+                    domain as a teenager and have been using it to host my portfolio since 2019. This website was laid
+                    out in
                     Figma and then hand-coded in HTML, JSS, and Javascript.
                     <br><br>
                     Across my design, illustration,
@@ -167,10 +152,10 @@
                     Digital products possess both power and pathos: I’m always seeking to challenge dogmatic UI/UX
                     standards while still respecting product integrity and users' natural intuitions. Whenever I can, I
                     loop in research from academia and the arts to inform client work. Basically, my design
-                    ethic = try to try everything. 
+                    ethic = try to try everything.
                     <br><br>
-                    I’d love to meet you: you can email me at </span><span
-                    class="span1-RxFDl0"><a href="betsy.z.ellison@gmail.com">betsy.z.ellison@gmail.com</a></span><span
+                    I’d love to meet you: you can email me at </span><span class="span1-RxFDl0"><a
+                      href="betsy.z.ellison@gmail.com">betsy.z.ellison@gmail.com</a></span><span
                     class="span2-RxFDl0 roobert-regular-normal-black-12px">. Resume available upon
                     request.</span></span></p>
             </div>
@@ -179,9 +164,9 @@
       </div>
 
       <!-- UX Card -->
-      <div class="frame-72-BsBNEN frame-72" data-id="168:154"> 
+      <div class="ux-card" data-id="168:154">
 
-        <a href="/UX" target="_blank">  
+        <a href="/ux/" target="_blank">
           <span style="position:absolute; 
           width:100%;
           height:100%;
@@ -192,29 +177,27 @@
         
           /* fixes overlap error in IE7/8, 
              make sure you have an empty gif */
-          background-image: url('empty.gif');"></span>
+          background-image: url('header-blob.png');"></span>
+        </a>
 
-        </a> 
-        
         <div class="homepage-new.anim6-UZvTVx">
-           
-            <img class="UX-static" data-id="173:946"
-            src="/Assets/Header-Assets/Header-grid.png"
-            style="width: 64px" alt="A rotating black and white grid">
-            <img src="/Assets/gridgif.gif"  style="width: 64px">
+
+          <img class="UX-static" data-id="173:946" src="/Assets/Header-Assets/Header-grid.png" style="width: 64px"
+            alt="A rotating black and white grid">
+          <img src="/Assets/gridgif.gif" style="width: 64px">
 
         </div>
-        
+
         <div class="frame-56" data-id="168:156">
           <div class="experience-design-8AEMPk valign-text-middle" data-id="168:157">Experience Design</div>
         </div>
-    
+
       </div>
 
       <!-- Visual Art Card -->
-      <div class="frame-75-BsBNEN" data-id="168:158">
+      <div class="art-card" data-id="168:158">
 
-        <a href="/Art" target="_blank">  
+        <a href="/Art" target="_blank">
           <span style="position:absolute; 
           width:100%;
           height:100%;
@@ -227,34 +210,70 @@
              make sure you have an empty gif */
           background-image: url('empty.gif');"></span>
         </a>
-        
-        <img class="frame-74-pvt6x4" data-id="168:159"
-          src="/Assets/Header-Assets/header-blob.png"
+
+        <img class="frame-74-pvt6x4" data-id="168:159" src="/Assets/Header-Assets/header-blob.png"
           alt="A rotating black and white blob">
+
         <div class="frame-56" data-id="168:160">
           <div class="visual-art-1p5TjO valign-text-middle" data-id="168:161">Visual Art</div>
         </div>
       </div>
     </div>
 
+    <div class="smlColo">
+
+      <div style=" font-family:SF Pro Text; font-size: 12px; font-style: normal;font-weight: 700; line-height: normal; letter-spacing: -0.6px; padding: 8px 0px 8px 0px;">Colophon</div>
+      <div style="color: #000;
+      font-family: Roobert;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: -0.48px;">
+        I registered this domain as a teenager and have been using it to host my portfolio since. This website was laid
+        out in Figma and then hand-coded in HTML, JSS, and Javascript. <br><br>
+
+        Across all my design, illustration, and visual art work, I use a framework that embraces contradiction,
+        iteration, and exchange. This approach favors a horizontal hierarchy, demanding a designer stay receptive,
+        humble, and curious. Digital products possess both power and pathos: I’m always seeking to challenge dogmatic
+        UI/UX standards while still respecting product integrity and users' natural intuitions. Whenever I can, I loop
+        in research from academia and the arts to inform client work. Basically, my design ethic = I want to try
+        everything.
+        <br><br>
+
+        I’d love to meet you: you can email me at betsy.z.ellison@gmail.com. Resume available upon request.
+
+        
+      </div>
+    </div>
+
+
+
+    <!-- </div> -->
+
     <!--sticky footer  -->
     <footer class="footer-7alUKT" data-id="171:762">
       <p class="you-can-also-find-me-YdUwlW valign-text-bottom apfelgrotezk-regular-normal-black-12px"
-        data-id="171:763"><span><span class="span0-uOQtAz">You can also find me
+        data-id="171:763">
+        <span><span class="span0-uOQtAz">You can also find me
             on social media: </span>
-            <span
-            class="span1-uOQtAz"><a href="https://wwww.instagram.com/b.eszi" target="_blank" style="color: #000000;">Instagram</a></span>
-            <span
-            class="span2-uOQtAz">, </span>
-            <span
-            class="span3-uOQtAz "><a href="https://www.are.na/betsy-ellison/channels" target="_blank" style="color:black">Are.na</a></span>
-            <span class="span4-uOQtAz ">, </span>
-            <span class="span5-uOQtAz "><a href="https://coyotespiderbuffalo.blot.im/" target="_blank" style="color: #000000;">Blot</a></span>
-          </span>
-          </p>
+          <span class="span1-uOQtAz"><a href="https://wwww.instagram.com/b.eszi" target="_blank"
+              style="color: #000000;">Instagram</a></span>
+          <span class="span2-uOQtAz">, </span>
+          <span class="span3-uOQtAz "><a href="https://www.are.na/betsy-ellison/channels" target="_blank"
+              style="color:black">Are.na</a></span>
+          <span class="span4-uOQtAz ">, </span>
+          <span class="span5-uOQtAz "><a href="https://coyotespiderbuffalo.blot.im/" target="_blank"
+              style="color: #000000;">Blot</a></span>
+        </span>
+      </p>
+
+  </div>
 
 
-    </footer>
+
+
+  </footer>
   </div>
   <div>
 

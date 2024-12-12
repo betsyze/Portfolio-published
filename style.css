@@ -1,21 +1,21 @@
   /* Importing Fonts */
 
   @font-face {
-    font-family: "Roobert-Medium";
+    font-family: "Roobert-Medium", Helvetica;
     font-style: normal;
     font-weight: 500;
     src: url('https://anima-uploads.s3.amazonaws.com/5963acbdff6ca0000c98ef8d/Roobert-Medium.otf') format("opentype");
   }
 
   @font-face {
-    font-family: "Roobert-Regular";
+    font-family: "Roobert-Regular", Helvetica;
     font-style: normal;
     font-weight: 400;
     src: url('https://anima-uploads.s3.amazonaws.com/5963acbdff6ca0000c98ef8d/Roobert-Regular.otf') format("opentype");
   }
 
   @font-face {
-    font-family: "SF Pro Text-Bold";
+    font-family: "SF Pro Text-Bold", Helvetica;
     font-style: normal;
     font-weight: 700;
     src: url('https://anima-uploads.s3.amazonaws.com/projects/62e5bd2f729e81c0f2cb0ddb/fonts/sf-pro-text-bold.ttf') format("truetype");

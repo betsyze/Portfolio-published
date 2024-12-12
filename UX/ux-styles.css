@@ -106,7 +106,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     gap: 8px;
     align-self: stretch;
 }

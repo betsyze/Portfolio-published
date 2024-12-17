@@ -113,7 +113,7 @@ body {
 
 .table-row {
     display: flex;
-    align-items: center;
+    align-items:flex-end;
     gap: 53px;
     align-self: stretch;
     min-width: 720px;

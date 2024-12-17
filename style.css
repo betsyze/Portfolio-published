@@ -30,6 +30,11 @@
 
   /* Page Architecture */
 
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
   /* Page bg  */
   .homepage-new {
     align-items: flex-start;
@@ -40,7 +45,7 @@
     /* height: 748px; */
     left: 0px;
     overflow: hidden;
-    padding: 20px 40px 20px;
+    padding: 20px 20px 20px;
     position: relative;
     top: 0px;
     width: 100%;

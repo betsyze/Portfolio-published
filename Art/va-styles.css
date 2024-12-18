@@ -90,6 +90,35 @@
 
   }
 
+  /* Header images and animations */
+  .img-fit {
+    height: 72px;
+    position: relative;
+    width: 72px;
+  }
+
+  .UX-gif {
+    display: none;
+  }
+
+  .UX-static {
+    position: absolute;
+    background: white;
+  }
+
+  .art-static {
+    position: absolute;
+    background: white;
+  }
+
+  .header-blob:hover .art-static {
+    opacity: 0;
+  }
+
+  .header-grid:hover .UX-static {
+    opacity: 0;
+  }
+
   /* ------------------------------------------------ */
 
   /* PAGE (global) */

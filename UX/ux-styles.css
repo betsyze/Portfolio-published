@@ -174,6 +174,87 @@ a:visited {
     text-decoration: none;
 }
 
+/* Functional Header */
+.header-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  align-self: stretch;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+}
+
+.bw-icons-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-face {
+  width: 64px;
+  height: 64.985px;
+}
+
+.header-grid {
+  width: 64px;
+  height: 64.985px;
+}
+
+.header-blob {
+  width: 64px;
+  height: 64.985px;
+}
+
+.divider-fit {
+  display: flex;
+  align-items: flex-start;
+  gap: 1px;
+  align-self: stretch;
+  border: black;
+}
+
+.divider-style {
+  height: 0px;
+  align-self: stretch;
+
+}
+
+/* Header images and animations */
+.img-fit {
+  height: 72px;
+  position: relative;
+  width: 72px;
+}
+
+.UX-gif {
+  display: none;
+}
+
+.UX-static {
+  position: absolute;
+  background: white;
+}
+
+.art-static {
+  position: absolute;
+  background: white;
+}
+
+.header-blob:hover .art-static {
+  opacity: 0;
+}
+
+.header-grid:hover .UX-static {
+  opacity: 0;
+}
+
+
 
 
 

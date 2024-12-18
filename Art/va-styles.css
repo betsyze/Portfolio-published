@@ -38,8 +38,6 @@
     --twilight: #00318A;
   }
 
-  /* HEADER */
-
   .header-box {
     display: flex;
     align-items: center;

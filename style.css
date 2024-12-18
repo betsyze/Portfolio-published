@@ -309,6 +309,15 @@
     background: white;
   }
 
+  .art-static {
+    position: absolute;
+    background: white;
+  }
+
+  .homepage-new .art-card:hover .art-static {
+    opacity: 0;
+  }
+
   .homepage-new .ux-card:hover .UX-static {
     opacity: 0;
   }

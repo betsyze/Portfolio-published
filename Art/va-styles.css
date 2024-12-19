@@ -436,6 +436,32 @@ p.pop-txt {
   color: var(--duval);
 }
 
+.footer {
+
+  /* layout */
+  display: flex;
+  width: 100%;
+  height: 43px;
+  padding: 0px 12px 0px 20px;
+  align-items: flex-start;
+  gap: 10px;
+
+
+  /* position */
+  position: fixed;
+  bottom: 0px;
+
+  /* style */
+  background: #FAF9F5;
+  color: #000;
+  font-family: "Apfel Grotezk";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
 
 /* ------------------------------------------------- */
 

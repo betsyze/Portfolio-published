@@ -49,12 +49,7 @@ main {
   width: 100%;
 }
 
-a {
-  padding: 0;
-  margin: 0;
-}
-
-p {
+a p h1 h2 h3 h4 h5 {
   padding: 0;
   margin: 0;
 }
@@ -437,6 +432,31 @@ p.pub-date {
 
 .header-grid:hover .UX-static {
   opacity: 0;
+}
+
+.footer {
+
+  /* layout */
+  display: flex;
+  width: 100%;
+  height: 43px;
+  padding: 0px 8px 0px 20px;
+  align-items: flex-start;
+  gap: 10px;
+
+
+  /* position */
+  position: fixed;
+  bottom: 0px;
+
+  /* style */
+  background: #FAF9F5;
+  color: #000;
+  font-family: "Apfel Grotezk";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 /* ------------------------------------------------- */

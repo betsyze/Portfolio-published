@@ -1,18 +1,28 @@
 /* Importing Fonts */
 
-@font-face {
-  font-family: "Roobert-Medium", Helvetica;
-  font-style: normal;
-  font-weight: 500;
-  src: url('https://anima-uploads.s3.amazonaws.com/5963acbdff6ca0000c98ef8d/Roobert-Medium.otf') format("opentype");
-}
 
 @font-face {
   font-family: "Roobert-Regular", Helvetica;
   font-style: normal;
-  font-weight: 400;
-  src: url('https://anima-uploads.s3.amazonaws.com/5963acbdff6ca0000c98ef8d/Roobert-Regular.otf') format("opentype");
+  font-weight: 300;
+  src: url('Roobert-Regular.otf');
+
+  @font-face {
+    font-family: "Roobert-Medium", Helvetica;
+    font-style: normal;
+    font-weight: 400;
+    src: url('Roobert-Medium.otf') format("opentype");
+  }
 }
+
+@font-face {
+  font-family: "Roobert-SemiBold", Helvetica;
+  font-style: normal;
+  font-weight: 500;
+  src: url('Roobert-SemiBold.otf');
+}
+
+
 
 html {
 
@@ -25,6 +35,18 @@ body {
   padding: 0;
   width: 100%;
   background-color: var(--desert-wind);
+}
+
+header {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+main {
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 a {
@@ -40,8 +62,10 @@ p {
 :root {
   --desert-wind: #faf9f5;
   --sandstone: #999999;
-  --sapphire: #0051E6;
+  --sapphire: #0057e4;
   --twilight: #00318A;
+  --duval: #131A1C;
+  --witch: #585959;
 }
 
 /* .homepage-new {
@@ -170,10 +194,11 @@ h1 {
   font-family: "Roobert-Medium", Helvetica;
   font-size: 16px;
   font-weight: 500;
+  color: var(--duval);
 }
 
 a.header {
-  color: black;
+color: var(--duval);
 font-family: "Roobert-Regular", Helvetica;
 font-size: 12px;
 font-style: normal;
@@ -182,8 +207,8 @@ line-height: normal;
 }
 
 a.line-title {
-color: black;
-font-family: "Roobert";
+  color: var(--duval);
+font-family: "Roobert-Regular", Helvetica;
 font-size: 16px;
 font-style: normal;
 /* font-weight: 500; */
@@ -194,7 +219,7 @@ min-width: 225px;
 a.line-keywords {
   align-content: bottom;
   color: var(--sandstone);
-  font-family: "apfel grotezk";
+  font-family: "Roobert-Regular", Helvetica;
   font-size: 16px;
   font-style: italic;
   min-width: 330px;
@@ -202,14 +227,14 @@ a.line-keywords {
 }
 
 a.disabled {
-  color: dimgrey;
-  font-family: "apfel grotezk";
+  color: var(--witch);
+  font-family: "Roobert-Regular", Helvetica;
   min-width: 120px;
 }
 
 a.cs-link {
   color: var(--sapphire);
-  font-family: "apfel grotezk";
+  font-family: "Roobert-Regular", Helvetica;
   width: 220px;
   text-decoration: none;
   min-width: 120px;
@@ -232,13 +257,14 @@ a:visited {
   width: 100%;
   max-width: 1024px;
   align-items: flex-start;
+  gap: 12px;
 }
 
 .img-container {
-  width: 320px;
-  height: 240px;
+  width: 360px;
+  height: 280px;
   flex-shrink: 0;
-  color: black;
+  background-color: var(--sandstone);
   position: relative;
   /* background-color: black; */
   border: 1px black solid;
@@ -247,29 +273,27 @@ a:visited {
 .project-txt-container {
   display: flex;
   min-width: 320px;
-  padding: 25px 12px 25px 32px;
+  max-width: fit-content;
   flex-direction: column;
   align-items: flex-start;
-  gap: 12px;
+  gap: 8px;
   flex: 1 0 0;
   align-self: stretch;
 }
 
 .project-date-container {
   display: flex;
-  height: 82px;
-  padding: 25px 17px 25px 32px;
   flex-direction: column;
   align-items: flex-start;
-  /* gap: 2px; */
+  gap: 2px;
 }
 
 h2.project-item-title {
   margin: 0;
   padding: 0;
-  color: #0051E6;
-  font-family: Roobert;
-  font-size: 16px;
+  color: var(--sapphire);
+  font-family: "Roobert-Medium", Helvetica;
+  font-size: 18px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -278,11 +302,10 @@ h2.project-item-title {
 h3.project-item-preview {
   margin: 0;
   padding: 0;
-  color: #0051E6;
-  font-family: Roobert;
+  color: var(--sapphire);
+  font-family: "Roobert-Regular", Helvetica;
   font-size: 12px;
   font-style: normal;
-  font-weight: 600;
   line-height: normal;
 }
 
@@ -290,19 +313,20 @@ p.project-description {
   margin: 0;
   padding: 0;
   align-self: stretch;
-  color: #000;
-  font-family: Roobert;
+  color: var(--duval);
+  font-family: "Roobert-Regular";
+  font-weight: 200;
   font-size: 12px;
   font-style: normal;
-  font-weight: 500;
   line-height: normal;
+  max-width: 500px;
 }
 
 p.keywords {
   margin: 0;
   padding: 0;
-  color: #000;
-  font-family: Roobert;
+  color: var(--witch);
+  font-family: "Roobert-Regular";
   font-size: 12px;
   /* font-style: italic; */
   font-weight: 200;
@@ -310,26 +334,26 @@ p.keywords {
 }
 
 h3.pub-title {
-  color: #111827;
-  text-align: left;
-  font-family: "SF Pro Text";
+  margin: 0;
+  padding: 0;
+  color: var(--witch);
+  font-family: "Roobert-Medium", Helvetica;
   font-size: 12px;
   font-style: normal;
-  font-weight: 700;
-  line-height: 18px;
+  font-weight: 600;
+
+
   /* 150% */
-  letter-spacing: -0.6px;
 }
 
 p.pub-date {
   margin: 0;
   padding: 0;
-  color: #374151;
   text-align: left;
-  font-family: "SF Pro Text";
+  color: var(--duval);
+  font-family: "Roobert-Regular";
   font-size: 12px;
   font-style: normal;
-  font-weight: 400;
   line-height: 15px;
   /* 125% */
   letter-spacing: -0.6px;
@@ -377,7 +401,7 @@ p.pub-date {
   align-items: flex-start;
   gap: 1px;
   align-self: stretch;
-  border: black;
+  border: var(--duval);
 }
 
 .divider-style {
@@ -413,4 +437,44 @@ p.pub-date {
 
 .header-grid:hover .UX-static {
   opacity: 0;
+}
+
+/* ------------------------------------------------- */
+
+/* Media Queries */
+
+/* Mobile */
+@media (max-width:360px) {
+
+  .project-txt-container {
+    max-width: 320px;
+  }
+
+  a {
+    width: 100%;
+  }
+
+  .img-container {
+    width: 100%;
+  }
+
+}
+
+/* SML */
+@media (max-width: 800px) {
+
+.project-item {
+  flex-direction: column;
+  max-height: fit-content;
+}
+
+/* rows: */
+.table-row {
+  flex-direction: column;
+  gap: 8px;
+  align-items:flex-start;
+  min-width: fit-content;
+  width: fit-content;
+}
+
 }

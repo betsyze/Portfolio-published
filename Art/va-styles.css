@@ -26,13 +26,21 @@
 body {
   margin: 0;
   padding: 0;
-  width: 100%;
+  /* width: 100%;
+  height: 100%; */
   background-color: var(--desert-wind);
+  
 }
 
 a p h1 h2 h3 h4 h5 {
   padding: 0;
   margin: 0;
+}
+
+a:hover {
+  margin: 0;
+  padding: 0;
+  cursor: url(/Assets/hover2.png), pointer;
 }
 
 
@@ -135,7 +143,7 @@ a p h1 h2 h3 h4 h5 {
   display: flex;
   /* width: 100%; */
   height: 100%;
-  padding: 40px 40px 20px 40px;
+  padding: 40px 40px 400px 40px;
   flex-direction: column;
   gap: 8px;
 }
@@ -157,11 +165,16 @@ a p h1 h2 h3 h4 h5 {
 
 }
 
+.ds {
+  width: 100%;
+  height: 200px;
+}
+
 h1 {
   margin: 0;
   padding: 0;
-  font-family: "Roobert-Medium", Helvetica;
-  font-size: 16px;
+  font-family: "roobert-semibold", Helvetica;
+  font-size: 18px;
   font-weight: 500;
   color: var(--duval);
 

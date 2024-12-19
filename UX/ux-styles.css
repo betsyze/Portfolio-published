@@ -52,6 +52,12 @@ main {
 a p h1 h2 h3 h4 h5 {
   padding: 0;
   margin: 0;
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+
 }
 
 :root {
@@ -186,29 +192,29 @@ a p h1 h2 h3 h4 h5 {
 h1 {
   margin: 0;
   padding: 0;
-  font-family: "Roobert-Medium", Helvetica;
-  font-size: 16px;
+  font-family: "roobert-semibold", Helvetica;
+  font-size: 18px;
   font-weight: 500;
   color: var(--duval);
 }
 
 a.header {
-color: var(--duval);
-font-family: "Roobert-Regular", Helvetica;
-font-size: 12px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+  color: var(--duval);
+  font-family: "Roobert-Regular", Helvetica;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 a.line-title {
   color: var(--duval);
-font-family: "Roobert-Regular", Helvetica;
-font-size: 16px;
-font-style: normal;
-/* font-weight: 500; */
-line-height: normal;
-min-width: 225px;
+  font-family: "Roobert-Regular", Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  /* font-weight: 500; */
+  line-height: normal;
+  min-width: 225px;
 }
 
 a.line-keywords {
@@ -236,7 +242,7 @@ a.cs-link {
 }
 
 a:visited {
-  color: var(--twilight);
+  color: var(--sapphire);
   text-decoration: none;
 }
 
@@ -483,18 +489,18 @@ p.pub-date {
 /* SML */
 @media (max-width: 800px) {
 
-.project-item {
-  flex-direction: column;
-  max-height: fit-content;
-}
+  .project-item {
+    flex-direction: column;
+    max-height: fit-content;
+  }
 
-/* rows: */
-.table-row {
-  flex-direction: column;
-  gap: 8px;
-  align-items:flex-start;
-  min-width: fit-content;
-  width: fit-content;
-}
+  /* rows: */
+  .table-row {
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+    min-width: fit-content;
+    width: fit-content;
+  }
 
 }

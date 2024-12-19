@@ -28,11 +28,14 @@
     src: url('https://anima-uploads.s3.amazonaws.com/projects/61428154992a408f45ab95b1/fonts/apfelgrotezk-regular.otf') format("opentype");
   }
 
+
+
   /* Page Architecture */
 
-  body {
+  a:hover {
     margin: 0;
     padding: 0;
+    cursor: url(/Assets/hover.png), pointer;
   }
 
   /* Page bg  */

@@ -64,10 +64,30 @@ a:visited {
 
 }
 
+h1 {
+  color: black; 
+  font-size: 36px; 
+  font-family: Roobert; 
+  font-weight: 600; 
+  word-wrap: break-word;
+  line-height: normal;
+  margin: 2%;
+}
+
+h2 {
+  color: var(--duval);
+  font-family: "Roobert-Regular", Helvetica;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+
 :root {
   --desert-wind: #faf9f5;
   --sandstone: #999999;
-  --sapphire: #0057e4;
+  --sapphire: #172c6c;
   --twilight: #00318A;
   --duval: #131A1C;
   --witch: #585959;
@@ -117,6 +137,7 @@ a:visited {
   gap: 8px;
   padding: 8px 0px;
 }
+
 
 
 .header-box {
@@ -193,14 +214,14 @@ a:visited {
   /* border:#0051E6 solid; */
 }
 
-h1 {
+/* h1 {
   margin: 0;
   padding: 0;
   font-family: "roobert-semibold", Helvetica;
   font-size: 18px;
   font-weight: 500;
   color: var(--duval);
-}
+} */
 
 a.header {
   color: var(--duval);
@@ -260,16 +281,16 @@ a:visited {
 .project-item {
   display: flex;
   width: 100%;
-  max-width: 1024px;
+  max-width: 720px;
   align-items: flex-start;
   gap: 12px;
 }
 
 .img-container {
   width: 360px;
-  height: 280px;
+  height: 270px;
   flex-shrink: 0;
-  background-color: var(--sandstone);
+  /* background-color: var(--sandstone); */
   position: relative;
   /* background-color: black; */
   border: 1px black solid;
@@ -386,7 +407,7 @@ p.pub-date {
   gap: 10px;
 }
 
-.header-face {
+/* .header-face {
   width: 64px;
   height: 64.985px;
 }
@@ -399,7 +420,7 @@ p.pub-date {
 .header-blob {
   width: 64px;
   height: 64.985px;
-}
+} */
 
 .divider-fit {
   display: flex;
@@ -442,6 +463,11 @@ p.pub-date {
 
 .header-grid:hover .UX-static {
   opacity: 0;
+}
+
+.ds {
+  width: 100%;
+  height: 200px;
 }
 
 .footer {

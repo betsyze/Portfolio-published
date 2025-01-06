@@ -43,6 +43,26 @@ a:hover {
   cursor: url(/Assets/hover2.png), pointer;
 }
 
+h1 {
+  color: black; 
+  font-size: 36px; 
+  font-family: "Roobert-Regular", Helvetica;
+  font-weight: 600; 
+  word-wrap: break-word;
+  line-height: normal;
+  margin: 2%;
+}
+
+h2 {
+  color: var(--duval);
+  font-family: "Roobert-Regular", Helvetica;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+
 
 
 :root {
@@ -170,7 +190,7 @@ a:hover {
   height: 200px;
 }
 
-h1 {
+/* h1 {
   margin: 0;
   padding: 0;
   font-family: "roobert-semibold", Helvetica;
@@ -178,7 +198,7 @@ h1 {
   font-weight: 500;
   color: var(--duval);
 
-}
+} */
 
 a.header {
   color: var(--duval);

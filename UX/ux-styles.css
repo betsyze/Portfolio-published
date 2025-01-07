@@ -11,7 +11,7 @@
   @font-face {
     font-family: "Roobert-Medium", Helvetica;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     src: url('https://github.com/betsyze/Portfolio-published/blob/main/Assets/Fonts/Roobert/Roobert-Medium.otf') format("opentype");
   }
 
@@ -21,6 +21,13 @@
   font-style: normal;
   font-weight: 500;
   src: url('https://github.com/betsyze/Portfolio-published/blob/main/Assets/Fonts/Roobert/Roobert-SemiBold.otf');
+}
+
+@font-face {
+  font-family: "Apfel Grotezk-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://anima-uploads.s3.amazonaws.com/projects/61428154992a408f45ab95b1/fonts/apfelgrotezk-regular.otf') format("opentype");
 }
 
 
@@ -68,7 +75,7 @@ a:visited {
 h1 {
   color: black; 
   font-size: 36px; 
-  font-family: Roobert; 
+  font-family: "Roobert-Regular", Helvetica; 
   font-weight: 600; 
   word-wrap: break-word;
   line-height: normal;
@@ -360,7 +367,7 @@ p.project-description {
   padding: 0;
   align-self: stretch;
   color: var(--duval);
-  font-family: "Roobert-Regular";
+  font-family: "Roobert-Regular", Helvetica;
   font-weight: 200;
   font-size: 12px;
   font-style: normal;
@@ -372,7 +379,7 @@ p.keywords {
   margin: 0;
   padding: 0;
   color: var(--witch);
-  font-family: "Roobert-Regular";
+  font-family: "Roobert-Regular", Helvetica;
   font-size: 12px;
   /* font-style: italic; */
   font-weight: 200;
@@ -397,7 +404,7 @@ p.pub-date {
   padding: 0;
   text-align: left;
   color: var(--duval);
-  font-family: "Roobert-Regular";
+  font-family: "Roobert-Regular", Helvetica;
   font-size: 12px;
   font-style: normal;
   line-height: 15px;

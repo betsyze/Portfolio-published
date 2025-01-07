@@ -4,21 +4,21 @@
     font-family: "Roobert-Medium", Helvetica;
     font-style: normal;
     font-weight: 500;
-    src: url('https://anima-uploads.s3.amazonaws.com/5963acbdff6ca0000c98ef8d/Roobert-Medium.otf') format("opentype");
+    src: url('/Assets/Fonts/Roobert/Roobert-Medium.otf') format("opentype");
   }
 
   @font-face {
     font-family: "Roobert-Regular", Helvetica;
     font-style: normal;
     font-weight: 400;
-    src: url('https://anima-uploads.s3.amazonaws.com/5963acbdff6ca0000c98ef8d/Roobert-Regular.otf') format("opentype");
+    src: url('/Assets/Fonts/Roobert/Roobert-Regular.otf') format("opentype");
   }
 
   @font-face {
-    font-family: "SF Pro Text-Bold", Helvetica;
+    font-family: "Roobert-Semibold", Helvetica;
     font-style: normal;
     font-weight: 700;
-    src: url('https://anima-uploads.s3.amazonaws.com/projects/62e5bd2f729e81c0f2cb0ddb/fonts/sf-pro-text-bold.ttf') format("truetype");
+    src: url('/Assets/Fonts/Roobert/Roobert-SemiBold.otf') format("truetype");
   }
 
   @font-face {

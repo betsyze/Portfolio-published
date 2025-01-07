@@ -529,8 +529,18 @@ p.pub-date {
 /* Mobile */
 @media (max-width:360px) {
 
+  .project-box {
+    max-width: 100%;
+    min-width: 270px;
+  }
+
+  .project-item {
+    min-width: 100%;
+  }
+
   .project-txt-container {
     max-width: 320px;
+    min-width: 100%;
   }
 
   a {
@@ -539,6 +549,7 @@ p.pub-date {
 
   .img-container {
     width: 100%;
+    min-width: 100%;
   }
 
   .pg-title {

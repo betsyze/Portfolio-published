@@ -71,7 +71,7 @@ h2.project-item-title {
     margin: 0;
     padding: 0;
     color: #0051E6;
-    font-family: Roobert;
+    font-family: "Roobert-Regular", Helvetica;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -83,7 +83,7 @@ p.project-description {
     padding: 0;
     align-self: stretch;
     color: #000;
-    font-family: Roobert;
+    font-family: "Roobert-Regular", Helvetica;
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
@@ -94,7 +94,7 @@ p.keywords {
 margin: 0;
 padding: 0;
 color: #000;
-font-family: Roobert;
+font-family: "Roobert-Regular", Helvetica;
 font-size: 12px;
 /* font-style: italic; */
 font-weight: 200;
@@ -104,7 +104,7 @@ line-height: normal;
 h3.pub-title {
     color: #111827;
 text-align: left;
-font-family: "SF Pro Text";
+font-family: "Roobert-Regular", Helvetica;
 font-size: 12px;
 font-style: normal;
 font-weight: 700;
@@ -117,7 +117,7 @@ p.pub-date {
     padding: 0;
     color: #374151;
     text-align: left;
-    font-family: "SF Pro Text";
+    font-family: "Roobert-Regular", Helvetica;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;

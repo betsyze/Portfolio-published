@@ -263,14 +263,26 @@ a:visited {
 }
 
 .img-container {
-  width: 480px;
+  /* width: 480px;
   height: 360px;
   flex-shrink: 0;
   color: black;
-  position: relative;
+  position: relative; */
   /* background-color: black; */
   /* border: 1px black solid; */
+
+  width:100%;
+  min-width: 360px;
+  max-width: 600px;
+  flex-shrink: 0;
+  /* background-color: var(--sandstone); */
+  position: relative;
+  /* background-color: black; */
+  border: 0.5px solid;
+  border-color: var(--rock);
 }
+
+
 
 .project-txt-container {
   display: flex;
@@ -513,7 +525,7 @@ p.pop-txt {
 
   .img-container {
     width: 100%;
-    height: fit-content;
+    height: 100%;
   }
 
 }

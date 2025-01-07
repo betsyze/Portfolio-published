@@ -312,7 +312,7 @@ a:visited {
 
 .img-container {
   width:100%;
-  min-width: 360px;
+  min-width: 100%;
   max-width: 480px;
   height: 75%;
   flex-shrink: 0;
@@ -527,7 +527,7 @@ p.pub-date {
 /* Media Queries */
 
 /* Mobile */
-@media (max-width:360px) {
+@media (max-width:460px) {
 
   .project-box {
     max-width: 100%;

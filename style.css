@@ -404,8 +404,8 @@
     background-color: #f6f4ec;
     gap: 10px;
     height: 43px;
-    left: 40px;
-    padding: 12px 0px 12px;
+    left: 0px;
+    padding: 12px 0px 12px 24px;
     position: fixed;
     bottom: 0px;
     width: 100%;

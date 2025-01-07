@@ -1,26 +1,32 @@
-/* Importing Fonts */
+  /* Importing Fonts */
 
-@font-face {
-  font-family: "Roobert-Medium", Helvetica;
-  font-style: normal;
-  font-weight: 500;
-  src: url('Roobert-Medium.otf') format("opentype");
-}
+  @font-face {
+    font-family: "Roobert-Medium", Helvetica;
+    font-style: normal;
+    font-weight: 500;
+    src: url('/Assets/Fonts/Roobert/Roobert-Medium.otf') format("opentype");
+  }
 
-@font-face {
-  font-family: "Roobert-Regular", Helvetica;
-  font-style: normal;
-  font-weight: 400;
-  src: url('Roobert-Regular.otf');
-}
+  @font-face {
+    font-family: "Roobert-Regular", Helvetica;
+    font-style: normal;
+    font-weight: 400;
+    src: url('/Assets/Fonts/Roobert/Roobert-Regular.otf') format("opentype");
+  }
 
-@font-face {
-  font-family: "Roobert-SemiBold", Helvetica;
-  font-style: normal;
-  font-weight: 700;
-  src: url('Roobert-SemiBold.otf');
-}
+  @font-face {
+    font-family: "Roobert-Semibold", Helvetica;
+    font-style: normal;
+    font-weight: 700;
+    src: url('/Assets/Fonts/Roobert/Roobert-SemiBold.otf') format("opentype");
+  }
 
+  @font-face {
+    font-family: "Apfel Grotezk-Regular";
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://anima-uploads.s3.amazonaws.com/projects/61428154992a408f45ab95b1/fonts/apfelgrotezk-regular.otf') format("opentype");
+  }
 
 
 body {
@@ -44,13 +50,13 @@ a:hover {
 }
 
 h1 {
-  color: black; 
+  color: var(--duval); 
   font-size: 36px; 
-  font-family: "Roobert-Regular", Helvetica;
+  font-family: "Roobert-Regular", Helvetica; 
   font-weight: 600; 
   word-wrap: break-word;
   line-height: normal;
-  margin: 2%;
+  margin: 12px;
 }
 
 h2 {

@@ -9,6 +9,33 @@
   <!-- favicon -->
   <link rel="icon" type="image/x-icon" href="/Assets/Header-Assets/header-face.png">
 
+  <!-- load code -->
+   <script src="modal.js"></script>
+
+<script>
+  // Get modal elements
+  const modal = document.getElementById("myModal");
+  const btn = document.getElementById("openModal");
+  const span = document.getElementsByClassName("close")[0];
+  
+  // Open modal when button is clicked
+  btn.onclick = function() {
+      modal.style.display = "block";
+  }
+  
+  // Close modal when X is clicked
+  span.onclick = function() {
+      modal.style.display = "none";
+  }
+  
+  // Close modal when clicking outside
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+  </script>
+
 
 
 
@@ -106,8 +133,47 @@
 </head>
 
 <body style="margin: 0px; background: rgb(246, 244, 236); overflow-x: hidden;">
+
+  <!-- Modal -->
+<div id="myPopover" class="popover">
+  <div class="pop-header">
+      <h3 class="pop-txt">Links</h3>
+      <div id="popoverClose" class="popover-close">x</div>
+  </div>
+  <p class="pop-txt" style="padding: 12px 0px 12px 0px;">
+    <span>Come and find me!</span>
+    <br><br>
+    <span class="span2-uOQtAz"> ✲ </span> 
+       <span class="span1-uOQtAz"><a href="https://wwww.instagram.com/b.eszi" target="_blank"
+              style="color: #000000;">Instagram</a></span>
+          
+          
+          <span class="span2-uOQtAz"> ✲ </span> 
+          <span class="span3-uOQtAz "><a href="https://www.linkedin.com/in/betsy-ellison-1a1584164/" target="_blank"
+              style="color:black">LinkedIn</a></span>
+              
+          <span class="span2-uOQtAz"> ✲ </span> 
+          <span class="span3-uOQtAz "><a href="https://www.are.na/betsy-ellison/channels" target="_blank"
+              style="color:black">Are.na</a></span>
+          
+        
+          <span class="span2-uOQtAz"> ✲ </span> 
+          <span class="span5-uOQtAz "><a href="https://coyotespiderbuffalo.blot.im/" target="_blank"
+              style="color: #000000;">Blot</a></span>
+        
+        </span>
+  </p>
+  <div>
+    <img src="/Assets/dogrender-sml.png" style="width: 100%;">
+  </div>
+</div>
+
   <input type="hidden" id="anPageName" name="page" value="homepage-new">
   <div class="homepage-new" >
+
+
+
+
     <div class="hero-box">
       <div class="biocard">
         <div class="innerbiostack"><img class="bio-img-ZlUoao" data-id="173:984"
@@ -255,9 +321,22 @@
     <footer class="footer-7alUKT" data-id="171:762">
       <p class="you-can-also-find-me-YdUwlW valign-text-bottom apfelgrotezk-regular-normal-black-12px"
         data-id="171:763">
-        <span><span class="span0-uOQtAz">You can also find me
-            on social media: </span>
-          <span class="span1-uOQtAz"><a href="https://wwww.instagram.com/b.eszi" target="_blank"
+        <span><span class="span0-uOQtAz">You can also find me</span>
+
+            <button id="popoverTrigger">elsewhere online</button>
+
+                    <!-- <div id="myPopover" class="popover">
+                        <div class="pop-header">
+                            <h3 class="pop-txt">Preview</h3>
+                            <div id="popoverClose" class="popover-close">x</div>
+                        </div>
+                        <p class="pop-txt">
+                            <img src="/Assets/rrrr480px.png" width="480px">
+                        </p>
+                    </div> -->
+
+
+          <!-- <span class="span1-uOQtAz"><a href="https://wwww.instagram.com/b.eszi" target="_blank"
               style="color: #000000;">Instagram</a></span>
           <span class="span2-uOQtAz">, </span>
           <span class="span3-uOQtAz "><a href="https://www.are.na/betsy-ellison/channels" target="_blank"
@@ -265,7 +344,7 @@
           <span class="span4-uOQtAz ">, </span>
           <span class="span5-uOQtAz "><a href="https://coyotespiderbuffalo.blot.im/" target="_blank"
               style="color: #000000;">Blot</a></span>
-        </span>
+        </span> -->
       </p>
 
   </div>

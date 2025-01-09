@@ -28,6 +28,114 @@
     src: url('https://anima-uploads.s3.amazonaws.com/projects/61428154992a408f45ab95b1/fonts/apfelgrotezk-regular.otf') format("opentype");
   }
 
+  /* popover */
+  /* Popover styling */
+.popover {
+  position: fixed;
+  top: 10%;
+  left: 30%;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 2px 16px #999999;
+  /* border-radius: 4px; */
+  display: none;
+  z-index: 1000;
+  min-width: 460px;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  background: none;
+  color: var(--sapphire);
+  font-family: "Roobert-Regular", Helvetica;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.popover.visible {
+  display: block;
+}
+
+.pop-header {
+  display: flex;
+  padding: 4px 4px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  border-bottom: #999999 1px solid;
+}
+
+h3.pop-txt {
+  font-family: "Roobert-Regular", Helvetica;
+  font-weight: 500;
+  font-size: 12px;
+  margin: 0%;
+  padding: 0%;
+}
+
+p.pop-txt {
+  font-family: "Roobert-Regular", Helvetica;
+  font-size: 12px;
+}
+
+.popover-close {
+  font-family: "Roobert-Regular", Helvetica;
+  font-size: 12px;
+  background: none;
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+  color: var(--witch);
+}
+
+.popover-close:hover {
+  color: var(--duval);
+}
+
+
+
+  /* modal */
+
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+    border-radius: 5px;
+}
+
+.close {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: black;
+}
+
 
 
   /* Page Architecture */
@@ -421,6 +529,7 @@
     position: fixed;
     bottom: 0px;
     width: 100%;
+    z-index: 1000;
   }
 
   .homepage-new .you-can-also-find-me-YdUwlW {
@@ -577,6 +686,11 @@
   .homepage-new .footer-7alUKT{
     left: 0px;
     padding: 12px 0px 12px 24px;
+  }
+
+  .popover {
+    left: 10%;
+    min-width: 75%;
   }
 
 }

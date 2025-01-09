@@ -1,4 +1,26 @@
+// // Get modal elements
+// const modal = document.getElementById("myModal");
+// const btn = document.getElementById("openModal");
+// const span = document.getElementsByClassName("close")[0];
 
+// // Open modal when button is clicked
+// btn.onclick = function() {
+//     modal.style.display = "block";
+// }
+
+// // Close modal when X is clicked
+// span.onclick = function() {
+//     modal.style.display = "none";
+// }
+
+// // Close modal when clicking outside
+// window.onclick = function(event) {
+//     if (event.target == modal) {
+//         modal.style.display = "none";
+//     }
+// }
+
+// popover
 
 console.log('Script is running!');
 
@@ -45,10 +67,23 @@ console.log('Script is running!');
 
             show() {
                 console.log('Showing popover');
-                // Position popover near the trigger
-                const triggerRect = this.triggerElement.getBoundingClientRect();
-                this.popoverElement.style.top = `${triggerRect.bottom + 10}px`;
-                this.popoverElement.style.left = `${triggerRect.left}px`;
+                
+                // Get viewport dimensions
+                const viewportWidth = screen.innerWidth;
+                const viewportHeight = window.screen.innerHeight;
+                
+                // Get popover dimensions
+                const popoverWidth = this.popoverElement.offsetWidth;
+                const popoverHeight = this.popoverElement.offsetHeight;
+                
+                // Calculate center position
+                const leftPosition = (viewportWidth - popoverWidth) / 2;
+                const topPosition = (viewportHeight - popoverHeight) / 2;
+                
+                // Set position
+                this.popoverElement.style.position = 'fixed'; // Make sure position is fixed
+                this.popoverElement.style.top = `${topPosition}px`;
+                this.popoverElement.style.left = `${leftPosition}px`;
                 
                 this.popoverElement.classList.add('visible');
             }

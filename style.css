@@ -28,6 +28,12 @@
     src: url('https://anima-uploads.s3.amazonaws.com/projects/61428154992a408f45ab95b1/fonts/apfelgrotezk-regular.otf') format("opentype");
   }
 
+  body {
+    background-color: var(--desert-storm);
+    width: 100vw;
+    height: 100%;
+  }
+
   /* popover */
   /* Popover styling */
 .popover {
@@ -159,7 +165,7 @@ p.pop-txt {
   /* Page bg  */
   .homepage-new {
     align-items: flex-start;
-    background-color: #f6f4ec;
+    /* background-color: #f6f4ec; */
     display: flex;
     flex-direction: column;
     gap: 40px;

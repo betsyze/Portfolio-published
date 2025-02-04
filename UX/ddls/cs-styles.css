@@ -30,10 +30,24 @@
 /* Global */
 
 :root {
+    /* neutral */
     --desert-wind: #faf9f5;
-    --sandstone: #999999;
-    --sapphire: #0051E6;
-    --twilight: #00318A;
+    --neutral-2: #F1EDDD;
+    --neutral-6: #D8D2BA;
+    --neutral-8: #9B9064;
+    --neutral-10: #766830;
+
+    /* yellow */
+    --yellow-primary: #FFE79B;
+    --yellow-6: #E3CA7B;
+    --yellow-8: #9C812E;
+    --yellow-10: #715600;
+
+    /* blue */
+    --sapphire: #5981FA;
+    --blue-6: #4769D0;
+    --blue-8: #1B2E68;
+    --blue-10: #010B2A;
 }
 
 body {
@@ -49,12 +63,12 @@ body {
 }
 
 .vertical-line {
-    border-left: solid var(--sandstone) 1px;
-    height: 70px;
+    border-left: solid var(--neutral-10) 0.5px;
+    height: 50px;
   }
 
   .horiz-line {
-    border-bottom: solid var(--sandstone) 1px;
+    border-bottom: solid var(--neutral 10) 0.5px;
     width: 100%;
   }
 
@@ -75,7 +89,7 @@ body {
 
     /* style */
     background: #FAF9F5;
-    color: #000;
+    color: var(--neutral-10);
     font-family: "Roobert-Regular", Helvetica;
     font-size: 12px;
     font-style: normal;
@@ -145,7 +159,7 @@ body {
     align-items: flex-start;
     gap: 1px;
     align-self: stretch;
-    border: black;
+    border: var(--neutral-10);
   }
 
   .divider-style {
@@ -210,6 +224,41 @@ align-self: stretch;
     gap: 12px;
 }
 
+.breadcrumb-banner {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 8px;
+    gap: 4px;
+
+    /* style */
+    background: var(--neutral-2);
+    color: var(--neutral-8);
+    font-family: "Roobert-Regular", Helvetica;
+    font-size: 12px;
+    color: var(--neutral-8);
+    
+}
+
+.breadcrumb-banner a {
+    color: var(--neutral-8);
+}
+
+.badge {
+    display: flex;
+    justify-content: center;
+    padding: 4px 12px;
+    gap: 4px;
+
+    /* style */
+    background: var(--yellow-primary);
+    border: var(--yellow-8) 1px solid;
+    border-radius: 12px;
+    font-family: "Roobert-Regular", Helvetica;
+    font-size: 12px;
+    color: var(--yellow-8);
+}
+
 
 h1.title {
 
@@ -225,7 +274,7 @@ h1.title {
     align-self: stretch;
 
     /* type */
-    color: #000;
+    color: var(--neutral-10);
     font-family: "Roobert-Regular", Helvetica;
     font-size: 32px;
     font-style: normal;
@@ -238,7 +287,7 @@ p.copy {
     margin: 0;
     padding: 0;
 
-    color: #000;
+    color: var(--neutral-10);
 
     /* Case Study/Body/Regular */
     font-family: "Roobert-Regular", Helvetica;
@@ -299,12 +348,12 @@ p.copy {
     margin: 0;
     padding: 0;
 
-    color: #111827;
+    color: var(--neutral-10);
     text-align: center;
     font-family: "Roobert-Regular", Helvetica;
     font-size: 12px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 18px;
     /* 150% */
     letter-spacing: -0.6px;
@@ -315,7 +364,7 @@ p.copy {
     margin: 0;
     padding: 0;
 
-    color: #374151;
+    color: black;
     font-family: "Roobert-Regular", Helvetica;
     font-size: 12px;
     font-style: normal;
@@ -332,6 +381,7 @@ p.copy {
     width: 100px;
     height: 100px;
     background-color: #000;
+    gap: 10px;
 }
 
 /* lrg */
@@ -396,20 +446,20 @@ gap: 2px;
 .lrg-info h2.subtitle {
     margin: 0;
     padding: 0;
-    color: #111827;
+    color: var(--neutral-10);
 text-align: center;
 font-family: "Roobert-Regular", Helvetica;
 font-size: 12px;
 font-style: normal;
-font-weight: 700;
+font-weight: 400;
 line-height: 18px; /* 150% */
-letter-spacing: -0.6px;
+
 }
 
 .lrg-info p.copy {
     margin: 0;
     padding: 0;
-    color: #374151;
+    color: black;
 text-align: center;
 font-family: "Roobert-Regular", Helvetica;
 font-size: 12px;

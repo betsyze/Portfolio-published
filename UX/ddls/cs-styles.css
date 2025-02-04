@@ -236,12 +236,12 @@ align-self: stretch;
     color: var(--neutral-8);
     font-family: "Roobert-Regular", Helvetica;
     font-size: 12px;
-    color: var(--neutral-8);
+    color: var(--neutral-10);
     
 }
 
 .breadcrumb-banner a {
-    color: var(--neutral-8);
+    color: var(--neutral-10);
 }
 
 .badge {

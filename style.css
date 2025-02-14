@@ -1,3 +1,33 @@
+:root {
+  --sandstone: #999999;
+  --sapphire: #172c6c;
+  --twilight: #00318A;
+  --duval: #131A1C;
+  --witch: #585959;
+  --rock: #83826b;
+
+    /* neutral */
+    --desert-wind: #faf9f5;
+    --neutral-2: #F1EDDD;
+    --neutral-6: #D8D2BA;
+    --neutral-8: #9B9064;
+    --neutral-10: #766830;
+
+    /* yellow */
+    --yellow-2: #FFF1C2;
+    --yellow-primary: #FFE79B;
+    --yellow-6: #E3CA7B;
+    --yellow-8: #9C812E;
+    --yellow-10: #715600;
+
+    /* blue */
+    --sapphire: #5981FA;
+    --blue-6: #4769D0;
+    --blue-8: #1B2E68;
+    --blue-10: #010B2A;
+
+}
+  
   /* Importing Fonts */
 
   @font-face {
@@ -29,7 +59,8 @@
   }
 
   body {
-    background-image: url(/Assets/dith_Bg3.png);
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(/Assets/dith_Bg3.png);
+    background-color: var(--desert-storm);
     width: 100%;
     height: 100%;
   }
@@ -60,7 +91,7 @@ button {
   font-family: "Roobert-Regular", Helvetica;
   font-size: 12px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: normal;
 }
 
@@ -145,6 +176,10 @@ p.pop-txt {
 
 
   /* Page Architecture */
+
+  a {
+    color: var(--sapphire);
+  }
 
   h1 {
     font-family: "Roobert-Semibold", Helvetica, sans-serif;

@@ -70,7 +70,7 @@
 .popover {
   position: fixed;
   top: 10%;
-  left: 30%;
+  left: 33.33%;
   background-color: white;
   border: 1px solid #ccc;
   padding: 10px;
@@ -673,6 +673,11 @@ p.pop-txt {
     padding: 12px 0px 12px 24px;
   }
 
+  .popover {
+    left: 15%;
+    min-width: 75%;
+  }
+
 
 }
 
@@ -735,7 +740,8 @@ p.pop-txt {
   }
 
   .popover {
-    left: 10%;
+    left: 8%;
+    right: 8%;
     min-width: 75%;
   }
 

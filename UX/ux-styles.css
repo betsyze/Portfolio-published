@@ -575,12 +575,85 @@ p.pub-date {
   /* style */
   background: #FAF9F5;
   color: #000;
-  font-family: "Apfel Grotezk";
+  font-family: "Roobert-Regular", Helvetica, sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
+
+/* popover */
+
+  /* popover */
+  /* Popover styling */
+  .popover {
+    position: fixed;
+    top: 10%;
+    left: 30%;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 2px 16px #999999;
+    /* border-radius: 4px; */
+    display: none;
+    z-index: 1000;
+    min-width: 460px;
+  }
+  
+  button {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    background: none;
+    color: var(--sapphire);
+    font-family: "Roobert-Regular", Helvetica;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  
+  .popover.visible {
+    display: block;
+  }
+  
+  .pop-header {
+    display: flex;
+    padding: 4px 4px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    border-bottom: #999999 1px solid;
+  }
+  
+  h3.pop-txt {
+    font-family: "Roobert-Regular", Helvetica;
+    font-weight: 500;
+    font-size: 12px;
+    margin: 0%;
+    padding: 0%;
+  }
+  
+  p.pop-txt {
+    font-family: "Roobert-Regular", Helvetica;
+    font-size: 12px;
+  }
+  
+  .popover-close {
+    font-family: "Roobert-Regular", Helvetica;
+    font-size: 12px;
+    background: none;
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+    color: var(--witch);
+  }
+  
+  .popover-close:hover {
+    color: var(--duval);
+  }
+  
 
 /* ------------------------------------------------- */
 

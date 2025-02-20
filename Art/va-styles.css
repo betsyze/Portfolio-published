@@ -80,12 +80,19 @@ h2 {
   --witch: #334448;
 }
 
+header {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
 .header-box {
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 10px;
   align-self: stretch;
+  
 }
 
 .header-top {
@@ -102,18 +109,18 @@ h2 {
 }
 
 .header-face {
-  width: 64px;
-  height: 64.985px;
+  width: 48px;
+  height: 48px;
 }
 
 .header-grid {
-  width: 64px;
-  height: 64.985px;
+  width: 36px;
+  height: 36px;
 }
 
 .header-blob {
-  width: 64px;
-  height: 64.985px;
+  width: 36px;
+  height: 36px;
 }
 
 .divider-fit {

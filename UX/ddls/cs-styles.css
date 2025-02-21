@@ -1,6 +1,6 @@
-  /* Importing Fonts */
+ /* Importing Fonts */
 
-  @font-face {
+ @font-face {
     font-family: "Roobert-Medium", Helvetica;
     font-style: normal;
     font-weight: 500;
@@ -20,6 +20,14 @@
     font-weight: 700;
     src: url('/Assets/Fonts/Roobert/Roobert-SemiBold.otf') format("opentype");
   }
+
+  @font-face {
+    font-family: "Roobert-Bold", Helvetica;
+    font-style: normal;
+    font-weight: 800;
+    src: url('/Assets/Fonts/Roobert/Roobert-Bold.otf') format("opentype");
+  }
+
 
   @font-face {
     font-family: "Apfel Grotezk-Regular";

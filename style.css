@@ -52,11 +52,21 @@
   }
 
   @font-face {
+    font-family: "Roobert-Bold", Helvetica;
+    font-style: normal;
+    font-weight: 800;
+    src: url('/Assets/Fonts/Roobert/Roobert-Bold.otf') format("opentype");
+  }
+
+
+  @font-face {
     font-family: "Apfel Grotezk-Regular";
     font-style: normal;
     font-weight: 400;
     src: url('https://anima-uploads.s3.amazonaws.com/projects/61428154992a408f45ab95b1/fonts/apfelgrotezk-regular.otf') format("opentype");
   }
+
+  
 
   body {
     background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(/Assets/dith_Bg3.png);

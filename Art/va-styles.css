@@ -1,33 +1,40 @@
-  /* Importing Fonts */
+ /* Importing Fonts */
 
-  @font-face {
-    font-family: "Roobert-Medium", Helvetica;
-    font-style: normal;
-    font-weight: 500;
-    src: url('/Assets/Fonts/Roobert/Roobert-Medium.otf') format("opentype");
-  }
+ @font-face {
+  font-family: "Roobert-Medium", Helvetica;
+  font-style: normal;
+  font-weight: 500;
+  src: url('/Assets/Fonts/Roobert/Roobert-Medium.otf') format("opentype");
+}
 
-  @font-face {
-    font-family: "Roobert-Regular", Helvetica;
-    font-style: normal;
-    font-weight: 400;
-    src: url('/Assets/Fonts/Roobert/Roobert-Regular.otf') format("opentype");
-  }
+@font-face {
+  font-family: "Roobert-Regular", Helvetica;
+  font-style: normal;
+  font-weight: 400;
+  src: url('/Assets/Fonts/Roobert/Roobert-Regular.otf') format("opentype");
+}
 
-  @font-face {
-    font-family: "Roobert-Semibold", Helvetica;
-    font-style: normal;
-    font-weight: 700;
-    src: url('/Assets/Fonts/Roobert/Roobert-SemiBold.otf') format("opentype");
-  }
+@font-face {
+  font-family: "Roobert-Semibold", Helvetica;
+  font-style: normal;
+  font-weight: 700;
+  src: url('/Assets/Fonts/Roobert/Roobert-SemiBold.otf') format("opentype");
+}
 
-  @font-face {
-    font-family: "Apfel Grotezk-Regular";
-    font-style: normal;
-    font-weight: 400;
-    src: url('https://anima-uploads.s3.amazonaws.com/projects/61428154992a408f45ab95b1/fonts/apfelgrotezk-regular.otf') format("opentype");
-  }
+@font-face {
+  font-family: "Roobert-Bold", Helvetica;
+  font-style: normal;
+  font-weight: 800;
+  src: url('/Assets/Fonts/Roobert/Roobert-Bold.otf') format("opentype");
+}
 
+
+@font-face {
+  font-family: "Apfel Grotezk-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://anima-uploads.s3.amazonaws.com/projects/61428154992a408f45ab95b1/fonts/apfelgrotezk-regular.otf') format("opentype");
+}
 
 body {
   margin: 0;
@@ -223,7 +230,7 @@ a.header {
 
 a.line-title {
   color: var(--duval);
-  font-family: "Roobert";
+  font-family: "Roobert-Regular", Helvetica;
   font-size: 16px;
   font-style: normal;
   /* font-weight: 500; */
@@ -331,7 +338,7 @@ h3.project-item-preview {
   margin: 0;
   padding: 0;
   color: var(--sapphire);
-  font-family: Roobert;
+  font-family: "Roobert-Regular", Helvetica;
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
@@ -513,7 +520,7 @@ p.pop-txt {
   /* style */
   background: #FAF9F5;
   color: #000;
-  font-family: "Apfel Grotezk";
+  font-family: "Roobert-Regular", Helvetica;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;

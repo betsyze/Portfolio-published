@@ -39,7 +39,6 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  background-color: var(--desert-wind);
 }
 
 header {
@@ -58,7 +57,7 @@ main {
   justify-content: center;
 }
 
-a p h1 h2 h3 h4 h5 {
+a p h1 h3 h4 h5 {
   padding: 0;
   margin: 0;
   text-decoration: none;
@@ -77,13 +76,25 @@ h1 {
   color: var(--duval); 
   font-size: 36px; 
   font-family: "Roobert-Regular", Helvetica; 
-  font-weight: 600; 
+  font-weight: 500; 
   word-wrap: break-word;
   line-height: normal;
   margin: 1px;
 }
 
 h2 {
+  color: var(--duval);
+  font-family: "Roobert-Regular", Helvetica;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  min-width: 118px;
+  margin: 8px;
+  align-self: left;
+}
+
+h3 {
   color: var(--duval);
   font-family: "Roobert-Regular", Helvetica;
   font-size: 12px;
@@ -348,12 +359,13 @@ a.cs-link {
 .pg-title {
   width: 100%; 
   height: 100%; 
-  max-width: 788px;
+  /* max-width: 788px; */
   padding: 18px 0px 24px 0px; 
   flex-direction: column; 
   justify-content: flex-start;
   align-items: center; 
   display: inline-flex;
+  background-color: var(--desert-wind);
 }
 
 
@@ -555,6 +567,11 @@ p.pub-date {
 .ds {
   width: 100%;
   height: 200px;
+}
+
+.ds-sml {
+  width: 100%;
+  height: 48px;
 }
 
 .footer {

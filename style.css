@@ -221,6 +221,7 @@ p.pop-txt {
     position: relative;
     top: 0px;
     width: 100%;
+    
   }
 
   /* White outer box */
@@ -329,10 +330,10 @@ p.pop-txt {
   .homepage-new .im-a-designer-and-il-7VwDpr {
     align-self: stretch;
     background-color: transparent;
-    letter-spacing: -0.60px;
+    letter-spacing: 0.01em;
     line-height: normal;
     position: relative;
-    text-align: justify;
+    text-align: left;
     font-family: "Roobert-Regular", Helvetica, sans-serif;
   }
 
@@ -386,7 +387,7 @@ p.pop-txt {
     font-size: var(--font-size-m);
     font-style: normal;
     font-weight: 600;
-    letter-spacing: -0.60px;
+    lletter-spacing: 0.01em;
     line-height: normal;
     margin-top: -1.00px;
     position: relative;
@@ -412,11 +413,11 @@ p.pop-txt {
   .homepage-new .i-registered-this-do-YBAkqo {
     background-color: transparent;
     flex: 1;
-    letter-spacing: -0.48px;
+    letter-spacing: 0.01em;
     line-height: normal;
     margin-top: -1.00px;
     position: relative;
-    text-align: justify;
+    text-align: left;
     font-family: "Roobert-Regular", Helvetica;
   }
 

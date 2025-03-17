@@ -329,6 +329,8 @@ a.line-keywords {
   font-size: 16px;
   font-style: italic;
   min-width: 330px;
+  letter-spacing: 0.01rem;
+    line-height: 1rem;
 
 }
 
@@ -431,7 +433,8 @@ h3.project-item-preview {
   font-family: "Roobert-Regular", Helvetica;
   font-size: 12px;
   font-style: normal;
-  line-height: normal;
+  letter-spacing: 0.01rem;
+  line-height: 1rem;
 }
 
 p.project-description {
@@ -443,7 +446,8 @@ p.project-description {
   font-weight: 200;
   font-size: 12px;
   font-style: normal;
-  line-height: normal;
+  letter-spacing: 0.01rem;
+  line-height: 1rem;
   max-width: 500px;
 }
 
@@ -455,7 +459,8 @@ p.keywords {
   font-size: 12px;
   /* font-style: italic; */
   font-weight: 200;
-  line-height: normal;
+  letter-spacing: 0.01rem;
+    line-height: 1rem;
 }
 
 h3.pub-title {
@@ -466,8 +471,8 @@ h3.pub-title {
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
-
-
+  letter-spacing: 0.01rem;
+    line-height: 1rem;
   /* 150% */
 }
 
@@ -479,9 +484,8 @@ p.pub-date {
   font-family: "Roobert-Regular", Helvetica;
   font-size: 12px;
   font-style: normal;
-  line-height: 15px;
-  /* 125% */
-  letter-spacing: -0.6px;
+  letter-spacing: 0.01rem;
+    line-height: 1rem;
 }
 
 /* Functional Header */

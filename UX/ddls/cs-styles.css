@@ -38,32 +38,129 @@
 /* Global */
 
 :root {
-    /* neutral */
-    --desert-wind: #faf9f5;
-    --neutral-2: #F1EDDD;
-    --neutral-6: #D8D2BA;
-    --neutral-8: #9B9064;
-    --neutral-10: #766830;
+    --sandstone: #999999;
+    --sapphire: #172c6c;
+    --twilight: #00318A;
+    --duval: #131A1C;
+    --witch: #585959;
+    --rock: #83826b;
+  
+      /* neutral */
+      --desert-wind: #faf9f5;
+      --neutral-2: #F1EDDD;
+      --neutral-6: #D8D2BA;
+      --neutral-8: #9B9064;
+      --neutral-10: #766830;
+  
+      /* yellow */
+      --yellow-2: #FFF1C2;
+      --yellow-primary: #FFE79B;
+      --yellow-6: #E3CA7B;
+      --yellow-8: #9C812E;
+      --yellow-10: #715600;
+  
+      /* blue */
+      --sapphire: #5981FA;
+      --blue-6: #4769D0;
+      --blue-8: #1B2E68;
+      --blue-10: #010B2A;
+  
+  }
+  
 
-    /* yellow */
-    --yellow-primary: #FFE79B;
-    --yellow-6: #E3CA7B;
-    --yellow-8: #9C812E;
-    --yellow-10: #715600;
-
-    /* blue */
-    --sapphire: #5981FA;
-    --blue-6: #4769D0;
-    --blue-8: #1B2E68;
-    --blue-10: #010B2A;
-}
-
-body {
+/* body {
     margin: 0;
     padding: 0;
     width: 100%;
     background-color: var(--desert-wind);
 }
+
+main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex
+;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} */
+
+html {
+
+    background-color: var(--desert-wind);
+    height: 100%;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  header {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  main {
+    margin: 12px 0px;
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  a p h1 h3 h4 h5 {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    cursor: url(/Assets/hover2.png), pointer;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  
+  }
+  
+  h1 {
+    color: var(--duval); 
+    font-size: 36px; 
+    font-family: "Roobert-Regular", Helvetica; 
+    font-weight: 500; 
+    word-wrap: break-word;
+    line-height: normal;
+    margin: 1px;
+  }
+  
+  h2 {
+    color: var(--duval);
+    font-family: "Roobert-Regular", Helvetica;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    min-width: 118px;
+    margin: 8px;
+    align-self: left;
+  }
+  
+  h3 {
+    color: var(--duval);
+    font-family: "Roobert-Regular", Helvetica;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    min-width: 118px;
+    margin: 0;
+  }
 
 .filler {
     height: 100px;
@@ -125,6 +222,11 @@ body {
     background-color: var(--desert-wind);
 }
 
+header {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
 
 .header-box {
     display: flex;
@@ -132,34 +234,34 @@ body {
     flex-direction: column;
     gap: 10px;
     align-self: stretch;
-  }
-
+}
+  
   .header-top {
     display: flex;
     align-items: center;
     gap: 10px;
     align-self: stretch;
   }
-
+  
   .bw-icons-row {
     display: flex;
     align-items: center;
     gap: 10px;
   }
-
+  
   .header-face {
-    width: 64px;
-    height: 64.985px;
+    width: 48px;
+    height: 48px;
   }
-
+  
   .header-grid {
-    width: 64px;
-    height: 64.985px;
+    width: 36px;
+    height: 36px;
   }
-
+  
   .header-blob {
-    width: 64px;
-    height: 64.985px;
+    width: 36px;
+    height: 36px;
   }
 
   .divider-fit {
@@ -173,14 +275,15 @@ body {
   .divider-style {
     height: 0px;
     align-self: stretch;
+    color: var(--rock);
 
   }
 
   /* Header images and animations */
   .img-fit {
-    height: 72px;
+    height: 48px;
     position: relative;
-    width: 72px;
+    width: 48px;
   }
 
   .UX-gif {
@@ -215,13 +318,19 @@ body {
 }
 
 .cs-body {
-    display: flex;
-padding: 24px 0px;
+    /* display: flex;
+padding: 16px 0px;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-gap: 24px;
-align-self: stretch;
+
+align-self: stretch; */
+margin: 0;
+  padding: 12px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .cs-context {
@@ -230,13 +339,14 @@ align-self: stretch;
     align-items: flex-start;
     width: fit-content;
     gap: 12px;
+    padding: 12px 0px;
 }
 
 .breadcrumb-banner {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 8px;
+    padding: 8px 0px;
     gap: 4px;
 
     /* style */
@@ -252,20 +362,32 @@ align-self: stretch;
     color: var(--neutral-10);
 }
 
+.pg-title {
+        width: 100%;
+        height: 100%;
+        /* max-width: 788px; */
+        padding: 18px 0px 24px 0px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        display: inline-flex;
+    gap: 12px;
+}
+
 .badge {
     display: flex;
     justify-content: center;
     padding: 4px 12px;
     gap: 4px;
-
+  
     /* style */
-    background: var(--yellow-primary);
+    background: var(--yellow-2);
     border: var(--yellow-8) 1px solid;
     border-radius: 12px;
     font-family: "Roobert-Regular", Helvetica;
     font-size: 12px;
-    color: var(--yellow-8);
-}
+    color: var(--yellow-10);
+  }
 
 
 h1.title {
@@ -379,7 +501,7 @@ p.copy {
     font-weight: 400;
     line-height: 18px;
     /* 150% */
-    letter-spacing: -0.6px;
+    /* letter-spacing: -0.6px; */
 }
 
 
@@ -474,7 +596,7 @@ font-size: 12px;
 font-style: normal;
 font-weight: 400;
 line-height: 18px; /* 150% */
-letter-spacing: -0.6px;
+/* letter-spacing: -0.6px; */
 max-width: 180px;
 }
 
@@ -553,7 +675,6 @@ max-width: 180px;
     font-weight: 400;
     line-height: 18px;
     /* 150% */
-    letter-spacing: -0.6px;
 }
 
 .link-table .row p.link-text {
@@ -569,7 +690,7 @@ max-width: 180px;
     font-weight: 400;
     line-height: 18px;
     /* 150% */
-    letter-spacing: -0.6px;
+    /* letter-spacing: -0.6px; */
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-skip-ink: auto;
@@ -619,7 +740,7 @@ max-width: 180px;
 @media (min-width:790px) {
 
     .cs-body {
-        padding: 16px;
+        padding: 12px 0px;
     }
      /* orientation */
      .cs-context {

@@ -1,0 +1,264 @@
+:root {
+    --sandstone: #999999;
+    --sapphire: #172c6c;
+    --twilight: #00318A;
+    --duval: #131A1C;
+    --witch: #585959;
+    --rock: #83826b;
+  
+      /* neutral */
+      --desert-wind: #faf9f5;
+      --neutral-2: #F1EDDD;
+      --neutral-6: #D8D2BA;
+      --neutral-8: #9B9064;
+      --neutral-10: #766830;
+  
+      /* yellow */
+      --yellow-2: #FFF1C2;
+      --yellow-primary: #FFE79B;
+      --yellow-6: #E3CA7B;
+      --yellow-8: #9C812E;
+      --yellow-10: #715600;
+  
+      /* blue */
+      --sapphire: #5981FA;
+      --blue-6: #4769D0;
+      --blue-8: #1B2E68;
+      --blue-10: #010B2A;
+
+
+  /* Importing Fonts */
+
+  @font-face {
+    font-family: "Roobert-Medium", Helvetica;
+    font-style: normal;
+    font-weight: 500;
+    src: url('/Assets/Fonts/Roobert/Roobert-Medium.otf') format("opentype");
+  }
+
+  @font-face {
+    font-family: "Roobert-Regular", Helvetica;
+    font-style: normal;
+    font-weight: 400;
+    src: url('/Assets/Fonts/Roobert/Roobert-Regular.otf') format("opentype");
+  }
+
+  @font-face {
+    font-family: "Roobert-Semibold", Helvetica;
+    font-style: normal;
+    font-weight: 700;
+    src: url('/Assets/Fonts/Roobert/Roobert-SemiBold.otf') format("opentype");
+  }
+
+  @font-face {
+    font-family: "Roobert-Bold", Helvetica;
+    font-style: normal;
+    font-weight: 800;
+    src: url('/Assets/Fonts/Roobert/Roobert-Bold.otf') format("opentype");
+  }
+
+
+}
+
+
+
+a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    width: 100%;
+  }
+
+  .cta a {
+    width: fit-content;
+    &:visited {
+        color: var(--neutral-10);
+    }
+  }
+  
+  p.card-header {
+    margin: 0;
+    padding: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+
+    font-family: 'Roobert-Medium', Helvetica, sans-serif;
+  }
+  
+  h1.card-header {
+    margin: 0;
+    padding: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+  
+  /* .App {
+    text-align: center;
+  } */
+  
+  .App-img {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  .card-container {
+    background-color: white;
+    border: var(--sandstone) 0.5px solid;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content:space-between;
+    /* font-size: calc(10px + 2vmin); */
+    /* color: var(--duval); */
+    padding: 10px;
+    gap: 10px;
+    /* height: 330px; */
+    width: 100%;
+  }
+  
+  .box-header {
+    position: relative;
+    background-color: var(--desert-wind);
+    border: var(--sandstone) 0.5px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:flex-start;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .card-header {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:flex-start;
+    gap: 12px;
+    width: 162px;
+    padding: 40px;
+
+  }
+  
+  h1 {
+    font-size: 1.71vw;
+    font-family: 'Roobert-Medium', Helvetica, sans-serif;
+  }
+  
+  p {
+    font-size: 0.86vw;
+    width: 100%;
+    font-family: 'Roobert-Medium', Helvetica, sans-serif;
+  }
+
+  p.box-header {
+    text-align: left;
+  }
+  
+  .App-link {
+    color: var(--sapphire);
+  }
+  
+  
+  .static-block {
+    width: fit-content;
+    position: absolute;
+  }
+  
+  #gif-block {
+    width: fit-content;
+    position: absolute;
+  }
+  
+  .card-container:hover .static-block {
+    display:none;
+  }
+  
+  
+  
+  .mini-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+  }
+  
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    background-color: var(--desert-wind);
+    border: var(--sandstone) 0.5px solid;
+    /* width: 300px; */
+    padding: 12px 30px 4px 30px;
+    color: var(--neutral-10);
+  
+  }
+  
+  .cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    font-size: 12px;
+    
+  }
+
+  a.cta {
+    cursor: pointer;
+    &:hover {
+        cursor: pointer;
+    }
+  }
+  
+  /* p.card {
+    color: var(--neutral-10);
+  } */
+  
+  .cta-button {
+    background-color: var(--neutral-2);
+    color: var(--neutral-10);
+    border: var(--neutral-10) 0.5px dashed;
+    padding: 0px 24px;
+    justify-content: center;
+  align-items: center;
+
+    /* font-size: 12px; */
+    cursor: pointer;
+    /* width: 100%; */
+    /* width: fill-available; */
+    text-align: center;
+    &:hover {
+      background-color: white;
+      color: var(--neutral-10);
+    }
+  }
+  
+  
+  
+  /* other deprecated stuff */
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  

@@ -397,6 +397,12 @@ a.cs-link {
   border-color: var(--rock);
 }
 
+img.image-container :hover {
+
+  box-shadow: var(--yellow-primary);
+
+}
+
 .project-txt-container {
   display: flex;
   min-width: 320px;

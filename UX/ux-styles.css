@@ -482,11 +482,12 @@ h3.pub-title {
   /* 150% */
 }
 
+
 p.pub-date {
   margin: 0;
   padding: 0;
   text-align: left;
-  color: var(--duval);
+  color: var(--sandstone);
   font-family: "Roobert-Regular", Helvetica;
   font-size: 12px;
   font-style: normal;

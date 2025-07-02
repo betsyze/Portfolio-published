@@ -79,12 +79,34 @@ h2 {
 
 
 :root {
-  --desert-wind: #faf9f5;
   --sandstone: #999999;
-  --sapphire: #3376FF;
+  --gravel: #9d9d9d;
+  --sapphire: #172c6c;
   --twilight: #00318A;
   --duval: #131A1C;
-  --witch: #334448;
+  --witch: #585959;
+  --rock: #83826b;
+
+    /* neutral */
+    --desert-wind: #faf9f5;
+    --neutral-2: #F1EDDD;
+    --neutral-6: #D8D2BA;
+    --neutral-8: #9B9064;
+    --neutral-10: #766830;
+
+    /* yellow */
+    --yellow-2: #FFF1C2;
+    --yellow-primary: #FFE79B;
+    --yellow-6: #E3CA7B;
+    --yellow-8: #9C812E;
+    --yellow-10: #715600;
+
+    /* blue */
+    --sapphire: #5981FA;
+    --blue-6: #4769D0;
+    --blue-8: #1B2E68;
+    --blue-10: #010B2A;
+
 }
 
 header {
@@ -240,7 +262,7 @@ a.line-title {
 
 a.line-keywords {
   align-content: bottom;
-  color: var(--witch);
+  color: var(--gravel);
   font-family: "Roobert-Regular", Helvetica;
   font-size: 16px;
   font-style: italic;
@@ -360,7 +382,7 @@ p.project-description {
 p.keywords {
   margin: 0;
   padding: 0;
-  color: var(--witch);
+  color: var(--gravel);
   font-family: "Roobert-Regular", Helvetica;
   font-size: 12px;
   /* font-style: italic; */

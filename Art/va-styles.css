@@ -615,9 +615,9 @@ p.pub-date {
     max-width: 320px;
   }
 
-  a {
+  /* a {
     width: 100%;
-  }
+  } */
 
   .img-container {
     max-width: 360px;

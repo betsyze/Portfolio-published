@@ -318,6 +318,10 @@ a:visited {
   font-family: "Roobert-Regular", Helvetica;
   font-size: 12px;
   color: var(--neutral-10);
+
+  :hover {
+    cursor: pointer;
+  }
   
 }
 .breadcrumb-banner a, a:visited {

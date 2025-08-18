@@ -132,8 +132,45 @@ h3.pop-txt {
 
 p.pop-txt {
   font-family: "Roobert-Regular", Helvetica;
+  font-size: 14px;
+  color: var(--neutral-10);
+}
+
+.pbox{
+  padding: 4px 8px;
+  background-color: var(--neutral-2);
+  border: 0.5px solid var(--neutral-6);
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+
+.pop-txxt {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  font-family: "Roobert-Regular", Helvetica;
   font-size: 12px;
 }
+
+.pop-txxt:hover {
+
+  border: 0.5px solid var(--neutral-10);
+  border-radius: 2px;
+  padding: 4px 4px;
+
+}
+
+.spacer {
+  height: 8px;
+}
+
+.spacer-mini {
+  height: 4px;
+}
+
 
 .popover-close {
   font-family: "Roobert-Regular", Helvetica;

@@ -97,8 +97,7 @@ h2 {
 h3 {
   color: var(--duval);
   font-family: "Roobert-Regular", Helvetica;
-  font-size: 12px;
-  font-style: normal;
+  font-size: 14px;
   font-weight: 500;
   line-height: normal;
   min-width: 118px;
@@ -115,6 +114,7 @@ h3 {
 
     /* neutral */
     --desert-wind: #faf9f5;
+    --neutral-0: #F7F4EB;
     --neutral-2: #F1EDDD;
     --neutral-6: #D8D2BA;
     --neutral-8: #9B9064;
@@ -334,6 +334,11 @@ a.line-keywords {
 
 }
 
+a {
+  color: var(--neutral-10);
+  text-decoration: none;
+}
+
 a.disabled {
   color: var(--witch);
   font-family: "Roobert-Regular", Helvetica;
@@ -348,8 +353,8 @@ a.cs-link {
   min-width: 120px;
 }
 
-.project-item a:visited {
-  color: var(--sapphire);
+a:visited {
+  color: var(--neutral-10);
   text-decoration: none;
 }
 
@@ -495,6 +500,36 @@ p.pub-date {
     line-height: 1rem;
 }
 
+.link-wrapper {
+  padding: 8px 8px;
+  
+}
+
+.link-cols {
+  width: 50%;
+}
+
+.links-divider {
+  align-self: stretch;  
+  border-left: 0.5px solid var(--sandstone);
+}
+
+
+.more-links {
+  border: 0.5px solid var(--neutral-10);
+  border-radius: 2px;
+  background-color: var(--neutral-0);
+  padding: 24px;
+  display: flex;
+  flex-direction: row;
+ justify-content: flex-start;
+ gap: 12px;
+ width: 75%;
+ min-width: 220px;
+ max-width: 720px;
+}
+
+
 /* Functional Header */
 .header-box {
   display: flex;
@@ -544,6 +579,11 @@ p.pub-date {
   height: 0px;
   align-self: stretch;
 
+}
+
+.divider-vert {
+  width: 0;
+  height: 100%;
 }
 
 /* Header images and animations */
@@ -711,6 +751,15 @@ p.pub-date {
   .img-container {
     width: 100%;
     min-width: 100%;
+  }
+
+  .more-links {
+    flex-direction: column;
+
+    & .links-divider {
+      border-bottom: 0.5px solid var(--neutral-10);
+    }
+    
   }
 
   

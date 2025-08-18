@@ -153,6 +153,10 @@ p.pop-txt {
   gap: 8px;
   font-family: "Roobert-Regular", Helvetica;
   font-size: 12px;
+
+  & a {
+  color: var(--neutral-10);
+  }
 }
 
 .pop-txxt:hover {

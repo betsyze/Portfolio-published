@@ -11,30 +11,30 @@
   <link rel="icon" type="image/x-icon" href="/Assets/Header-Assets/header-face.png">
 
   <!-- load code -->
-   <script src="modal.js"></script>
+  <script src="modal.js"></script>
 
-<script>
-  // Get modal elements
-  const modal = document.getElementById("myModal");
-  const btn = document.getElementById("openModal");
-  const span = document.getElementsByClassName("close")[0];
-  
-  // Open modal when button is clicked
-  btn.onclick = function() {
+  <script>
+    // Get modal elements
+    const modal = document.getElementById("myModal");
+    const btn = document.getElementById("openModal");
+    const span = document.getElementsByClassName("close")[0];
+
+    // Open modal when button is clicked
+    btn.onclick = function () {
       modal.style.display = "block";
-  }
-  
-  // Close modal when X is clicked
-  span.onclick = function() {
+    }
+
+    // Close modal when X is clicked
+    span.onclick = function () {
       modal.style.display = "none";
-  }
-  
-  // Close modal when clicking outside
-  window.onclick = function(event) {
+    }
+
+    // Close modal when clicking outside
+    window.onclick = function (event) {
       if (event.target == modal) {
-          modal.style.display = "none";
+        modal.style.display = "none";
       }
-  }
+    }
   </script>
 
 
@@ -45,9 +45,6 @@
 
 
   <style>
-
-
-
     .container-center-horizontal {
       display: flex;
       flex-direction: row;
@@ -131,99 +128,109 @@
 <body style="margin: 0px; overflow-x: hidden;">
 
   <!-- Modal -->
-<div id="myPopover" class="popover">
-  <div class="pop-header">
+  <div id="myPopover" class="popover">
+    <div class="pop-header">
       <h3 class="pop-txt">Links</h3>
       <div id="popoverClose" class="popover-close">x</div>
-  </div>
+    </div>
 
-  <div class="spacer"></div>
+    <div class="spacer"></div>
 
 
-  <div class="pbox"> 
-    <img src="/Assets/custom icons/me-icon 48px-smooth - neutral 10.png" width="48px">
-  <p class="pop-txt">
-    Come and find me!
+    <div class="pbox">
+      <img src="/Assets/custom icons/me-icon 48px-smooth - neutral 10.png" width="48px">
+      <p class="pop-txt">
+        Come and find me!
+      </p>
+    </div>
+
+    <div class="spacer"></div>
+
+
+    <div class="pbox">
+      <div class="pop-txxt">
+        <img src="Assets/custom icons/Instagram 24px - neutral 10.png" width="12px">
+        <a href="https://www.instagram.com/b.eszi" target="_blank">Instagram</a>
+      </div>
+
+      <div class="spacer-mini"></div>
+
+      <div class="pop-txxt">
+        <img src="/Assets/custom icons/Linkedin 24px - neutral 10.png" width="12px">
+        <a href="https://www.linkedin.com/in/betsy-ellison-1a1584164/" target="_blank">LinkedIn</a>
+      </div>
+
+      <div class="spacer-mini"></div>
+
+      <div class="pop-txxt">
+        <span class="span2-uOQtAz"> <img src="/Assets/custom icons/arena 24px - neutral 10.png" width="18px"> </span>
+        <span class="span3-uOQtAz "><a href="https://www.are.na/betsy-ellison/channels" target="_blank">Are.na</a></span>
+      </div>
+      <div class="spacer-mini"></div>
+
+      <div class="pop-txxt">
+        <img src="/Assets/custom icons/splay icon 16 px - neutral 10.png" width="12px">
+        <a href="https://coyotespiderbuffalo.blot.im/" target="_blank">Blot</a></span>
+      </div>
+    </div>
+
+    </span>
     </p>
+    <div>
+      <img src="/Assets/dogrender - sml - neutral 10.png" style="width: 50%;">
+    </div>
   </div>
 
-  <div class="spacer"></div>
-
-    <div class="pop-txxt">
-       <span class="span2-uOQtAz"> <img src="Assets/custom icons/Instagram 24px.png" width="18px"> </span> 
-      <span class="span1-uOQtAz"><a href="https://www.instagram.com/b.eszi" target="_blank"
-             style="color: #000000;">Instagram</a></span>
-
-            </div>
-        
-    <div class="spacer-mini"></div>
-             
-            <div class="pop-txxt">
-          <span class="span2-uOQtAz"> <img src="/Assets/custom icons/Linkedin 24px.png" width="18px"> </span> 
-          <span class="span3-uOQtAz "><a href="https://www.linkedin.com/in/betsy-ellison-1a1584164/" target="_blank"
-              style="color:black">LinkedIn</a></span>
-              </div>
-
-              <div class="spacer-mini"></div>
-              
-              <div class="pop-txxt">   
-          <span class="span2-uOQtAz"> <img src="/Assets/custom icons/arena 24 px.png" width="20px"> </span> 
-          <span class="span3-uOQtAz "><a href="https://www.are.na/betsy-ellison/channels" target="_blank"
-              style="color:black">Are.na</a></span>
-              </div>
-
-               <div class="spacer-mini"></div>
-          
-              <div class="pop-txxt">
-          <span class="span2-uOQtAz"> <img src="/Assets/custom icons/splay icon 24px.png" width="18px"> </span> 
-          <span class="span5-uOQtAz "><a href="https://coyotespiderbuffalo.blot.im/" target="_blank"
-              style="color: #000000;">Blot</a></span>
-              </div>
-        
-        </span>
-  </p>
-  <div>
-    <img src="/Assets/dogrender - sml - neutral 10.png" style="width: 50%;">
-  </div>
-</div>
-
-<!-- second modal -->
- <!-- Modal -->
-<div id="colophonPopover" class="popover">
-  <div class="pop-header">
+  <!-- second modal -->
+  <!-- Modal -->
+  <div id="colophonPopover" class="popover">
+    <div class="pop-header">
       <h3 class="pop-txt">Colophone</h3>
       <div id="popoverClose" class="popover-close">x</div>
+    </div>
+    <p class="pop-txt" style="padding: 12px 0px 12px 0px;">
+      This website is, like many designer’s websites, a perpetual experiment. I’m building it from scratch, writing it
+      line-by-line in HTML, CSS, and Javascript, and hosting it on Github pages with a custom domain name. I built a few
+      components in React, too-- before I learned I can’t integrate it on a page already structured in HTML. Whoops!
+      <br><br>
+      But hey, that’s part of the the learning process. I’m trained in the arts, so aesthetic critical inquiry is my
+      bread and butter. I’m a big believer that a craftsperson shouldn’t use shortcuts when it comes to their practice.
+      I’ve harnessed internet platforms to host my artwork since I was a child, and eventually took up UI/UX design
+      because I like to know both the how and why of what I do. I really care about websites: I believe in rigorous
+      consideration of websites as a context with real social and political impact. Why follow a standard just because
+      it’s the standard? What does it mean to present myself via someone else’s product?
+      <br><br>
+      So when I explored no-code portfolio builders like Webflow or Framer, I struggled with the reduced measure of
+      control. Even though abstraction was reduced, I wasn’t satisfied. What was I missing by relying on a third party
+      vendor? What if the GUI of no-code editors obfuscates something new and different a website could do?
+      <br><br>
+      That’s a lot of questions and no answers all in a row. I’m trying to answer these questions for myself by getting
+      down to brass tacks and learning to code. I’m still new to this, and as I practice, I’m learning code
+      organization, syntax, and accessibility; I’m becoming accustomed to the many new languages, frameworks,
+      infrastructure and data structures that govern digital life. You might encounter a few inconsistencies: that will
+      change. Stay tuned as beszi.world evolves.
+      <br><br>
+      <span class="span2-uOQtAz"> ✲ </span>
+    </p>
+    <div>
+      <img src="/Assets/dogrender-sml.png" style="width: 100%;">
+    </div>
   </div>
-  <p class="pop-txt" style="padding: 12px 0px 12px 0px;">
-    This website is, like many designer’s websites, a perpetual experiment. I’m building it from scratch, writing it line-by-line in HTML, CSS, and Javascript, and hosting it on Github pages with a custom domain name. I built a few components in React, too-- before I learned I can’t integrate it on a page already structured in HTML. Whoops!
-<br><br>
-But hey, that’s part of the the learning process. I’m trained in the arts, so aesthetic critical inquiry is my bread and butter. I’m a big believer that a craftsperson shouldn’t use shortcuts when it comes to their practice. I’ve harnessed internet platforms to host my artwork since I was a child, and eventually took up UI/UX design because I like to know both the how and why of what I do. I really care about websites: I believe in rigorous consideration of websites as a context with real social and political impact. Why follow a standard just because it’s the standard? What does it mean to present myself via someone else’s product?
-<br><br>
-So when I explored no-code portfolio builders like Webflow or Framer, I struggled with the reduced measure of control. Even though abstraction was reduced, I wasn’t satisfied. What was I missing by relying on a third party vendor? What if the GUI of no-code editors obfuscates something new and different a website could do?
-<br><br>
-That’s a lot of questions and no answers all in a row. I’m trying to answer these questions for myself by getting down to brass tacks and learning to code. I’m still new to this, and as I practice, I’m learning code organization, syntax, and accessibility; I’m becoming accustomed to the many new languages, frameworks, infrastructure and data structures that govern digital life. You might encounter a few inconsistencies: that will change. Stay tuned as beszi.world evolves.
-    <br><br>
-    <span class="span2-uOQtAz"> ✲ </span> 
-  </p>
-  <div>
-    <img src="/Assets/dogrender-sml.png" style="width: 100%;">
-  </div>
-</div>
 
   <input type="hidden" id="anPageName" name="page" value="homepage-new">
-  <div class="homepage-new" >
+  <div class="homepage-new">
 
     <div class="hero-box">
       <div class="biocard">
         <div class="innerbiostack"><img class="bio-img-ZlUoao" data-id="173:984"
-            src="/Assets/Header-Assets/NU-BIO-IMG.png"
-            alt="Bio Img">
-          <div class="frame-47-ZlUoao" >
+            src="/Assets/Header-Assets/NU-BIO-IMG.png" alt="Bio Img">
+          <div class="frame-47-ZlUoao">
             <div class="frame-60-7VwDpr">
               <h1 class="title-mygWwm valign-text-middle">Betsy Ellison</h1>
             </div>
             <p class="im-a-designer-and-il-7VwDpr valign-text-middle roobert-regular-normal-black-12px"
-              data-id="168:146">I’m a product designer and painter presently located in Chicago. Currently, I work for FCB
+              data-id="168:146">I’m a product designer and painter presently located in Chicago. Currently, I work for
+              FCB
               Chicago as a UX Architect — a role that combines UX research, design, and strategy on a brainy and brawny
               digital team. </p><img class="divider-7VwDpr" data-id="168:147"
               src="https://cdn.animaapp.com/projects/63a130846d099077909945b8/releases/6758b178ad9974c27f569c6b/img/divider.svg"
@@ -237,14 +244,22 @@ That’s a lot of questions and no answers all in a row. I’m trying to answer 
             <div class="colo-text-TxuAYa" data-id="168:152">
               <p class="i-registered-this-do-YBAkqo valign-text-middle roobert-regular-normal-black-12px"
                 data-id="168:153"><span><span class="span0-RxFDl0 roobert-regular-normal-black-12px">
-                   I learned to build websites via Tumblr and fan forums in eighth grade. Now I get to do it professionally. "Beszi" has been my online persona ever since.
+                    I learned to build websites via Tumblr and fan forums in eighth grade. Now I get to do it
+                    professionally. "Beszi" has been my online persona ever since.
                     <br><br>
-                   I have a background in visual art, and my loyalty still lies with artists and small creative spaces. Typically, I lead with site architecture, front-end execution, and web
+                    I have a background in visual art, and my loyalty still lies with artists and small creative spaces.
+                    Typically, I lead with site architecture, front-end execution, and web
                     accessibility, and consult on art direction, creative strategy, and brand identity.
                     <br><br>
-                    <b>✎ </b>This site was coded by hand, from scratch. Fonts used are <a href="https://displaay.net/typeface/roobert-collection/roobert/" target="_blank" style="text-decoration: none; cursor: pointer;">Roobert</a> and <a href="https://www.collletttivo.it/typefaces/apfel-grotezk" target="_blank" style="text-decoration: none; cursor: pointer;">Apfel Grotezk</a>. You can read more about that process <a href="Other/index.html" style="cursor: pointer">here</a>.
+                    <b>✎ </b>This site was coded by hand, from scratch. Fonts used are <a
+                      href="https://displaay.net/typeface/roobert-collection/roobert/" target="_blank"
+                      style="text-decoration: none; cursor: pointer;">Roobert</a> and <a
+                      href="https://www.collletttivo.it/typefaces/apfel-grotezk" target="_blank"
+                      style="text-decoration: none; cursor: pointer;">Apfel Grotezk</a>. You can read more about that
+                    process <a href="Other/index.html" style="cursor: pointer">here</a>.
                     <br><br>
-                    I’d love to meet you: you can email me at </span><span class="span1-RxFDl0"><a href="mailto:me@beszi.world" style="cursor: pointer">me@beszi.world</a></span><span
+                    I’d love to meet you: you can email me at </span><span class="span1-RxFDl0"><a
+                      href="mailto:me@beszi.world" style="cursor: pointer">me@beszi.world</a></span><span
                     class="span2-RxFDl0 roobert-regular-normal-black-12px">. Resume available upon
                     request.</span></span></p>
             </div>
@@ -332,16 +347,24 @@ That’s a lot of questions and no answers all in a row. I’m trying to answer 
       font-weight: 400;
       line-height: 1.1rem;
       letter-spacing: -0.4px; ">
-        I learned to build websites via Tumblr and fan forums in eighth grade. Now I get to do it professionally. "Beszi" has been my online persona ever since.
-                    <br><br>
-                   I have a background in visual art, and my loyalty still lies with artists and small creative spaces. Typically, I lead with site architecture, front-end execution, and web
-                    accessibility, and consult on art direction, creative strategy, and brand identity.
-                    <br><br>
-                    <b>✎ </b>This site was coded by hand, from scratch. Fonts used are <a href="https://displaay.net/typeface/roobert-collection/roobert/" target="_blank" style="text-decoration: none; cursor: pointer;">Roobert</a> and <a href="https://www.collletttivo.it/typefaces/apfel-grotezk" target="_blank" style="text-decoration: none; cursor: pointer;">Apfel Grotezk</a>. You can read more about that process <a href="Other/index.html" style="cursor: pointer">here</a>.
-                    <br><br>
-                    I’d love to meet you: you can email me at </span><span class="span1-RxFDl0"><a href="mailto:me@beszi.world" style="cursor: pointer">me@beszi.world</a></span><span
-                    class="span2-RxFDl0 roobert-regular-normal-black-12px">. Resume available upon
-                    request.</span></span>
+        I learned to build websites via Tumblr and fan forums in eighth grade. Now I get to do it professionally.
+        "Beszi" has been my online persona ever since.
+        <br><br>
+        I have a background in visual art, and my loyalty still lies with artists and small creative spaces. Typically,
+        I lead with site architecture, front-end execution, and web
+        accessibility, and consult on art direction, creative strategy, and brand identity.
+        <br><br>
+        <b>✎ </b>This site was coded by hand, from scratch. Fonts used are <a
+          href="https://displaay.net/typeface/roobert-collection/roobert/" target="_blank"
+          style="text-decoration: none; cursor: pointer;">Roobert</a> and <a
+          href="https://www.collletttivo.it/typefaces/apfel-grotezk" target="_blank"
+          style="text-decoration: none; cursor: pointer;">Apfel Grotezk</a>. You can read more about that process <a
+          href="Other/index.html" style="cursor: pointer">here</a>.
+        <br><br>
+        I’d love to meet you: you can email me at </span><span class="span1-RxFDl0"><a href="mailto:me@beszi.world"
+            style="cursor: pointer">me@beszi.world</a></span><span
+          class="span2-RxFDl0 roobert-regular-normal-black-12px">. Resume available upon
+          request.</span></span>
 
 
       </div>
@@ -405,7 +428,7 @@ That’s a lot of questions and no answers all in a row. I’m trying to answer 
       </div>
   </section> -->
 
-  <div></div>
+    <div></div>
 
 
     <!-- </div> -->
@@ -416,9 +439,9 @@ That’s a lot of questions and no answers all in a row. I’m trying to answer 
         data-id="171:763">
         <span><span class="span0-uOQtAz">You can also find me</span>
 
-            <button id="popoverTrigger">elsewhere online</button>
+          <button id="popoverTrigger">elsewhere online</button>
 
-                    <!-- <div id="myPopover" class="popover">
+          <!-- <div id="myPopover" class="popover">
                         <div class="pop-header">
                             <h3 class="pop-txt">Preview</h3>
                             <div id="popoverClose" class="popover-close">x</div>
@@ -439,7 +462,7 @@ That’s a lot of questions and no answers all in a row. I’m trying to answer 
               style="color: #000000;">Blot</a></span>
         </span> -->
       </p>
-  </footer>
+    </footer>
   </div>
   <div>
 

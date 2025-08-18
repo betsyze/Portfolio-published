@@ -79,7 +79,11 @@
     height: 200%;
   }
 
+  
+
   /* popover */
+
+
   /* Popover styling */
 .popover {
   position: fixed;
@@ -153,9 +157,14 @@ p.pop-txt {
   gap: 8px;
   font-family: "Roobert-Regular", Helvetica;
   font-size: 12px;
+  cursor: default;
 
   & a {
   color: var(--neutral-10);
+  }
+
+  & a:hover {
+    cursor:pointer;
   }
 }
 

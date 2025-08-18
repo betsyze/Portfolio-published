@@ -79,7 +79,7 @@
     height: 200%;
   }
 
-  
+
 
   /* popover */
 
@@ -149,7 +149,6 @@ p.pop-txt {
   gap: 12px;
 }
 
-
 .pop-txxt {
   display: flex;
   flex-direction: row;
@@ -183,7 +182,6 @@ p.pop-txt {
 .spacer-mini {
   height: 4px;
 }
-
 
 .popover-close {
   font-family: "Roobert-Regular", Helvetica;

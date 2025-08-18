@@ -121,6 +121,7 @@ p {
 
     /* neutral */
     --desert-wind: #faf9f5;
+    --neutral-0: #F7F4EB;
     --neutral-2: #F1EDDD;
     --neutral-6: #D8D2BA;
     --neutral-8: #9B9064;
@@ -601,7 +602,7 @@ p.pub-date {
   width: 100%;
   height: 43px;
   padding: 0px 8px 0px 20px;
-  align-items: flex-start;
+  align-items: center;
   gap: 10px;
 
 
@@ -619,14 +620,14 @@ p.pub-date {
   line-height: normal;
 }
 
-/* popover */
+    /* popover */
 
-  /* popover */
+
   /* Popover styling */
   .popover {
     position: fixed;
     top: 10%;
-    left: 30%;
+    left: 33.33%;
     background-color: white;
     border: 1px solid #ccc;
     padding: 10px;
@@ -674,7 +675,59 @@ p.pub-date {
   
   p.pop-txt {
     font-family: "Roobert-Regular", Helvetica;
+    font-size: 14px;
+    color: var(--neutral-10);
+  }
+  
+  .pbox{
+    padding: 4px 8px;
+    background-color: var(--neutral-2);
+    border: 0.5px solid var(--neutral-6);
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+  }
+  .pbox2{
+    padding: 4px 8px;
+    background-color: var(--neutral-0);
+    border: 0.5px solid var(--neutral-6);
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+  }
+  
+  .pop-txxt {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    font-family: "Roobert-Regular", Helvetica;
     font-size: 12px;
+    cursor: default;
+  
+    & a {
+    color: var(--neutral-10);
+    }
+  
+    & a:hover {
+      cursor:pointer;
+    }
+  }
+  
+  .pop-txxt:hover {
+  
+    border: 0.5px solid var(--neutral-10);
+    border-radius: 2px;
+    padding: 4px 4px;
+  
+  }
+  
+  .spacer {
+    height: 8px;
+  }
+  
+  .spacer-mini {
+    height: 4px;
   }
   
   .popover-close {
@@ -691,6 +744,7 @@ p.pub-date {
     color: var(--duval);
   }
   
+
 
 /* ------------------------------------------------- */
 

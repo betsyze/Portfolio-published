@@ -623,7 +623,8 @@ p.pub-date {
 
     & p:hover {
       border: none;
-      padding: 0;
+      padding: 4px;
+
     }
     }
     

@@ -126,6 +126,9 @@ a {
   /* popover */
   
   
+  /* popover */
+  
+  
     /* Popover styling */
     .popover {
       position: fixed;
@@ -236,8 +239,10 @@ a {
 
     & p:hover {
       border: none;
-      padding: 0;
+
+
     }
+
     }
     
     .spacer {
@@ -261,7 +266,6 @@ a {
     .popover-close:hover {
       color: var(--duval);
     }
-    
   
 
 .page {

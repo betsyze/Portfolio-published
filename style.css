@@ -196,7 +196,7 @@
     justify-content: space-between;
 
     & p:hover {
-      border: none;
+      border: 0;
       padding: 0;
     }
     }

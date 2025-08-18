@@ -503,8 +503,7 @@ p.pub-date {
   /* border:#0051E6 solid; */
 }
 
-
- /* popover */
+    /* popover */
 
 
   /* Popover styling */
@@ -579,7 +578,6 @@ p.pub-date {
     flex-direction: row;
     gap: 12px;
   }
-
   
   .pop-txxt {
     display: flex;
@@ -628,6 +626,8 @@ p.pub-date {
   .popover-close:hover {
     color: var(--duval);
   }
+  
+
 
 /* ------------------------------------------------- */
 

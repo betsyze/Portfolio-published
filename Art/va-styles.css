@@ -394,16 +394,20 @@ a:visited {
   flex-direction: column;
   align-items: flex-start;
   gap: 2px;
+
+  & a:hover {
+    cursor: pointer;
+  }
 }
 
 h2.project-item-title {
   margin: 0;
   padding: 0;
-  color: var(--sapphire);
+  color: var(--neutral-10);
   font-family: "Roobert-Medium", Helvetica;
   font-size: 16px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: normal;
 }
 
@@ -428,6 +432,8 @@ p.project-description {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+
+  
 }
 
 p.keywords {

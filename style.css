@@ -39,14 +39,14 @@
     font-family: "Roobert-Medium", Helvetica;
     font-style: normal;
     font-weight: 500;
-    src: url('/Assets/Fonts/Roobert/Roobert-Medium.otf') format("opentype");
+    src: url('https://github.com/betsyze/Portfolio-published/blob/main/Assets/Fonts/Roobert/Roobert-Medium.otf') format("opentype");
   }
 
   @font-face {
     font-family: "Roobert-Regular", Helvetica;
     font-style: normal;
     font-weight: 400;
-    src: url('/Assets/Fonts/Roobert/Roobert-Regular.otf') format("opentype");
+    src: url('https://github.com/betsyze/Portfolio-published/blob/main/Assets/Fonts/Roobert/Roobert-Regular.otf');
   }
 
   @font-face {

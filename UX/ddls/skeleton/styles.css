@@ -116,10 +116,10 @@ p {
     font-size: 12px;
     letter-spacing: 0em;
     line-height: 1.4;
-    font-weight: 400;
+    /* font-weight: 400; */
     min-width: 118px;
     margin: 0; 
-    text-wrap: pretty;
+    text-wrap: balance;
     width: 100%;
     min-width: 300px;
     max-width: 760px;
@@ -129,10 +129,10 @@ p {
 
 p.project-description {
     align-self: left;
+    text-align: center;
     color: var(--duval);
     font-family: "Roobert-Regular", Helvetica;
     font-size: var(--font-size-l);
-    font-style: normal;
     letter-spacing: 0em;
       line-height: 1.4;
 }
@@ -153,6 +153,12 @@ ul {
     & li {
         text-align: left;
     }
+}
+
+b {
+  font-family: "Roobert-Semibold", Helvetica;
+  letter-spacing: 0.02em;
+
 }
 
 :root {
@@ -217,6 +223,10 @@ ul {
   padding: 40px 40px 20px 40px;
   flex-direction: column;
   gap: 8px;
+
+  & .img.illo-hero {
+    width: 100%;
+  }
 
 }
 
@@ -634,11 +644,11 @@ p.pub-date {
 .teaser-container {
     width: 80%;
     min-width: 300px;;
-    padding: 12px 24px;
+    padding: 18px 18px;
 
     display: flex;
     flex-direction: column;
-    align-self: center;
+    align-self: left;
     gap: 12px;
 
     background-color: var(--neutral-0);
@@ -657,6 +667,7 @@ p.pub-date {
 
     & p {
         text-align: left;
+        text-wrap: pretty;
     }
 
     & .shout {
@@ -666,7 +677,7 @@ p.pub-date {
         border: 0.5px solid var(--neutral-10);
         padding: 8px 16px;
         font-size: 12px;
-        text-wrap: pretty;
+        text-wrap: balance;
     }
     & :hover {
       cursor: pointer;

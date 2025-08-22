@@ -675,7 +675,7 @@ a:hover {
   display: flex;
   width: 100%;
   height: 43px;
-  padding: 0px 8px 0px 20px;
+  padding: 12px 8px 0px 20px;
   align-items: flex-start;
   gap: 10px;
 
@@ -698,7 +698,7 @@ a:hover {
 .homepage-new .you-can-also-find-me-YdUwlW {
   background-color: transparent;
   height: 28px;
-  margin-top: -1.00px;
+  /* margin-top: -1.00px; */
   text-align: left;
   width: 636px;
 
@@ -870,7 +870,7 @@ a:hover {
 
   }
 
-  .homepage-new .footer-7alUKT {
+  .homepage-new .footer {
     left: 0px;
     padding: 12px 0px 12px 24px;
   }
@@ -960,7 +960,7 @@ a:hover {
     font-weight: 600;
   }
 
-  .homepage-new .footer-7alUKT {
+  .homepage-new .footer {
     left: 0px;
     padding: 12px 0px 12px 24px;
   }

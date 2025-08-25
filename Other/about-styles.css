@@ -427,7 +427,7 @@
 
   .h2box-horiz {
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
     display: flex;
     flex-direction: row;
     align-items: center;

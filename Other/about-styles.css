@@ -453,6 +453,8 @@
       padding: 0;
       margin: 0;
       font-size: var(--font-size-m);
+
+      text-wrap: balance;
     }
 
     & a {

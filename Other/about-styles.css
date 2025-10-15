@@ -433,7 +433,7 @@
     align-items: center;
     padding: 12px 0px 8px 0px;
     align-self: center;
-    justify-content: center;
+    justify-content: left;
     padding: 18px 18px;
     gap: 3%;
     margin: 10px;
@@ -443,7 +443,7 @@
 
     & p,
     h2 {
-      max-width: 350px;
+      max-width: 600px;
       color: var(--neutral-10);
 
       font-family: "Roobert-Regular", Helvetica;
@@ -491,6 +491,7 @@
     flex-direction: column;
     justify-content: left;
     text-align: left;
+    gap: 10px;
 
     & h2 {
       width: 100%;

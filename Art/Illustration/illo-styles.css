@@ -92,7 +92,7 @@
     line-height: normal;
     min-width: 118px;
     margin: 8px;
-    align-self: left;
+    text-align: center;
   }
 
   h3 {
@@ -814,15 +814,15 @@
   }
 
   .spacer {
-    height: 8px;
+    height: 24px;
   }
 
   .spacer-mini {
-    height: 4px;
+    height: 12px;
   }
 
   .spacer-huge {
-    height: 1vw;
+    height: 64px;
   }
 
   .popover-close {

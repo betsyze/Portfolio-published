@@ -73,7 +73,7 @@
      justify-content: center;
      background-color: var(--desert-wind);
      display: flex;
-     width: 100%;
+     /* width: 100%; */
      min-width: 200px;
      height: 100%;
      padding: 40px 40px 20px 40px;

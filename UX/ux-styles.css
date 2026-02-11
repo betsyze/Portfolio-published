@@ -418,7 +418,33 @@
     align-items: flex-start;
     gap: 8px;
     flex: 1 0 0;
+    align-self: flex-start;
+  }
+
+  .unlisted-contact {
+    display: flex;
+    min-width: 320px;
+    max-width: fit-content;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+    flex: 1 0 0;
     align-self: stretch;
+
+    padding: 4px 8px;
+
+
+    background-color: var(--neutral-0);
+    border: var(--neutral-6) 0.5px solid;
+
+    & a {
+      font-family: "Roobert-medium", Helvetica;
+      font-weight: 400;
+      text-decoration: none;
+      color: var(--yellow-10);
+    }
+
+
   }
 
   .project-date-container {
@@ -462,6 +488,18 @@
     letter-spacing: 0.01rem;
     line-height: 1rem;
     max-width: 500px;
+
+    .unlisted-contact & {
+      color: var(--yellow-10);
+      height: fit-content;
+    }
+
+    & a, a:visited {
+      font-family: "Roobert-medium", Helvetica;
+      font-weight: 400;
+      text-decoration: none;
+      color: var(--yellow-10);
+    }
   }
 
   p.keywords {

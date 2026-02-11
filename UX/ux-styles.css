@@ -107,7 +107,7 @@
   }
 
   :root {
-    --sandstone: #999999;
+    --sandstone: #7c7c7c;
     --sapphire: #172c6c;
     --twilight: #00318A;
     --duval: #131A1C;
@@ -288,11 +288,19 @@
 
   .table-row {
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
     gap: 53px;
     align-self: stretch;
     min-width: 720px;
 
+  }
+
+  .end-of-row {
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    justify-content: space-between;
+    width: 100%;
   }
 
   .icon-fit {
@@ -423,19 +431,26 @@
 
   .unlisted-contact {
     display: flex;
-    min-width: 320px;
+    min-width: 200px;
     max-width: fit-content;
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-start;
-    gap: 8px;
+    gap: 4px;
     flex: 1 0 0;
-    align-self: stretch;
+    align-self: flex-start;
 
-    padding: 4px 8px;
+    padding: 8px 10px;
 
 
     background-color: var(--neutral-0);
     border: var(--neutral-6) 0.5px solid;
+
+    & .horiz {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 4px;
+    }
 
     & a {
       font-family: "Roobert-medium", Helvetica;
@@ -487,14 +502,15 @@
     font-style: normal;
     letter-spacing: 0.01rem;
     line-height: 1rem;
-    max-width: 500px;
+    max-width: 600px;
 
     .unlisted-contact & {
       color: var(--yellow-10);
       height: fit-content;
     }
 
-    & a, a:visited {
+    & a,
+    a:visited {
       font-family: "Roobert-medium", Helvetica;
       font-weight: 400;
       text-decoration: none;
@@ -505,7 +521,7 @@
   p.keywords {
     margin: 0;
     padding: 0;
-    color: var(--witch);
+    color: var(--sandstone);
     font-family: "Roobert-Regular", Helvetica;
     font-size: 12px;
     /* font-style: italic; */

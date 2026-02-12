@@ -88,9 +88,9 @@
    color: black;
 
    .pull-quote & {
-      color: var(--yellow-10);
-      font-family: Roobert-medium, Helvetica;
-      text-decoration: none;
+     color: var(--yellow-10);
+     font-family: Roobert-medium, Helvetica;
+     text-decoration: none;
    }
  }
 
@@ -437,6 +437,7 @@
    align-items: flex-start;
    width: 100%;
    gap: 12px;
+   justify-content: space-between;
  }
 
  .breadcrumb-banner {
@@ -779,7 +780,7 @@
    border: 0.5px solid var(--neutral-6);
    border-radius: 4px;
 
- 
+
  }
 
  .pull-quote .content {

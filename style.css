@@ -184,6 +184,10 @@ p.pop-txt {
   }
 }
 
+.pbox-main:hover {
+  background-color: var(--neutral-0);
+}
+
 .pbox2 {
   padding: 4px 8px;
   background-color: white;

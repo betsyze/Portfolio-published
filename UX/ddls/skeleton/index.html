@@ -5,8 +5,8 @@
 
     <!-- load code -->
     <script src="/modal.js"></script>
+    <link rel="stylesheet" href="/src/files/main.css">
 
-    <link rel="stylesheet" href="styles.css">
     <title>Betsy Ellison</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -131,8 +131,7 @@
                             style="width: 0px; align-self: stretch; border: 0.5px var(--neutral-10) solid"></div>
                         <div class="team">
                             <h2 class="subtitle">Collaborators</h2>
-                            <p class="copy">Internal team: 3 total UXers, support from UI, Digital Strategy, Account,
-                                Project Management.
+                            <p class="copy">UI designer, PM, agency design system team, client design system & dev teams
                             </p>
                         </div>
                         <div class="VertDiv"
@@ -146,10 +145,7 @@
                         </div>
                     </div>
                     <div class="lrg-info" style="width: 200px; min-width: 199px">
-                        <!-- <div class="client-fit" >
-                <h2 class="subtitle">Client</h2>
-                <p class="copy" >N/A</p>
-            </div> -->
+
                         <div class="horiz-line"></div>
                         <div class="middle-fit">
                             <div class="published">
@@ -161,10 +157,8 @@
                             <div class="vertical-line"></div>
                             <div class="team">
                                 <h2 class="subtitle">Collaborators</h2>
-                                <p class="copy"> FCB UX: Spyridon Alexopolous, Megan Sanders, Julia Pfatteicher,
-                                    Jennifer Bacani.
-                                    Additional support from FCB Digital Team.
-
+                                <p class="copy"> UI designer, PM, agency design system team, client design system & dev
+                                    teams
                                 </p>
                             </div>
                         </div>
@@ -182,174 +176,201 @@
 
                     <!-- study copy -->
                     <div class="cs-content">
-                        <!-- Intro -->
                         <img src="/Assets/Skeleton loader/positioning and placement.png"
                             alt="Example of a page skeleton" width="100%">
-                        <p class="copy">To demonstrate the in-depth, integrative UX research process we performed on
-                            Radiant, let's examine a single component up-close.
-                        <p class="subhead">The process:</p>
-                        <p class="copy">
-                            Radiant used an agile sprint framework.
-                            Once we handed off final design components after a sprint, our PMs could pull a cluster of
-                            new component stories from a thorough backlog. Sometimes a component existed in the 1.0
-                            design system, and
-                            initial research
-                            could reference what already existed in the system while incorporating new research and best
-                            practices. Othertimes, design system components were net new, and we started from scratch.
-                        </p>
 
-                        <p class="copy">
-                            One such example was the skeleton loader: an unusually liminal component that appears during
-                            load times.
-                        </p>
 
-                        <div class="chunk"> <img src="/Assets/ddls/divider.png" alt="decorative divider" width="30%">
+                        <!-- 01 Context & Problem -->
+                        <div class="cs-section">
+                            <h2 class="cs-section-label">Context &amp; problem</h2>
+                            <p class="copy">The Radiant Design System — built for Discover's consumer financial app —
+                                ran on an agile sprint model. After each sprint, designers handed off finalized
+                                components to developers, who pulled from a deep backlog of component stories.</p>
+                            <p class="copy">The skeleton loader was a net-new component: nothing existed in the 1.0
+                                system to reference. It's an unusually liminal object: it exists only during load
+                                states, standing in for content that isn't there yet. That invisibility makes it easy
+                                for the system to underspecify how the page will present, leading to a user closing out
+                                or dropping of the experience. The question for us as UX designers wasn't just "what
+                                does this look like," but rather a ladder of questions:</p>
+                            <ul
+                                style="list-style: none; display: flex; flex-direction: column; gap: 4px; padding-left: 16px;">
+                                <li class="copy">— when it appears and disappears</li>
+                                <li class="copy">— how it replicates loaded content</li>
+                                <li class="copy">— how it moves and animates while present</li>
+                                <li class="copy">— whether accessibility guidelines should apply to something that's
+                                    never truly interactive</li>
+                            </ul>
+                            <p class="copy">This meant a deeper investigation into API calls, accessibility
+                                requirements, and comically existential questions regarding how one designates the
+                                usability for a transient, fundamentally disabling event.</p>
                         </div>
 
-                        <!-- <img src="/Assets/Toolkit/UX Annotation.png" alt="Img" width="100%"> -->
+                        <div class="divider-line"></div>
 
-
-                        <h2>Getting started</h2>
-
-                        <!-- Chunk: phase 1 -->
-                        <div class="chunk">
-                            <h2>Research</h2>
-                            <p class="copy">The first stage of component design is always field research. How do other
-                                web apps
-                                leverage skeleton loaders (aka Ghost Chip, or just “Skeleton”)? During comparative
-                                research,
-                                I started to identify distinctions between when we might use a skeleton loader versus
-                                when a spinner
-                                could suffice</p>
-                            <p class="subhead">Big 4 Design Systems</p>
-                            <p class="copy">
-                                The "Big 4" design systems (Material, Fluent, Carbon, and Apple Human Interface
-                                Guidelines) are a helpful jumping off point, as leaders in the industry that have
-                                already done a great deal of research and testing on best practices for skeleton loader
-                                design and implementation.
-                                make varied use of skeleton loaders.
-
+                        <!-- 02 My Role -->
+                        <div class="cs-section">
+                            <h2 class="cs-section-label">My role</h2>
+                            <p class="copy">I owned this component end-to-end — the first design story I led
+                                independently at FCB. My responsibilities included:</p>
+                            <ul
+                                style="list-style: none; display: flex; flex-direction: column; gap: 6px; padding-left: 16px;">
+                                <li class="copy">— Conducting comparative research across the Big 4 design systems
+                                    (Material, Fluent, Carbon, Apple HIG) and synthesizing findings into actionable
+                                    recommendations</li>
+                                <li class="copy">— Defining specific use cases in the Discover app architecture</li>
+                                <li class="copy">— Writing animation and color contrast recommendations to hand to the
+                                    UI designer</li>
+                                <li class="copy">— Reviewing UI designer's component build and calling out any
+                                    digression from recommended behavior</li>
+                                <li class="copy">— Authoring the full accessibility documentation on the approved design
+                                </li>
+                                <li class="copy">— Presenting to our client, Discover's internal design system team,
+                                    across our three-stage review process: research check-in, design review, and final
+                                    guidance recommendations</li>
+                            </ul>
+                            <p class="copy">Key research items included <strong>use case definition</strong>,
+                                <strong>animation direction</strong> (shape and timing), <strong>color contrast &amp;
+                                    WCAG ambiguity</strong>, and <strong>progressive population vs. batch swap</strong>:
+                                do skeleton items transform into page content all at once, or as the API calls in each
+                                item?
                             </p>
-                            <p class="copy">I got smart on skeletons by jotting down notes and observations from public
-                                documentation by leaders in the field.</p>
-                            <div class="spacer-small"></div>
-                            <div class="two-up">
-                                <img src="/Assets/Skeleton loader/Example comp research.png"
-                                    alt=" Screenshot of refined notes from comparative Big 4 research" width="100%">
+                        </div>
+
+                        <div class="divider-line"></div>
+
+                        <!-- 03 Research Insights -->
+                        <div class="cs-section">
+                            <h2 class="cs-section-label">Research insights</h2>
+                            <p class="copy">The "Big 4" design systems (Material, Fluent, Carbon, and Apple Human
+                                Interface Guidelines) are a helpful jumping-off point. I got smart on skeletons by
+                                jotting down notes and observations from public documentation by leaders in the field,
+                                then drilled down to specific questions via published UX research and accessibility
+                                guidance.</p>
+
+
+                            <div class="subsection">
+                                <h3>Use case definition</h3>
+                                <p class="copy"><em>When and why is a skeleton better than a spinner?</em></p>
+                                <p class="copy">Based on existing app architecture, skeleton loaders are appropriate for
+                                    loading full pages of dynamic content between experiences: the AC Home landing page,
+                                    and
+                                    transitions into features like Spend Analyzer. Not every loading state warrants one
+                                    —
+                                    simple spinners suffice for smaller, scoped loads.</p>
                             </div>
-                            <p class="subhead">Client use case:</p>
-                            <p class="copy">Based on industry expectations and existing app architecture, I determined
-                                this component is needed for loading full pages of dynamic
-                                content in between experiences: for instance, initially loading the app’s landing page
-                                (AC Home), or switching from AC Home into the budget-tracking feature Spend Analyzer.
-                            </p>
-                            <div class="spacer-reg"></div>
-                            <img src="/Assets/Skeleton loader/Use case.png" alt="Example of skeleton loader use case"
-                                width="100%">
-
-                            <p class="subhead">Pulse or wave?</p>
-                            <p class="copy">Many major design systems animate their skeleton loader via pulse or wave.
-                                In fact, some design systems, like Fluent, account for both. We wanted to make a single
-                                recommendation for a component that would have limited usage.</p>
-                            <p class="copy">
 
 
-                                <a href="https://uxdesign.cc/what-you-should-know-about-skeleton-screens-a820c45a571a">In
-                                    a study conducted by UX Collective, </a>68% of users guessed that a wave
-                                animation
-                                represented a shorter time duration than
-                                a pulse, and than a left to right animation was brief than right to left
-                                This may be because our natural eye patterns (most) languages are written
-                                left-right, top-down, leading to less cognitive load
-                                <br><br>
-                                In the same study, UX Collective also recommends that as soon as content is
-                                available, skeleton should
-                                populate,
-                                rather than swap the skeleton loader for content once all page content is loaded.
-                                This diverges from Carbon's recommended pattern of keeping the skeleton loader in
-                                place until all content is loaded.
-                            </p>
-                            <div class="spacer-small"></div>
+                            <div class="subsection">
+                                <h3>Animation direction</h3>
+                                <p class="copy"><em>Should the skeleton be animated? What should that look like?</em>
+                                </p>
+                                <p class="copy">Per UX Collective research, 68% of users perceived a wave animation as
+                                    representing a shorter wait time than a pulse. Left-to-right wave was perceived as
+                                    faster than right-to-left — likely because it mirrors natural reading direction,
+                                    reducing cognitive load.</p>
+                            </div>
+
+
+                            <div class="subsection">
+                                <h3>Color contrast &amp; WCAG ambiguity</h3>
+                                <p class="copy"><em>Do visibility laws apply to unloaded content?</em></p>
+                                <p class="copy"><a href="https://www.w3.org/TR/WCAG21/#non-text-contrast"
+                                        class="cs-link">WCAG 1.4.11</a> (Non-text contrast) requires a 3:1 ratio for UI
+                                    components and states. However, the skeleton loader occupies a grey zone: the
+                                    overwhelming majority of major apps and design systems use ratios below 3:1.
+                                    Accessibility blogger <a
+                                        href="https://adrianroselli.com/2020/11/more-accessible-skeletons.html"
+                                        class="cs-link">Adrian Roselli</a> argues most skeletons are technically
+                                    inaccessible, but no consensus exists on enforcement.</p>
+                            </div>
+
+
+                            <div class="subsection">
+                                <h3>Progressive population vs. batch swap</h3>
+                                <p class="copy"><em>Does the skeleton load in as the API calls in each object? Or does
+                                        the
+                                        full page appear at once?</em></p>
+                                <p class="copy">UX Collective research recommends progressively populating skeleton
+                                    slots as
+                                    content becomes available, rather than holding the full skeleton until all content
+                                    loads
+                                    — diverging from Carbon's "hold until complete" pattern.</p>
+                            </div>
+
+                        </div>
+
+                        <div class="chunk">
+                            <img src="/Assets/Skeleton loader/Example comp research.png"
+                                alt="Screenshot of refined notes from comparative Big 4 research" width="100%">
+                        </div>
+
+                        <div class="divider-line"></div>
+
+                        <!-- 04 Design Decisions -->
+                        <div class="cs-section">
+                            <h2 class="cs-section-label">Design decisions</h2>
+
+                            <h3>Wave over pulse</h3>
+                            <p class="copy">Wave animation, moving left-to-right and top-to-bottom. Research showed
+                                users perceive wave animations as faster. Matching reading direction (LTR) reduces
+                                cognitive friction. We made a single animation recommendation rather than accounting for
+                                both, given the component's limited usage.</p>
+
                             <div class="pull-quote">
                                 <p class="subhead">Our motion recommendation</p>
-                                <p class="copy">
-                                    We determined that a wave animation would be the best fit for our skeleton loader.
-                                    I advised Pete, our UI designer, that the loader should animate as a wave from
-                                    top-to-bottom, left-to-right, using grayscale geometry.
-
-                                </p>
+                                <p class="copy">A wave animation, animating top-to-bottom and left-to-right, using
+                                    grayscale geometry only.</p>
                             </div>
+
                             <img src="/Assets/Skeleton loader/Wave animation visual.png"
                                 alt="Example of a wave animation skeleton loader" width="100%">
 
-                            <p class="subhead">Color contrast</p>
-                            <p class="copy">Our research also accounted for potential accessibility questions.</p>
-                            <p class="copy">There is current ambiguity surrounding whether skeleton loaders are
-                                considered active or
-                                <a href="https://www.w3.org/TR/WCAG21/#contrast-minimum">inactive</a> components, and
-                                therefore whether or not they are required to meet a certain
-                                contrast requirement.
-                            </p>
+                            <h3>Below 3:1 contrast — intentionally</h3>
+                            <p class="copy">Skeleton colors do not meet WCAG 1.4.11's 3:1 contrast requirement for
+                                graphical components. A skeleton that meets contrast requirements risks being mistaken
+                                for loaded, interactive content — creating worse usability than the accessibility
+                                compromise. We categorized it as an inactive component. This was a defensible,
+                                documented decision, not an oversight.</p>
+
+                            <div class="pull-quote">
+                                <p class="subhead">Our color contrast recommendation</p>
+                                <p class="copy">Harsh contrast for an inactive skeleton goes against user expectations.
+                                    The skeleton may be mistaken for loaded and thus interactive content. Therefore, the
+                                    skeleton loader can be considered an inactive component, and color styles do not
+                                    need to adhere to visual accessibility guidelines.</p>
+                            </div>
+
                             <img src="/Assets/Skeleton loader/color styles.png"
-                                alt="Visualization of skeleton loader color styles from Radiant Design library, with illustration of potential accessibility issues"
+                                alt="Visualization of skeleton loader color styles from Radiant Design library"
                                 width="100%">
 
-                            <p class="copy"><span style="color: var(--neutral-10); font-family: Roobert-medium;">Field
-                                    notes: </span>The overwhelming majority of skeleton loaders in other design systems
-                                have a ratio below 3:1,
-                                which does not meet the requirements for graphical elements.
-                                UX blogger <a
-                                    href="https://adrianroselli.com/2020/11/more-accessible-skeletons.html">Adrian
-                                    Roselli</a> argues that most skeleton’s are inaccessible as they
-                                convey a loading state of active components </p>
-                            <p class="copy">
-                                <a href="https://www.w3.org/TR/WCAG21/#non-text-contrast">WCAG Guidance 1.4.11</a>
-                                (Non-text contrast):<span style="color: #72726b;">
-                                    <i>
-                                        “Visual information required to identify user
-                                        interface
-                                        components and states...[must have] a color contrast ratio of at least 3:1”
+                            <h3>Progressive population (not batch swap)</h3>
+                            <p class="copy">Skeleton slots fill as content becomes available, not all at once. This
+                                aligns with UX Collective findings, and it feels faster. We spoke with developer
+                                stakeholders on the client end about their API, and confirmed the app calls in content
+                                progressively. We diverged from Carbon deliberately here, citing the research basis.</p>
 
-                                    </i>
-                                </span>
-
-                            </p>
-                            <p class="copy">The overwhelming majority of skeleton loaders in commonly used apps and
-                                design systems have a
-                                ratio
-                                below 3:1,
-                                which does not meet the requirements for graphical elements.</p>
-                            <div class="pull-quote">
-                                <p class="subhead">Our color contrast recommendations</p>
-
-                                <p class="copy">
-                                    Harsh contrast for an inactive skeleton goes against user expectations. The skeleton
-                                    may be mistaken for
-                                    loaded and thus interactive content.
-                                    <br><br>
-                                    This is especially true if there is noticeable discrepancy from the standard set by
-                                    other apps. Therefore, the skeleton loader can be considered an inactive component,
-                                    and color styles do not need to adhere to visual accessibility guidelines.
-                                </p>
-                            </div>
+                            <h3>Grayscale geometry only</h3>
+                            <p class="copy">Our build uses neutral grayscale with no color, no text, and no iconography.
+                                The skeleton's job is to imply structure without conveying content. Color would suggest
+                                real information, which doesn't exist yet.</p>
                         </div>
 
-                        <div class="chunk"> <img src="/Assets/ddls/divider.png" alt="decorative divider" width="30%">
-                        </div>
-
-                        <!-- Chunk: build -->
                         <div class="chunk">
+                            <img src="/Assets/ddls/divider.png" alt="decorative divider" width="30%">
+                        </div>
+
+                        <!-- Build -->
+                        <div class="cs-section">
                             <h2>Build</h2>
                             <p class="subhead">Early designs</p>
-                            <p class="copy">Once we had a clear recommendation for the design of the skeleton loader,
-                                we built out the
-                                component in Figma. In accordance with our design system's guidelines, we created a
-                                document detailing the component's default state, usage, anatomy, variants, sizing,
-                                positioning, and motion. (Behavior=not relevant for this component.)</p>
-                            <p class="copy">
-                                I tag-teamed with a UI designer to initially document purely visual specifications.
-                                After client approval,
-                                I would later begin accessibility on the second-round approved design. </p>
+                            <p class="copy">Once we had a clear recommendation for the design of the skeleton loader, we
+                                built out the component in Figma. In accordance with our design system's guidelines, we
+                                created a document detailing the component's default state, usage, anatomy, variants,
+                                sizing, positioning, and motion.</p>
+                            <p class="copy">I tag-teamed with a UI designer to initially document purely visual
+                                specifications. After client approval, I would later begin accessibility documentation
+                                on the second-round approved design.</p>
                             <img src="/Assets/Skeleton loader/Anatomy and sizing.png"
                                 alt="Excerpts from the design system documentation for skeleton loader anatomy, variants and sizing"
                                 width="100%">
@@ -357,69 +378,110 @@
                                 alt="Animation of visual skeleton loader component" width="100%">
 
                             <div class="spacer-small"></div>
-                            <p class="subhead">Final Documentation</p>
-                            <img src="/Assets/Skeleton loader/final comps/1.png" alt="Final design anatomyt"
+                            <p class="subhead">Final documentation</p>
+                            <img src="/Assets/Skeleton loader/final comps/1.png" alt="Final design anatomy"
                                 width="100%">
-                            <img src="/Assets/Skeleton loader/final comps/2.png" alt="Final design anatomyt"
+                            <img src="/Assets/Skeleton loader/final comps/2.png" alt="Final design anatomy"
                                 width="100%">
-                            <img src="/Assets/Skeleton loader/final comps/3.png" alt="Final design anatomyt"
+                            <img src="/Assets/Skeleton loader/final comps/3.png" alt="Final design anatomy"
                                 width="100%">
-                            <img src="/Assets/Skeleton loader/final comps/4.png" alt="Final design anatomyt"
+                            <img src="/Assets/Skeleton loader/final comps/4.png" alt="Final design anatomy"
                                 width="100%">
-
-
-
-
-
-
-
-
-
-
                         </div>
 
-                        <div class="chunk"> <img src="/Assets/ddls/divider.png" alt="decorative divider" width="30%">
-                        </div>
-
-
-                        <!-- Chunk: Learnings -->
-                        <h2>Learnings and Takeaways</h2>
                         <div class="chunk">
-
-                            <p class="copy">Alongside my UI support, I presented three times to Ravi and Discover's
-                                internal design system team: once for research, once for R1 designs, and once for final
-                                design and accessibility documentation.
-                            </p>
-                            <p class="copy">Our design was launched and Discover developers built our skeleton loader
-                                into their official Storybook. Development began on the loader's inclusion in the app's
-                                AC Home page.
-
-                            </p>
-
-                            <p class="copy">Also, personal win: this was the first component I took ownership of, and it
-                                was a challenge. The skeleton loader diverges in several ways
-                                from traditional design system components, so I was onboarded to the Radiant Design
-                                System at the same time I was learning how and when to break it.
-                            </p>
-                            <p class="copy">Fortunately, the design system team both internally at FCB and externally at
-                                Discover was supportive of my approach. I was able to
-                                articulate my decisions and process to a degree of detail I had never before attempted,
-                                and I'm proud of what I achieved.
-                            </p>
-                            <p class="copy">After final approval, I took on 10 more component research, design, and
-                                accessibility tasks before FCB's work was paused following Discover's
-                                acquisition by Capital One. These components included a file uploader, form elements
-                                such as dropdown menus and radio buttons, content view control elements like such as
-                                tabs.</p>
-
-                            <p class="copy">For more details on the Radiant Design System, you can zoom out and read
-                                through the <a href="">Radiant Design System case study.</a></p>
-
+                            <img src="/Assets/ddls/divider.png" alt="decorative divider" width="30%">
                         </div>
-                        <img src="/Assets/Skeleton loader/final comps/storybook.png"
-                            alt="The underwhelming visual representation of the skeleton loader in Discover's Storybook"
-                            width="100%">
-                    </div>
+
+                        <!-- 05 Outcome -->
+                        <div class="cs-section">
+                            <p class="cs-section-label">05 — Outcome &amp; impact</p>
+
+                            <div class="outcome-table">
+                                <div class="outcome-row">
+                                    <div class="outcome-label">Shipped</div>
+                                    <div class="outcome-value">Built into Discover's official Storybook by development
+                                        team</div>
+                                </div>
+                                <div class="outcome-row">
+                                    <div class="outcome-label">Integrated</div>
+                                    <div class="outcome-value">Development began on inclusion in AC Home page</div>
+                                </div>
+                                <div class="outcome-row">
+                                    <div class="outcome-label">Stakeholder reviews</div>
+                                    <div class="outcome-value">Presented to Discover's internal design system team 3
+                                        times</div>
+                                </div>
+                                <div class="outcome-row">
+                                    <div class="outcome-label">Unlocked</div>
+                                    <div class="outcome-value">10 subsequent component tasks led after this one</div>
+                                </div>
+                            </div>
+
+                            <blockquote class="pull-quote-block">
+                                "The design system team both internally at FCB and externally at Discover was supportive
+                                of my approach. I was able to articulate my decisions and process to a degree of detail
+                                I had never before attempted."
+                            </blockquote>
+
+                            <p class="copy">The project ended when FCB's work paused following Discover's acquisition by
+                                Capital One. Subsequent components I researched and designed included a file uploader,
+                                dropdown menus, radio buttons, and tab/view control elements. Unfortunately, we saw the
+                                Discover app sunset before these could launch.</p>
+
+                            <img src="/Assets/Skeleton loader/final comps/storybook.png"
+                                alt="The skeleton loader in Discover's Storybook" width="100%">
+                        </div>
+
+                        <div class="divider-line"></div>
+
+                        <!-- 06 Learnings -->
+                        <div class="cs-section">
+                            <p class="cs-section-label">06 — Learnings</p>
+                            <p class="copy">The skeleton loader is a rule-breaker by nature. It lives outside the normal
+                                component lifecycle and doesn't cleanly fit design system conventions. Being onboarded
+                                to the system at the same time I was learning when to deviate from it was both real
+                                challenge and real education.</p>
+                            <p class="copy">Accessibility ambiguity requires documented, reasoned decisions — not just
+                                compliance or avoidance. Writing out the rationale for the contrast call made it
+                                defensible, not just excusable.</p>
+                            <p class="copy">Comparative research is most useful when it surfaces genuine disagreement
+                                between systems (like Carbon vs. UX Collective on progressive population) — those forks
+                                are where design judgment actually lives.</p>
+                            <p class="copy">Next iteration: explore reduced-motion alternatives to the wave animation
+                                for users with vestibular disorders, and establish clearer thresholds for skeleton vs.
+                                spinner selection in the component's usage guidance.</p>
+                        </div>
+
+                        <!-- Additional references -->
+                        <div class="link-table"
+                            style="border-top: 0.5px solid var(--neutral-6); padding-top: var(--space-8);">
+                            <p class="copy" style="padding-bottom: var(--space-8); color: var(--sandstone);">Additional
+                                references:</p>
+                            <div class="row">
+                                <p class="num">1.</p>
+                                <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" class="cs-link">
+                                    <p class="link-text">WCAG 2 Accessibility Guidelines</p>
+                                </a>
+                            </div>
+                            <div class="row">
+                                <p class="num">2.</p>
+                                <a href="https://uxdesign.cc/what-you-should-know-about-skeleton-screens-a820c45a571a"
+                                    class="cs-link">
+                                    <p class="link-text">UX Collective on skeleton loaders</p>
+                                </a>
+                            </div>
+                            <div class="row">
+                                <p class="num">3.</p>
+                                <a href="https://adrianroselli.com/2020/11/more-accessible-skeletons.html"
+                                    class="cs-link">
+                                    <p class="link-text">Adrian Roselli on accessible skeletons</p>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div><!-- /cs-content -->
+
 
 
 

@@ -1,0 +1,86 @@
+/* ============================================================
+   reset.css
+   Minimal global reset: zeroes out browser defaults on
+   structural elements and sets the page background.
+   ============================================================ */
+
+html {
+    background-color: var(--desert-wind);
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: var(--desert-wind);
+}
+
+/* Homepage only: dithered texture overlay */
+body.home {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(/Assets/dith_Bg3.png);
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* About page: constrain to reading column */
+main.about {
+    max-width: 780px;
+}
+
+a,
+p,
+h1,
+h3,
+h4,
+h5 {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: "Roobert-Regular", Helvetica;
+}
+
+a {
+    color: var(--neutral-10);
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: url(/Assets/hover2.png), pointer;
+}
+
+a:visited {
+    color: var(--neutral-10);
+    text-decoration: none;
+}
+
+p {
+    font-size: var(--font-size-m);
+}
+
+button {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    background: none;
+    color: var(--sapphire);
+    font-family: "Roobert-Regular", Helvetica;
+    font-size: var(--font-size-m);
+    font-weight: 500;
+    line-height: normal;
+}

@@ -1,0 +1,69 @@
+/* ============================================================
+   tokens.css
+   Design tokens: fonts, color palette, type scale.
+   All custom properties live here.
+   ============================================================ */
+
+
+/* ── Fonts ──────────────────────────────────────────────────── */
+
+@import url('https://rawcdn.githack.com/betsyze/Roobert/ade264a03965d7d4cf3f21c63377455ee49b9489/Roobert.css');
+
+@font-face {
+    font-family: "Roobert-Regular";
+    font-style: normal;
+    font-weight: 400;
+    src: url('/Assets/Fonts/Roobert/Roobert-Regular.otf') format("opentype");
+}
+
+@font-face {
+    font-family: "Roobert-Medium";
+    font-style: normal;
+    font-weight: 500;
+    src: url('/Assets/Fonts/Roobert/Roobert-Medium.otf') format("opentype");
+}
+
+@font-face {
+    font-family: "Roobert-Semibold";
+    font-style: normal;
+    font-weight: 700;
+    src: url('/Assets/Fonts/Roobert/Roobert-SemiBold.otf') format("opentype");
+}
+
+
+/* ── Color tokens ───────────────────────────────────────────── */
+
+:root {
+    /* neutral */
+    --desert-wind: #faf9f5;
+    --neutral-0: #F7F4EB;
+    --neutral-2: #F1EDDD;
+    --neutral-6: #D8D2BA;
+    --neutral-8: #9B9064;
+    --neutral-10: #766830;
+
+    /* yellow */
+    --yellow-2: #FFF1C2;
+    --yellow-primary: #FFE79B;
+    --yellow-6: #E3CA7B;
+    --yellow-8: #9C812E;
+    --yellow-10: #715600;
+
+    /* blue */
+    --sapphire: #5981FA;
+    --blue-6: #4769D0;
+    --blue-8: #1B2E68;
+    --blue-10: #010B2A;
+
+    /* named semantic */
+    --duval: #131A1C;
+    --sandstone: #787676;
+    --witch: #585959;
+    --rock: #83826b;
+
+    /* type scale */
+    --font-size-xl: 2rem;
+    --font-size-l: 1.2rem;
+    --font-size-m: 12px;
+    --font-size-body: 14px;
+}

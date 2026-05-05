@@ -1,0 +1,13 @@
+/* ============================================================
+   main.css — entry point for betsyje.com styles
+   Import order matters: tokens first (defines custom
+   properties), then reset, then type, layout, components,
+   and utilities last.
+   ============================================================ */
+
+@import url('tokens.css');      /* custom properties & fonts  */
+@import url('reset.css');       /* element-level resets       */
+@import url('base.css');        /* typography & text roles    */
+@import url('layout.css');      /* page-level layout          */
+@import url('components.css');  /* UI components              */
+@import url('utilities.css');   /* spacers, helpers, @media   */

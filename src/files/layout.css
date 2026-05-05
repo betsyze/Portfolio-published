@@ -1,0 +1,783 @@
+/* ============================================================
+   layout.css
+   Page-level layout containers: homepage, listing pages,
+   case study pages, and about page.
+   ============================================================ */
+
+
+/* ── Homepage layout ────────────────────────────────────────── */
+
+.homepage-new {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    height: 100%;
+    overflow: hidden;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+}
+
+/* Outer hero container: bio card + two work cards in a row */
+.homepage-new .hero-box {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    width: 100%;
+    background-color: #ffffff;
+    border: 0.5px solid var(--duval);
+    position: relative;
+}
+
+/* Bio card */
+.homepage-new .biocard {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 28px 32px;
+    width: 100%;
+    min-width: 430px;
+    height: auto;
+    align-items: flex-start;
+    align-self: stretch;
+    background-color: var(--neutral-0);
+    border: 0.5px dashed var(--duval);
+    position: relative;
+}
+
+.homepage-new .innerbiostack {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.homepage-new .frame-47-ZlUoao {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+    align-self: stretch;
+    max-width: 300px;
+}
+
+.homepage-new .frame-60-7VwDpr {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: stretch;
+    width: 100%;
+}
+
+.homepage-new .title-mygWwm {
+    color: var(--duval);
+    font-family: "Roobert-Medium", Helvetica;
+    font-size: var(--font-size-xl);
+    font-weight: 500;
+    line-height: 1.3;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+    margin-top: -1px;
+    position: relative;
+}
+
+.homepage-new .intro-headline {
+    font-family: "Roobert-Regular", Helvetica, sans-serif;
+    font-size: var(--font-size-m);
+    line-height: 1.3rem;
+    letter-spacing: 0em;
+    text-align: left;
+    align-self: stretch;
+    position: relative;
+}
+
+.homepage-new .divider {
+    display: block;
+    align-self: stretch;
+    width: 100%;
+    height: 1px;
+    border-bottom: 0.5px dashed var(--neutral-10);
+    margin-bottom: -0.5px;
+    position: relative;
+}
+
+/* Colophon */
+.homepage-new .colo-ZlUoao {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    height: 100%;
+    align-items: flex-start;
+    align-self: stretch;
+    position: relative;
+}
+
+.homepage-new .colophon-header-TxuAYa {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+    align-self: stretch;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.homepage-new .colophon-JgoTnY {
+    flex: 1;
+    color: var(--duval);
+    font-family: "Roobert-Medium", Helvetica;
+    font-size: var(--font-size-m);
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    line-height: normal;
+    text-align: left;
+    margin-top: -1px;
+    position: relative;
+}
+
+.homepage-new .colo-container {
+    flex: 1;
+    font-family: "Roobert-Regular", Helvetica;
+    font-size: var(--font-size-m);
+    letter-spacing: 0em;
+    line-height: 1.6;
+    text-align: left;
+    min-width: 75%;
+    max-width: 350px;
+    position: relative;
+}
+
+.homepage-new .span1-RxFDl0 {
+    color: var(--duval);
+    font-family: "Roobert-Regular", Helvetica;
+    font-size: var(--font-size-m);
+    text-decoration: underline;
+}
+
+.homepage-new .frame-56 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    align-items: flex-start;
+    align-self: stretch;
+    justify-content: center;
+    overflow: hidden;
+    padding: 8px 0px;
+    position: relative;
+}
+
+/* Condensed colophon for small screens */
+.smlColo {
+    display: none;
+    padding: 12px;
+    width: 90%;
+
+    & p {
+        font-family: "Roobert-Regular", Helvetica;
+        color: var(--witch);
+        letter-spacing: 0em;
+        line-height: 1.3;
+        font-size: var(--font-size-m);
+    }
+}
+
+.homepage-new .bio-img-ZlUoao {
+    height: 100%;
+    width: 84px;
+    position: relative;
+}
+
+.homepage-new .you-can-also-find-me-YdUwlW {
+    text-align: left;
+    letter-spacing: 0em;
+    line-height: normal;
+    position: relative;
+}
+
+.homepage-new .span1-uOQtAz,
+.homepage-new .span3-uOQtAz,
+.homepage-new .span5-uOQtAz {
+    text-decoration: underline;
+    color: black;
+}
+
+/* Work cards */
+.homepage-new .ux-card,
+.homepage-new .art-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    gap: 10px;
+    overflow: hidden;
+    padding: 40px;
+    position: relative;
+    width: 100%;
+    min-width: 305px;
+    background-color: var(--neutral-0);
+    border: 0.5px solid var(--duval);
+}
+
+.homepage-new .ux-card:hover,
+.homepage-new .art-card:hover {
+    background-color: #ffffff;
+}
+
+.homepage-new .experience-design-8AEMPk,
+.homepage-new .visual-art-1p5TjO {
+    color: var(--duval);
+    font-family: "Roobert-Medium", Helvetica;
+    font-size: var(--font-size-l);
+    font-weight: 500;
+    letter-spacing: 0em;
+    line-height: normal;
+    text-align: left;
+    width: fit-content;
+    margin-top: -1px;
+    position: relative;
+}
+
+.homepage-new .anim6-UZvTVx,
+.homepage-new .frame-74-pvt6x4 {
+    height: 72px;
+    width: 72px;
+    position: relative;
+}
+
+
+/* ── Listing pages (UX, illo, reading) ──────────────────────── */
+
+/* Page wrapper */
+.homepage-ux {
+    align-items: center;
+    justify-content: center;
+    background-color: var(--desert-wind);
+    display: flex;
+    min-width: 200px;
+    height: 100%;
+    padding: 40px 40px 20px 40px;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+}
+
+.uxtitle-fit {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+    padding: 8px 0px;
+}
+
+.pg-title {
+    width: 100%;
+    height: 100%;
+    padding: 18px 0px 24px 0px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    display: inline-flex;
+    background-color: var(--desert-wind);
+}
+
+/* Dashed subhead divider */
+.h2box {
+    width: 100%;
+    max-width: 500px;
+    border-bottom: 0.5px dashed var(--sandstone);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 0px 8px 0px;
+}
+
+/* Project list */
+.project-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    min-width: 460px;
+    gap: 12px;
+
+    & img {
+        width: 100%;
+    }
+}
+
+.project-item {
+    display: flex;
+    width: 100%;
+    max-width: 720px;
+    min-width: 360px;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+/* Default img-container: single image with border (UX/RRR) */
+.img-container {
+    width: 100%;
+    min-width: 100%;
+    max-width: 480px;
+    height: 75%;
+    flex-shrink: 0;
+    position: relative;
+    border: 0.5px solid var(--rock);
+}
+
+/* Illo variant: dual images side by side, no outer border */
+.img-container.dual {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: none;
+}
+
+.row-image {
+    width: 48%;
+    border: 0.5px solid var(--witch);
+    display: flex;
+    position: relative;
+}
+
+.project-txt-container {
+    display: flex;
+    min-width: 320px;
+    max-width: fit-content;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.project-date-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+}
+
+.table-row {
+    display: flex;
+    align-items: flex-end;
+    gap: 53px;
+    align-self: stretch;
+    min-width: 720px;
+}
+
+.end-of-row {
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* More-links panel */
+.link-wrapper {
+    padding: 8px;
+}
+
+.link-cols {
+    width: 50%;
+}
+
+.links-divider {
+    align-self: stretch;
+    border-left: 0.5px solid var(--sandstone);
+}
+
+.more-links {
+    border: 0.5px solid var(--neutral-10);
+    border-radius: 2px;
+    background-color: var(--neutral-0);
+    padding: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 12px;
+    width: 75%;
+    min-width: 220px;
+    max-width: 720px;
+}
+
+
+/* ── About page ─────────────────────────────────────────────── */
+
+/* Horizontal teaser card: image + text side by side */
+.h2box-horiz {
+    width: 100%;
+    max-width: 750px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 18px;
+    gap: 3%;
+    margin: 10px;
+    align-self: center;
+    justify-content: flex-start;
+    background-color: var(--neutral-0);
+    border: 0.5px solid var(--neutral-10);
+
+    & p,
+    & h2 {
+        max-width: 600px;
+        color: var(--neutral-10);
+        font-family: "Roobert-Regular", Helvetica;
+    }
+
+    & p {
+        padding: 0;
+        margin: 0;
+        font-size: var(--font-size-body);
+        text-wrap: balance;
+    }
+
+    & a {
+        background-color: var(--neutral-0);
+        border: none;
+
+        &:hover {
+            background-color: var(--neutral-2);
+            border: 0.5px solid var(--neutral-6);
+        }
+    }
+
+    & .link-button {
+        width: 100px;
+        text-align: center;
+        background-color: var(--neutral-0);
+    }
+
+    & .pop-txt {
+        width: 100%;
+    }
+}
+
+/* Vertical text stack */
+.vert {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    gap: 10px;
+
+    & h2 {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        text-align: left;
+    }
+}
+
+/* Image + caption pairing */
+.img-caption-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    width: 40%;
+
+    & p {
+        font-size: 10px;
+    }
+}
+
+
+/* ── Case study pages ───────────────────────────────────────── */
+
+/* Page wrapper */
+.page {
+    align-items: flex-start;
+    background-color: var(--desert-wind);
+    display: flex;
+    padding: 40px 40px 20px 40px;
+    flex-direction: column;
+}
+
+.pg-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    align-self: stretch;
+}
+
+/* Metadata info box */
+.cs-body {
+    display: flex;
+    padding: 24px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+}
+
+.cs-context {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 12px;
+    justify-content: space-between;
+}
+
+/* Three responsive info box size variants */
+.sml-info {
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+    gap: 10px;
+}
+
+.med-info {
+    display: flex;
+    max-height: 140px;
+    padding: 8px 0px;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+}
+
+.med-info .client-fit,
+.med-info .published,
+.med-info .team {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+}
+
+.med-info .keyword-fit {
+    display: flex;
+    min-width: 75px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    flex: 1 0 0;
+}
+
+.med-info h2.subtitle,
+.med-info p.copy {
+    margin: 0;
+    padding: 0;
+    font-family: "Roobert-Regular", Helvetica;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.6px;
+}
+
+.med-info h2.subtitle {
+    color: var(--neutral-10);
+    text-align: center;
+}
+
+.med-info p.copy {
+    color: black;
+}
+
+.lrg-info {
+    display: flex;
+    width: 200px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.lrg-info .client-fit,
+.lrg-info .keyword-fit {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+
+.lrg-info .middle-fit {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    align-self: stretch;
+}
+
+.lrg-info .middle-fit .published,
+.lrg-info .middle-fit .team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+.lrg-info h2.subtitle,
+.lrg-info p.copy {
+    margin: 0;
+    padding: 0;
+    font-family: "Roobert-Regular", Helvetica;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+}
+
+.lrg-info h2.subtitle {
+    color: var(--neutral-10);
+}
+
+.lrg-info p.copy {
+    color: black;
+    letter-spacing: -0.6px;
+    max-width: 180px;
+}
+
+/* Content body */
+.cs-content {
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+    padding-top: 12px;
+}
+
+.cs-section {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    align-self: stretch;
+
+    & .subsection {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
+        align-self: stretch;
+    }
+}
+
+
+
+.cs-content p.copy {
+    margin: 0;
+    padding: 0;
+    color: #000;
+    font-family: "Roobert-Regular", Helvetica;
+    font-size: var(--font-size-body);
+    font-weight: 400;
+    letter-spacing: 0.01rem;
+    line-height: 1rem;
+    width: 100%;
+
+    .pull-quote & {
+        color: var(--neutral-10);
+    }
+}
+
+.cs-content span.bold {
+    font-weight: 600;
+}
+
+.chunk {
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.two-up {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 12px;
+}
+
+.pull-quote {
+    display: flex;
+    width: 100%;
+    min-width: 200px;
+    padding: 12px;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+    background-color: var(--neutral-0);
+    color: var(--neutral-10);
+    border: 0.5px solid var(--neutral-6);
+    border-radius: 4px;
+
+    & a {
+        color: var(--yellow-10);
+        font-family: "Roobert-Medium", Helvetica;
+        text-decoration: none;
+    }
+}
+
+.pull-quote .content {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+/* Footnote / reference link table */
+.link-table {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    max-width: 190px;
+    min-width: 90px;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 8px;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+.link-table .row {
+    display: flex;
+    width: 100%;
+    max-width: 190px;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.link-table .row p.num,
+.link-table .row p.link-text {
+    padding: 0;
+    margin: 0;
+    color: #000;
+    font-family: "Roobert-Regular", Helvetica;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.6px;
+}
+
+.link-table .row p.link-text {
+    text-align: left;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-underline-position: from-font;
+}

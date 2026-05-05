@@ -1,0 +1,425 @@
+/* ============================================================
+   components.css
+   Self-contained UI components: header, navigation (breadcrumb
+   & popover), footer, badges, modal, dividers, cards, and
+   contact/link-button components.
+   ============================================================ */
+
+
+/* ── Header ─────────────────────────────────────────────────── */
+
+.header-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.bw-icons-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-face {
+    width: 48px;
+    height: 48px;
+}
+
+.header-grid {
+    width: 36px;
+    height: 36px;
+}
+
+.header-blob {
+    width: 36px;
+    height: 36px;
+}
+
+/* Animated icon swap: static image fades out on hover to reveal GIF */
+.img-fit {
+    height: 72px;
+    width: 72px;
+    position: relative;
+}
+
+.UX-gif {
+    display: none;
+}
+
+.UX-static,
+.art-static {
+    position: absolute;
+    background: white;
+}
+
+/* Header nav icon hover */
+.header-blob:hover .art-static,
+.header-grid:hover .UX-static {
+    opacity: 0;
+}
+
+/* Homepage card hover — scoped so it doesn't fire on nav icons */
+.homepage-new .art-card:hover .art-static,
+.homepage-new .ux-card:hover .UX-static {
+    opacity: 0;
+}
+
+
+/* ── Dividers ───────────────────────────────────────────────── */
+
+.divider-fit {
+    display: flex;
+    align-items: flex-start;
+    gap: 1px;
+    align-self: stretch;
+}
+
+.divider-style {
+    height: 0px;
+    align-self: stretch;
+}
+
+.divider-line {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    width: 100%;
+    border-top: 0.5px dashed var(--duval);
+}
+
+.divider-vert {
+    width: 0;
+    height: 100%;
+}
+
+.vertical-line {
+    border-left: 0.5px solid var(--neutral-10);
+    height: 50px;
+}
+
+.horiz-line {
+    border-bottom: 0.5px solid var(--neutral-10);
+    width: 100%;
+}
+
+.horiz-div {
+    width: 100%;
+    height: 0px;
+    align-self: stretch;
+    border-bottom: 1px solid #000;
+}
+
+
+/* ── Navigation: breadcrumb & popover ───────────────────────── */
+
+.breadcrumb-banner {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 8px 0px;
+    gap: 4px;
+    background: var(--neutral-2);
+    font-family: "Roobert-Regular", Helvetica;
+    font-size: 12px;
+    color: var(--neutral-10);
+}
+
+.breadcrumb-banner:hover {
+    cursor: pointer;
+}
+
+.breadcrumb-banner a {
+    color: var(--neutral-10);
+}
+
+.badge {
+    display: flex;
+    justify-content: center;
+    padding: 4px 12px;
+    gap: 4px;
+    background: var(--yellow-2);
+    border: 1px solid var(--yellow-8);
+    border-radius: 12px;
+    font-family: "Roobert-Regular", Helvetica;
+    font-size: 12px;
+    color: var(--yellow-10);
+}
+
+.popover {
+    position: fixed;
+    top: 10%;
+    left: 33.33%;
+    background-color: var(--desert-wind);
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 2px 16px #999999;
+    display: none;
+    z-index: 1000;
+    min-width: 460px;
+    max-width: 500px;
+}
+
+.popover.visible {
+    display: block;
+}
+
+.pop-header {
+    display: flex;
+    padding: 4px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    border-bottom: 1px solid #999999;
+}
+
+h3.pop-txt {
+    font-family: "Roobert-Regular", Helvetica;
+    font-weight: 500;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+p.pop-txt {
+    font-family: "Roobert-Regular", Helvetica;
+    font-size: 16px;
+    color: var(--neutral-10);
+}
+
+.pbox {
+    padding: 4px 8px;
+    background-color: var(--neutral-2);
+    border: 0.5px solid var(--neutral-6);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+
+    & a {
+        color: var(--neutral-10);
+        font-family: "Roobert-Regular", Helvetica;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
+
+.pbox-main {
+    padding: 4px 8px;
+    background-color: var(--neutral-2);
+    border: 0.5px solid var(--neutral-6);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    min-width: 75%;
+    max-width: 350px;
+
+    & a {
+        color: var(--neutral-10);
+        font-family: "Roobert-Regular", Helvetica;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
+
+.pbox-main:hover {
+    background-color: var(--neutral-0);
+}
+
+.pbox2 {
+    padding: 4px 8px;
+    background-color: white;
+    border: 0.5px solid var(--neutral-6);
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    height: 36px;
+}
+
+.pop-txxt {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    font-family: "Roobert-Regular", Helvetica;
+    font-size: 12px;
+    cursor: default;
+    padding: 4px;
+
+    & a {
+        color: var(--neutral-10);
+    }
+
+    & a:hover {
+        cursor: pointer;
+    }
+}
+
+.pop-txxt:hover {
+    border: 0.5px solid var(--neutral-10);
+    border-radius: 2px;
+    padding: 12px 4px;
+}
+
+.dog {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    & p:hover {
+        border: 0;
+        padding: 4px;
+    }
+}
+
+.popover-close {
+    font-family: "Roobert-Regular", Helvetica;
+    font-size: 12px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--witch);
+}
+
+.popover-close:hover {
+    color: var(--duval);
+}
+
+
+/* ── Footer ─────────────────────────────────────────────────── */
+
+.footer {
+    display: flex;
+    width: 100%;
+    height: 43px;
+    padding: 12px 8px 0px 20px;
+    align-items: center;
+    gap: 10px;
+    position: fixed;
+    bottom: 0px;
+    background: var(--desert-wind);
+    color: var(--duval);
+    font-family: "Roobert-Regular", Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+/* ── Modal ──────────────────────────────────────────────────── */
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+    border-radius: 5px;
+}
+
+.close {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: black;
+}
+
+
+/* ── Unlisted / contact card ────────────────────────────────── */
+
+.unlisted-contact {
+    display: flex;
+    min-width: 200px;
+    max-width: fit-content;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    flex: 1 0 0;
+    align-self: flex-start;
+    padding: 8px 10px;
+    background-color: var(--neutral-0);
+    border: 0.5px solid var(--neutral-6);
+
+    & .horiz {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 4px;
+    }
+
+    & a {
+        font-family: "Roobert-Medium", Helvetica;
+        font-weight: 400;
+        text-decoration: none;
+        color: var(--yellow-10);
+    }
+}
+
+p.project-description .unlisted-contact & {
+    color: var(--yellow-10);
+    height: fit-content;
+}
+
+p.project-description {
+
+    & a,
+    & a:visited {
+        font-family: "Roobert-Medium", Helvetica;
+        font-weight: 400;
+        text-decoration: none;
+        color: var(--yellow-10);
+    }
+}
+
+
+/* ── Link button ────────────────────────────────────────────── */
+
+.link-button {
+    padding: 6px 8px;
+    background-color: var(--neutral-2);
+    border: 0.5px solid var(--neutral-6);
+    border-radius: 2px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    max-width: 350px;
+
+    & a {
+        color: var(--neutral-10);
+        font-family: "Roobert-Regular", Helvetica;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    & p {
+        margin: 0;
+    }
+}

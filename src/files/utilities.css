@@ -1,0 +1,364 @@
+/* ============================================================
+   utilities.css
+   Spacers, icon sizing, visual placeholder blocks, and all
+   media queries (collected here so breakpoints are in one
+   place rather than scattered across files).
+   ============================================================ */
+
+
+/* ── Spacers ────────────────────────────────────────────────── */
+
+.spacer-mini {
+    height: 4px;
+}
+
+.spacer {
+    height: 8px;
+}
+
+.spacer-reg {
+    height: 16px;
+    width: 100%;
+}
+
+.spacer-huge {
+    height: 48px;
+    width: 100%;
+}
+
+.filler {
+    height: 100px;
+    width: 200px;
+}
+
+
+/* ── Visual placeholder / debug blocks ──────────────────────── */
+
+/* ds visual placeholder blocks */
+.ds {
+    width: 100%;
+    height: 200px;
+}
+
+.ds-sml {
+    width: 100%;
+    height: 48px;
+}
+
+.ds2 {
+    width: 100%;
+    height: 100px;
+}
+
+
+/* ── Icon sizing ────────────────────────────────────────────── */
+
+.icon-fit {
+    width: 18px;
+    height: 18px;
+}
+
+
+/* ── Media queries ──────────────────────────────────────────── */
+
+/* Large: ≥ 1200px */
+@media screen and (min-width: 1200px) {
+    :root {
+        --font-size-l: 1.4rem;
+    }
+
+    .homepage-new .biocard {
+        max-width: 150%;
+    }
+
+    .homepage-new .frame-47-ZlUoao {
+        max-width: 80%;
+    }
+
+    .homepage-new .colo-container {
+        min-width: 80%;
+    }
+
+    .homepage-new .intro-headline {
+        font-size: var(--font-size-m);
+        line-height: 1.6em;
+    }
+}
+
+/* Medium: ≥ 800px — homepage hero height */
+@media (min-width: 800px) {
+    .homepage-new .hero-box {
+        height: 600px;
+        min-width: 100%;
+    }
+}
+
+/* Large: ≥ 790px — case study layout */
+@media (min-width: 790px) {
+    .cs-body {
+        padding: 16px;
+    }
+
+    .cs-context {
+        flex-direction: row;
+        gap: 36px;
+        align-self: center;
+    }
+
+    .sml-info {
+        display: none;
+    }
+
+    .med-info {
+        display: none;
+    }
+
+    .lrg-info {
+        display: block;
+    }
+
+    .filler {
+        display: none;
+    }
+
+    h1.title {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    .cs-content {
+        width: 100%;
+        min-width: 400px;
+    }
+}
+
+/* Small: < 860px — listing stacking */
+@media (max-width: 860px) {
+    .pg-title {
+        align-items: flex-start;
+        padding-left: 0;
+    }
+
+    .project-item {
+        flex-direction: column;
+        max-height: fit-content;
+    }
+
+    .table-row {
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
+        min-width: fit-content;
+        width: fit-content;
+    }
+}
+
+/* Tablet: < 768px — homepage stacks */
+@media (max-width: 768px) {
+    .homepage-new {
+        padding: 10px;
+    }
+
+    .homepage-new .hero-box {
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 100%;
+    }
+
+    .homepage-new .biocard {
+        height: fit-content;
+        min-width: auto;
+        align-items: stretch;
+
+        & .frame-47-ZlUoao {
+            min-width: 200px;
+            max-width: 75%;
+        }
+
+        & .colo-container {
+            min-width: 350px;
+            max-width: 75%;
+            font-size: 0.75rem;
+            line-height: 1.3em;
+        }
+
+        & .intro-headline {
+            font-size: 1rem;
+            line-height: 1.3em;
+        }
+    }
+
+    .homepage-new .ux-card,
+    .homepage-new .art-card {
+        height: fit-content;
+    }
+
+    .homepage-new .footer {
+        left: 0px;
+        padding: 12px 0px 12px 24px;
+    }
+
+    .popover {
+        left: 15%;
+        min-width: 75%;
+    }
+}
+
+/* Small: < 600px — about teaser stacks */
+@media (max-width: 600px) {
+    .h2box-horiz {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+
+        & p {
+            max-width: 100%;
+        }
+    }
+
+    .img-caption-container {
+        width: 90%;
+        align-self: center;
+    }
+}
+
+/* Small: < 480px — case study info box visibility */
+@media (max-width: 480px) {
+    .sml-info {
+        display: none;
+    }
+
+    .med-info {
+        display: none;
+    }
+
+    .lrg-info {
+        display: block;
+    }
+
+    .cs-content {
+        width: 100%;
+        min-width: 300px;
+    }
+}
+
+/* Medium: 481px – 789px — case study info box */
+@media (min-width: 481px) and (max-width: 789px) {
+    .sml-info {
+        display: none;
+    }
+
+    .lrg-info {
+        display: none;
+    }
+}
+
+/* Mobile: < 488px — homepage simplifies */
+@media (max-width: 488px) {
+    body.home {
+        background-image: none;
+        background-color: var(--neutral-0);
+    }
+
+    .homepage-new {
+        gap: 12px;
+        padding: 12px 12px 48px 12px;
+    }
+
+    .homepage-new .divider {
+        display: none;
+    }
+
+    .homepage-new .colophon-JgoTnY {
+        display: none;
+    }
+
+    .homepage-new .colo-container {
+        display: none;
+    }
+
+    .ds2 {
+        display: none;
+    }
+
+    .homepage-new .hero-box {
+        flex-direction: column;
+    }
+
+    .homepage-new .biocard {
+        min-width: 100%;
+
+        & .intro-headline {
+            font-size: var(--font-size-m);
+            line-height: 1.3em;
+        }
+    }
+
+    .homepage-new .intro-headline {
+        min-width: 200px;
+    }
+
+    .homepage-new .ux-card,
+    .homepage-new .art-card {
+        min-width: auto;
+    }
+
+    .smlColo {
+        display: block;
+    }
+
+    .homepage-new .footer {
+        left: 0px;
+        padding: 12px 0px 12px 24px;
+    }
+
+    .popover {
+        left: 8%;
+        right: 8%;
+        min-width: 75%;
+    }
+}
+
+/* Mobile: < 460px — listing and project item */
+@media (max-width: 460px) {
+    .project-box {
+        max-width: 100%;
+        min-width: 270px;
+    }
+
+    .project-item {
+        min-width: 100%;
+    }
+
+    .project-txt-container {
+        max-width: 320px;
+        min-width: 100%;
+    }
+
+    .project-box a {
+        width: 100%;
+    }
+
+    .img-container {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .pop-img-container {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .more-links {
+        flex-direction: column;
+
+        & .links-divider {
+            border-left: none;
+            border-bottom: 0.5px solid var(--neutral-10);
+        }
+    }
+
+    .link-cols {
+        width: 100%;
+    }
+}

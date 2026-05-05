@@ -1,0 +1,297 @@
+/* ============================================================
+   base.css
+   Typography defaults: heading scale, text roles, link
+   variants, and shared listing/case-study text styles.
+   ============================================================ */
+
+
+/* ── Heading scale ──────────────────────────────────────────── */
+
+/* Base heading scale applies across listing and about pages.
+   Homepage and case study pages scope overrides via parent class. */
+
+h1 {
+    color: var(--duval);
+    font-family: "Roobert-Regular", Helvetica;
+    font-size: 36px;
+    font-weight: 500;
+    word-wrap: break-word;
+    line-height: normal;
+    margin: 1px;
+}
+
+h2 {
+    color: var(--duval);
+    font-family: "Roobert-Regular", Helvetica;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: normal;
+    min-width: 118px;
+    margin: 8px;
+}
+
+h3 {
+    color: var(--duval);
+    font-family: "Roobert-medium", Helvetica;
+    font-size: 14px;
+    line-height: normal;
+    letter-spacing: 0.01rem;
+    min-width: 118px;
+    margin: 0;
+}
+
+h4 {
+    color: var(--duval);
+    font-family: "Roobert-Regular", Helvetica;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: normal;
+    min-width: 118px;
+    margin: 0;
+}
+
+
+strong {
+    font-weight: 600;
+}
+
+/* Secondary/muted h3 — sandstone tone for captions and labels */
+h3.muted {
+    color: var(--sandstone);
+    font-size: 14px;
+}
+
+/* Centered h2 variant used on illo index */
+h2.centered {
+    text-align: center;
+}
+
+h2.cs-section-label {
+    text-align: center;
+}
+
+/* Case study h1 override: large display title */
+h1.title {
+    margin: 0;
+    padding: 4px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    color: var(--neutral-10);
+    font-family: "Roobert-Regular", Helvetica;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.6px;
+}
+
+/* Case study h2: section marker, yellow, centered */
+h2.cs {
+    font-family: "Roobert-Medium", Helvetica;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.01rem;
+    line-height: 1rem;
+    margin: 0;
+    padding: 0;
+    color: var(--yellow-10);
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+h2.cs.subhead {
+    font-size: 16px;
+    text-align: left;
+}
+
+/* Case study h3: yellow label */
+h3.cs {
+    font-family: "Roobert-Medium", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.01rem;
+    line-height: 1rem;
+    margin: 0;
+    padding: 0;
+    color: var(--yellow-10);
+}
+
+/* Homepage h1: Semibold, larger scale */
+.homepage-new h1 {
+    font-family: "Roobert-Semibold", Helvetica, sans-serif;
+    font-size: var(--font-size-xl);
+    margin: 0;
+}
+
+
+/* ── Shared link and text roles ─────────────────────────────── */
+
+a.header {
+    color: var(--duval);
+    font-family: "Roobert-Regular", Helvetica;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+a.line-title {
+    color: var(--duval);
+    font-family: "Roobert-Regular", Helvetica;
+    font-size: 16px;
+    line-height: normal;
+    min-width: 225px;
+}
+
+a.line-keywords {
+    color: var(--sandstone);
+    font-family: "Roobert-Regular", Helvetica;
+    font-size: 16px;
+    font-style: italic;
+    min-width: 330px;
+    letter-spacing: 0.01rem;
+    line-height: 1rem;
+}
+
+a.disabled {
+    color: var(--witch);
+    font-family: "Roobert-Regular", Helvetica;
+    min-width: 120px;
+}
+
+a.cs-link {
+    color: var(--sapphire);
+    font-family: "Roobert-Regular", Helvetica;
+    width: 220px;
+    text-decoration: none;
+    min-width: 120px;
+}
+
+.project-item a:visited {
+    color: var(--sapphire);
+    text-decoration: none;
+}
+
+
+/* ── Shared text classes ────────────────────────────────────── */
+
+h2.project-item-title {
+    margin: 0;
+    padding: 0;
+    color: var(--neutral-10);
+    font-family: "Roobert-Medium", Helvetica;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* UX listing: project titles use sapphire */
+.ux-listing h2.project-item-title,
+.ux-listing h3.project-item-preview {
+    color: var(--sapphire);
+}
+
+h3.project-item-preview {
+    margin: 0;
+    padding: 0;
+    color: var(--neutral-10);
+    font-family: "Roobert-Regular", Helvetica;
+    font-size: 12px;
+    letter-spacing: 0.01rem;
+    line-height: 1rem;
+}
+
+p.project-description {
+    margin: 0;
+    padding: 0;
+    align-self: center;
+    color: var(--duval);
+    font-family: "Roobert-Regular", Helvetica;
+    font-weight: 200;
+    font-size: 14px;
+    letter-spacing: 0.01rem;
+    line-height: 1.2rem;
+    max-width: 780px;
+}
+
+p.keywords {
+    margin: 0;
+    padding: 0;
+    color: var(--witch);
+    font-family: "Roobert-Regular", Helvetica;
+    font-size: 12px;
+    font-weight: 200;
+    letter-spacing: 0.01rem;
+    line-height: 1rem;
+}
+
+h3.pub-title {
+    margin: 0;
+    padding: 0;
+    color: var(--witch);
+    font-family: "Roobert-Medium", Helvetica;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.01rem;
+    line-height: 1rem;
+}
+
+p.pub-date {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    color: var(--sandstone);
+    font-family: "Roobert-Regular", Helvetica;
+    font-size: 12px;
+    letter-spacing: 0.01rem;
+    line-height: 1rem;
+}
+
+p.copy {
+    margin: 0;
+    padding: 0;
+    color: var(--neutral-10);
+    font-family: "Roobert-Regular", Helvetica;
+    font-size: var(--font-size-body);
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.6px;
+}
+
+p.subhead {
+    margin: 0;
+    padding: 0;
+    color: var(--yellow-10);
+    font-family: "Roobert-Medium", Helvetica;
+    font-size: var(--font-size-body);
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.01px;
+    text-align: left;
+    width: 60%;
+}
+
+p.meet {
+    margin: 8px 0px;
+}
+
+p.bold {
+    font-weight: 600;
+}
+
+a,
+p,
+ul,
+ol li,
+span {
+    margin: 0;
+    padding: 0;
+    font-family: "Roobert-Regular", Helvetica;
+    font-size: var(--font-size-body);
+    font-weight: 400;
+    line-height: normal;
+}

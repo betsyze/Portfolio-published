@@ -53,6 +53,7 @@ h4 {
 
 strong {
     font-weight: 600;
+    color: var(--neutral-10);
 }
 
 /* Secondary/muted h3 — sandstone tone for captions and labels */

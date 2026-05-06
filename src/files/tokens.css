@@ -43,6 +43,7 @@
     --neutral-10: #766830;
 
     /* yellow */
+    --yellow-0: #FFFBEC;
     --yellow-2: #FFF1C2;
     --yellow-primary: #FFE79B;
     --yellow-6: #E3CA7B;
@@ -54,6 +55,13 @@
     --blue-6: #4769D0;
     --blue-8: #1B2E68;
     --blue-10: #010B2A;
+
+    /* green */
+    --green-2: #E9F7F1;
+    --green-primary: #C0E0C0;
+    --green-6: #7CD1AB;
+    --green-8: #1D8E5C;
+    --green-10: #0E472E;
 
     /* named semantic */
     --duval: #131A1C;

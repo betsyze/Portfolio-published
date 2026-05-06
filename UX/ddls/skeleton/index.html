@@ -131,7 +131,7 @@
                             style="width: 0px; align-self: stretch; border: 0.5px var(--neutral-10) solid"></div>
                         <div class="team">
                             <h2 class="subtitle">Collaborators</h2>
-                            <p class="copy">UI designer, PM, agency design system team, client design system & dev teams
+                            <p class="copy">UI designer, PM, agency design system team
                             </p>
                         </div>
                         <div class="VertDiv"
@@ -157,8 +157,7 @@
                             <div class="vertical-line"></div>
                             <div class="team">
                                 <h2 class="subtitle">Collaborators</h2>
-                                <p class="copy"> UI designer, PM, agency design system team, client design system & dev
-                                    teams
+                                <p class="copy"> UI designer, PM, agency design system team
                                 </p>
                             </div>
                         </div>
@@ -331,6 +330,9 @@
                                 for loaded, interactive content — creating worse usability than the accessibility
                                 compromise. We categorized it as an inactive component. This was a defensible,
                                 documented decision, not an oversight.</p>
+                            <p class="copy">Our build uses neutral grayscale with no color, no text, and no iconography.
+                                The skeleton's job is to imply structure without conveying content. Color would suggest
+                                real information, which doesn't exist yet.</p>
 
                             <div class="pull-quote">
                                 <p class="subhead">Our color contrast recommendation</p>
@@ -338,6 +340,7 @@
                                     The skeleton may be mistaken for loaded and thus interactive content. Therefore, the
                                     skeleton loader can be considered an inactive component, and color styles do not
                                     need to adhere to visual accessibility guidelines.</p>
+
                             </div>
 
                             <img src="/Assets/Skeleton loader/color styles.png"
@@ -345,15 +348,16 @@
                                 width="100%">
 
                             <h3>Progressive population (not batch swap)</h3>
-                            <p class="copy">Skeleton slots fill as content becomes available, not all at once. This
-                                aligns with UX Collective findings, and it feels faster. We spoke with developer
+                            <p class="copy"> We spoke with developer
                                 stakeholders on the client end about their API, and confirmed the app calls in content
                                 progressively. We diverged from Carbon deliberately here, citing the research basis.</p>
 
-                            <h3>Grayscale geometry only</h3>
-                            <p class="copy">Our build uses neutral grayscale with no color, no text, and no iconography.
-                                The skeleton's job is to imply structure without conveying content. Color would suggest
-                                real information, which doesn't exist yet.</p>
+                            <div class="pull-quote">
+                                <p class="subhead">Our population recommendation</p>
+                                <p class="copy">Skeleton slots fill as content becomes available, not all at once. This
+                                    aligns with UX Collective findings, and it feels faster.</p>
+                            </div>
+
                         </div>
 
                         <div class="chunk">
@@ -362,7 +366,7 @@
 
                         <!-- Build -->
                         <div class="cs-section">
-                            <h2>Build</h2>
+                            <h2 class="cs-section-label">Build</h2>
                             <p class="subhead">Early designs</p>
                             <p class="copy">Once we had a clear recommendation for the design of the skeleton loader, we
                                 built out the component in Figma. In accordance with our design system's guidelines, we
@@ -390,38 +394,49 @@
                         </div>
 
                         <div class="chunk">
-                            <img src="/Assets/ddls/divider.png" alt="decorative divider" width="30%">
+                            <img src="/Assets/Skeleton loader/divider.png" alt="decorative divider" width="30%">
                         </div>
 
                         <!-- 05 Outcome -->
-                        <div class="cs-section">
-                            <p class="cs-section-label">05 — Outcome &amp; impact</p>
+                        <div class="cs-section" style="align-items: center;">
+                            <h2 class="cs-section-label">Outcome &amp; impact</h2>
 
-                            <div class="outcome-table">
-                                <div class="outcome-row">
-                                    <div class="outcome-label">Shipped</div>
-                                    <div class="outcome-value">Built into Discover's official Storybook by development
-                                        team</div>
-                                </div>
-                                <div class="outcome-row">
-                                    <div class="outcome-label">Integrated</div>
-                                    <div class="outcome-value">Development began on inclusion in AC Home page</div>
-                                </div>
-                                <div class="outcome-row">
-                                    <div class="outcome-label">Stakeholder reviews</div>
-                                    <div class="outcome-value">Presented to Discover's internal design system team 3
-                                        times</div>
-                                </div>
-                                <div class="outcome-row">
-                                    <div class="outcome-label">Unlocked</div>
-                                    <div class="outcome-value">10 subsequent component tasks led after this one</div>
-                                </div>
-                            </div>
 
-                            <blockquote class="pull-quote-block">
-                                "The design system team both internally at FCB and externally at Discover was supportive
-                                of my approach. I was able to articulate my decisions and process to a degree of detail
-                                I had never before attempted."
+                            <blockquote class="outcomes">
+                                <p class="subhead">Shipped:</p>
+                                <p class="subhead">Built into Discover's official Storybook by development
+                                    team</p>
+                            </blockquote>
+
+
+                            <blockquote class="outcomes">
+                                <p class="subhead">Integrated:</p>
+                                <p class="subhead">Development began on inclusion in AC Home page</p>
+                            </blockquote>
+
+                            <blockquote class="outcomes">
+                                <p class="subhead">Stakeholder reviews:</p>
+                                <p class="subhead">Presented to Discover's internal design system team 3
+                                    times</p>
+                            </blockquote>
+
+
+                            <blockquote class="outcomes">
+                                <p class="subhead">Unlocked:</p>
+                                <p class="subhead">10 subsequent component tasks led after this one</p>
+                            </blockquote>
+
+
+
+                            <blockquote>
+                                <p>From Associate Creative Director (UI):</p>
+                                <p>
+                                    "The design system team both internally at FCB and externally at Discover was
+                                    supportive
+                                    of my approach. I was able to articulate my decisions and process to a degree of
+                                    detail
+                                    I had never before attempted."
+                                </p>
                             </blockquote>
 
                             <p class="copy">The project ended when FCB's work paused following Discover's acquisition by
@@ -437,11 +452,16 @@
 
                         <!-- 06 Learnings -->
                         <div class="cs-section">
-                            <p class="cs-section-label">06 — Learnings</p>
-                            <p class="copy">The skeleton loader is a rule-breaker by nature. It lives outside the normal
-                                component lifecycle and doesn't cleanly fit design system conventions. Being onboarded
-                                to the system at the same time I was learning when to deviate from it was both real
-                                challenge and real education.</p>
+                            <h2 class="cs-section-label"> Learnings</h2>
+                            <blockquote class="learnings">
+                                <p class="subhead">The skeleton loader is a rule-breaker by nature. </p>
+                                <p class="copy">It lives outside the
+                                    normal
+                                    component lifecycle and doesn't cleanly fit design system conventions. Being
+                                    onboarded
+                                    to the system at the same time I was learning when to deviate from it was both real
+                                    challenge and real education.</p>
+                            </blockquote>
                             <p class="copy">Accessibility ambiguity requires documented, reasoned decisions — not just
                                 compliance or avoidance. Writing out the rationale for the contrast call made it
                                 defensible, not just excusable.</p>

@@ -734,7 +734,7 @@
 
 blockquote {
     display: flex;
-    width: 90%;
+    width: 100%;
     min-width: 200px;
     padding: 12px;
     flex-direction: row;

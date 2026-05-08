@@ -32,7 +32,8 @@ h2 {
 
 h3 {
     color: var(--duval);
-    font-family: "Roobert-medium", Helvetica;
+    font-family: "Roobert-Regular", Helvetica;
+    font-weight: 400;
     font-size: 14px;
     line-height: normal;
     letter-spacing: 0.01rem;

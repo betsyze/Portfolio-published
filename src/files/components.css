@@ -522,10 +522,31 @@ p.project-description {
     padding: 0px 32px 0 0;
 }
 
+.intro-illo {
+    position: relative;
+}
+
 .intro-illo img {
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
     object-fit: cover;
+}
+
+.intro-illo-static {
+    position: absolute;
+    inset: 0;
+}
+
+.intro-illo-gif {
+    opacity: 0;
+}
+
+.intro-card:hover .intro-illo-gif {
+    opacity: 1;
+}
+
+.intro-card:hover .intro-illo-static {
+    opacity: 0;
 }
 
 
@@ -534,12 +555,12 @@ p.project-description {
     border: none;
 }
 
-.intro-body-accordion > summary.intro-body-toggle {
+.intro-body-accordion>summary.intro-body-toggle {
     display: none;
     list-style: none;
 }
 
-.intro-body-accordion > summary.intro-body-toggle::-webkit-details-marker {
+.intro-body-accordion>summary.intro-body-toggle::-webkit-details-marker {
     display: none;
 }
 

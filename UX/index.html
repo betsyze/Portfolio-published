@@ -117,7 +117,40 @@
 
                 <div class="badge">Beta</div>
 
-                <h1> Experience Design</h1>
+                <div class="intro-card">
+                    <div class="intro-content">
+                        <div class="intro-header">
+                            <div class="intro-tags">
+                                <span class="intro-badge-pill">Design Microsite</span>
+                                <a href="https://betsyje.com" class="intro-tag-link">Explore full site</a>
+                            </div>
+                            <h1>Experience Design</h1>
+                            <p class="intro-subtitle">I'm a full-stack design engineer: digital strategy, visual design,
+                                and, increasingly, web dev.</p>
+                        </div>
+                        <details class="intro-body-accordion">
+                            <summary class="intro-body-toggle">Expand to read more</summary>
+                            <div class="intro-body">
+                                <p>I have a background in visual art, and my loyalty still lies with artists and small
+                                    creative spaces. Typically, I lead with site architecture, front-end execution, and
+                                    web accessibility, and consult on art direction, creative strategy, and brand
+                                    identity.</p>
+                                <p>I'm interested in weaving handmade-media into hardcore strategy and execution. I'm
+                                    all about tech that's open source, scrappy, and heartfelt. My goal is twofold: to
+                                    build practical tools that can evolve alongside users, and to never sacrifice my
+                                    commitment to aesthetics.</p>
+                                <p>At work, I've built complex design systems and directed style guidance for UI and
+                                    animated video. At home, I'm a self taught coder (read about <a
+                                        href="/about/this-website">this website</a>), and artist (explore <a
+                                        href="/Art/">my art practice</a>).</p>
+                            </div>
+                        </details>
+                        <a href="/about" class="intro-btn">Read more about me</a>
+                    </div>
+                    <div class="intro-illo">
+                        <img src="/Assets/ux/brown-grid-anim.gif" alt="animation of betsyje.com's UX icons">
+                    </div>
+                </div>
 
             </div>
 
@@ -404,6 +437,22 @@
 
         <div class="ds"></div>
     </div>
+
+    <script>
+        (function () {
+            function syncAccordion() {
+                var el = document.querySelector('.intro-body-accordion');
+                if (!el) return;
+                if (window.innerWidth >= 860) {
+                    el.setAttribute('open', '');
+                } else {
+                    el.removeAttribute('open');
+                }
+            }
+            document.addEventListener('DOMContentLoaded', syncAccordion);
+            window.addEventListener('resize', syncAccordion);
+        }());
+    </script>
 
     <div class="footer">
         <footer>

@@ -399,6 +399,151 @@ p.project-description {
 }
 
 
+/* ── Intro card (UX index) ──────────────────────────────────── */
+
+.intro-card {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    /* padding: 32px; */
+    border: 1px solid var(--neutral-10);
+    background: var(--desert-wind);
+    overflow: hidden;
+    width: 100%;
+    max-width: 788px;
+}
+
+.intro-card .intro-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1 0 0;
+    min-width: 0;
+
+    padding: 32px;
+}
+
+.intro-card .intro-header {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.intro-card .intro-tags {
+    display: flex;
+    align-items: center;
+}
+
+.intro-badge-pill {
+    background: var(--yellow-2);
+    border: 0.5px solid var(--neutral-10);
+    border-radius: 12px;
+    padding: 6px 12px;
+    font-family: "Roobert-Medium", Helvetica;
+    font-size: 9px;
+    color: var(--neutral-10);
+    line-height: 1.2;
+}
+
+.intro-tag-link {
+    padding: 6px 12px;
+    font-family: "Roobert-Medium", Helvetica;
+    font-size: 9px;
+    color: var(--neutral-10);
+    text-decoration: none;
+    line-height: 1.2;
+}
+
+.intro-tag-link:hover {
+    text-decoration: underline;
+}
+
+.intro-card h1 {
+    font-family: "Roobert-Regular", Helvetica;
+    font-size: 18px;
+    color: var(--neutral-10);
+    margin: 0;
+    font-weight: 400;
+}
+
+.intro-subtitle {
+    font-family: "Roobert-Regular", Helvetica;
+    font-size: 16px;
+    color: var(--neutral-10);
+    margin: 0;
+    font-weight: 400;
+}
+
+.intro-body {
+    font-family: "Roobert-Regular", Helvetica;
+    font-size: 12px;
+    color: #605542;
+    letter-spacing: 0.036px;
+    line-height: 1.5;
+}
+
+.intro-body p {
+    margin: 0 0 8px 0;
+}
+
+.intro-body p:last-child {
+    margin-bottom: 0;
+}
+
+.intro-body a {
+    color: #605542;
+    text-decoration: underline;
+}
+
+.intro-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 12px;
+    border: 0.5px solid var(--neutral-10);
+    border-radius: 2px;
+    font-family: "Roobert-Medium", Helvetica;
+    font-size: 9px;
+    color: var(--neutral-10);
+    text-decoration: none;
+    line-height: 1.2;
+    align-self: flex-start;
+}
+
+.intro-btn:hover {
+    background: var(--neutral-2);
+}
+
+.intro-illo {
+    width: 240px;
+    height: 240px;
+    min-width: 240px;
+    flex-shrink: 0;
+    padding: 0px 32px 0 0;
+}
+
+.intro-illo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Intro body accordion — summary hidden on large screens; shown + styled on small via utilities.css */
+.intro-body-accordion {
+    border: none;
+}
+
+.intro-body-accordion > summary.intro-body-toggle {
+    display: none;
+    list-style: none;
+}
+
+.intro-body-accordion > summary.intro-body-toggle::-webkit-details-marker {
+    display: none;
+}
+
+
 /* ── Link button ────────────────────────────────────────────── */
 
 .link-button {

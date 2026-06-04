@@ -59,6 +59,30 @@
 }
 
 
+/* ── Custom cursors ─────────────────────────────────────────── */
+
+/* Hide the native cursor; cursor.js handles the floating overlay. */
+.cursor-hover-interactive {
+    cursor: none;
+}
+
+/* The floating label that follows the mouse */
+#cursor-overlay {
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    display: none;
+    transform: translate(12px, 12px);
+    width: 180px;
+    /* half of your 2× export size */
+}
+
+
+#cursor-overlay.visible {
+    display: block;
+}
+
+
 /* ── Media queries ──────────────────────────────────────────── */
 
 /* Large: ≥ 1200px */

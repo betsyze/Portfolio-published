@@ -61,7 +61,7 @@ a {
 }
 
 a:hover {
-    cursor: url(/Assets/hover2.png), pointer;
+    cursor: url(/Assets/utility/nu-hover.png), pointer;
 }
 
 a:visited {

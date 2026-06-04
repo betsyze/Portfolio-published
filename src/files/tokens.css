@@ -8,6 +8,7 @@
 /* ── Fonts ──────────────────────────────────────────────────── */
 
 @import url('https://rawcdn.githack.com/betsyze/Roobert/ade264a03965d7d4cf3f21c63377455ee49b9489/Roobert.css');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
 
 @font-face {
     font-family: "Roobert-Regular";
@@ -28,6 +29,15 @@
     font-style: normal;
     font-weight: 700;
     src: url('/Assets/Fonts/Roobert/Roobert-SemiBold.otf') format("opentype");
+}
+
+.Inconsolata {
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 200;
 }
 
 

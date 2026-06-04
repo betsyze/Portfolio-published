@@ -766,6 +766,27 @@ blockquote.learnings {
     }
 }
 
+blockquote.example {
+    width: 100%;
+    background-color: var(--desert-wind);
+    color: var(--yellow-10);
+    border: 1px var(--yellow-6) dashed;
+    gap: 18px;
+
+    & p.subhead {
+        width: 180px;
+        color: var(--yellow-10);
+    }
+
+    & p {
+        color: var(--duval);
+        font-family: "Inconsolata", Roboto;
+        text-decoration: none;
+    }
+
+
+}
+
 blockquote.outcomes {
     width: 100%;
     background-color: var(--green-2);
